@@ -7,10 +7,10 @@ const messages = [
 
 export default function StudioTicker() {
   return (
-    <div className="studio-ticker" role="group" aria-label="Made for ambitious businesses, designed to feel different">
+    <section className="studio-ticker" aria-label="Made for ambitious businesses, designed to feel different">
       <div className="ticker-track">
         {[0, 1].map((copy) => (
-          <div className="ticker-group" key={copy} aria-hidden={copy === 1}>
+          <div className="ticker-group" key={copy} aria-hidden={copy === 1} role={copy === 0 ? "group" : undefined}>
             {messages.map((message) => (
               <span className="ticker-message" key={`${copy}-${message}`}>
                 {message}
@@ -20,6 +20,6 @@ export default function StudioTicker() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

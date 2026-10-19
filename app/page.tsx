@@ -9,6 +9,13 @@ import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import StickyCta from "@/components/StickyCta";
 import StudioTicker from "@/components/StudioTicker";
+import {
+  IndustriesSection,
+  LaunchSupport,
+  StudioIntroduction,
+  StudioPartnership,
+  WebsiteStandards,
+} from "@/components/StudioSections";
 
 export default function HomePage() {
   return (
@@ -16,10 +23,15 @@ export default function HomePage() {
       <Hero />
       <LogoBar />
       <StudioTicker />
+      <StudioIntroduction />
       <Services />
+      <IndustriesSection />
       <Approach />
+      <WebsiteStandards />
       <Proof />
+      <StudioPartnership />
       <Testimonials />
+      <LaunchSupport />
       <CtaBand />
       <FAQ />
       <Contact />
