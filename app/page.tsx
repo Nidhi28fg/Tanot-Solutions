@@ -8,12 +8,14 @@ import Proof from "@/components/Proof";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import StickyCta from "@/components/StickyCta";
+import StudioTicker from "@/components/StudioTicker";
 
 export default function HomePage() {
   return (
     <main id="main">
       <Hero />
       <LogoBar />
+      <StudioTicker />
       <Services />
       <Approach />
       <Proof />

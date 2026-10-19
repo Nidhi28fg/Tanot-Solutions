@@ -3,6 +3,7 @@ import { Instrument_Serif, Plus_Jakarta_Sans } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
+import "./studio-redesign.css";
 
 const sans = Plus_Jakarta_Sans({
   subsets: ["latin"],

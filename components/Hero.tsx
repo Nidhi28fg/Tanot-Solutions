@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const offerings = ["Strategy", "Design", "Development", "Growth"];
 
 export default function Hero() {
@@ -36,38 +38,19 @@ export default function Hero() {
           </ul>
         </div>
 
-        <div className="hero-art relative mx-auto w-full max-w-[570px]" aria-label="A glimpse of a modern custom website design">
-          <div className="art-note note-top"><span className="note-star">✳</span> Made to move you forward</div>
-          <div className="browser-window">
-            <div className="browser-bar">
-              <div className="flex gap-1.5" aria-hidden="true">
-                <span className="browser-dot bg-[#FF8274]" />
-                <span className="browser-dot bg-[#F8C75E]" />
-                <span className="browser-dot bg-[#7BC9A2]" />
-              </div>
-              <span className="browser-url">yourbrand.co</span>
-              <span className="text-xs text-white/50">↗</span>
-            </div>
-            <div className="mock-site">
-              <div className="mock-nav">
-                <span className="mock-logo"><span />FORME</span>
-                <span className="mock-menu">STUDIO　 JOURNAL　 ABOUT</span>
-                <span className="mock-contact">LET&apos;S TALK ↗</span>
-              </div>
-              <div className="mock-content">
-                <span className="mock-overline">DESIGN FOR EVERYDAY RITUALS</span>
-                <p>Make room<br />for <i>better.</i></p>
-                <span className="mock-link">DISCOVER THE COLLECTION <b>↗</b></span>
-                <div className="mock-orb" aria-hidden="true"><span>F</span></div>
-                <div className="mock-sun" aria-hidden="true" />
-              </div>
-              <div className="mock-bottom"><span>OBJECTS WITH INTENTION</span><span>01 — 04</span></div>
-            </div>
-          </div>
-          <div className="art-sticker" aria-hidden="true">
-            <span>IDEAS</span><b>↗</b><span>INTO IMPACT</span>
-          </div>
-          <div className="art-note note-bottom">Thoughtful by design <span>✳</span></div>
+        <div className="hero-art relative mx-auto w-full max-w-[700px]" aria-label="A colorful collage of original website designs">
+          <div className="hero-art-glow" aria-hidden="true" />
+          <Image
+            className="hero-collage"
+            src="/images/hero-studio.svg"
+            alt="Original website concepts presented as overlapping colorful glass browser windows"
+            width={920}
+            height={660}
+            priority
+            sizes="(max-width: 1023px) 100vw, 54vw"
+          />
+          <div className="hero-float-label hero-float-top"><span>✳</span> BIG IDEAS, BUILT TOGETHER</div>
+          <div className="hero-float-label hero-float-bottom"><span>01 / 03</span> Strategy → Design → Launch</div>
         </div>
       </div>
       <div className="hero-footer container-page">

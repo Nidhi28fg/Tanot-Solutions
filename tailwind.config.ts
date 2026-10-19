@@ -34,7 +34,7 @@ const config: Config = {
         serif: ["var(--font-serif)", "Georgia", "serif"],
       },
       maxWidth: {
-        page: "70rem",
+        page: "82rem",
       },
       boxShadow: {
         card: "0 8px 24px rgba(25, 22, 36, 0.06)",
