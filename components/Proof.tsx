@@ -1,25 +1,7 @@
-const quotes = [
-  {
-    quote:
-      "We were ranking, but ChatGPT never named us. Eight weeks later we are a cited source in our category prompts — and inbound quality jumped with it.",
-    initials: "AR",
-    name: "Amelia Reyes",
-    role: "VP Growth, Northline Analytics",
-  },
-  {
-    quote:
-      "Tanot replaced a messy mix of SEO vendors with one system. Content finally has a brief, a standard, and a number the board actually cares about.",
-    initials: "JK",
-    name: "James Khan",
-    role: "Head of Marketing, Helio Cloud",
-  },
-  {
-    quote:
-      "The visibility console made AI search tangible. We stopped guessing and started funding the pages that get retrieved.",
-    initials: "SP",
-    name: "Sofia Patel",
-    role: "CMO, Meridian Health Tech",
-  },
+const work = [
+  { number: "01", title: "A digital storefront with a little more soul.", type: "E-commerce · Brand experience", className: "project-retail", mark: "GOOD\nTHINGS", label: "Curated goods, considered living" },
+  { number: "02", title: "A calmer way to find the care you need.", type: "Healthcare · UX & development", className: "project-health", mark: "wellkind", label: "Care that meets you where you are." },
+  { number: "03", title: "A stay worth planning your next trip around.", type: "Hospitality · Website redesign", className: "project-stay", mark: "Casa\nSol", label: "A slower kind of escape." },
 ];
 
 export default function Proof() {
@@ -27,33 +9,35 @@ export default function Proof() {
     <section className="section" id="proof">
       <div className="container-page">
         <header className="section-head mb-12">
-          <p className="eyebrow">Proof</p>
-          <h2>Operators, not observers.</h2>
+          <p className="eyebrow"><span className="eyebrow-dot" /> Who we help</p>
+          <h2>Different businesses. One thing in common: big ideas.</h2>
           <p>
-            Marketing leaders hire Tanot when AI search started answering their
-            category — and their brand was missing from the reply.
+            From growing teams in India to established businesses around the
+            world, we create digital experiences for people in every kind of
+            industry.
           </p>
         </header>
 
-        <div className="grid gap-6 md:grid-cols-3">
-          {quotes.map((item) => (
-            <figure
-              key={item.name}
-              className="flex h-full flex-col justify-between rounded-2xl border border-line bg-paper-2 p-8 shadow-card"
-            >
-              <blockquote className="font-serif text-xl leading-8 text-ink">
-                “{item.quote}”
-              </blockquote>
-              <figcaption className="mt-8 flex items-center gap-3 text-sm">
-                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-ink text-xs font-semibold text-cta">
-                  {item.initials}
-                </span>
-                <span>
-                  <strong className="block font-semibold text-ink">{item.name}</strong>
-                  <span className="text-muted">{item.role}</span>
-                </span>
-              </figcaption>
-            </figure>
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {work.map((project) => (
+            <article key={project.number} className="project-card">
+              <div className={`project-preview ${project.className}`} aria-label={`${project.type} website preview`}>
+                <div className="project-browser"><span>● ● ●</span><span>brandstudio.com</span><span>↗</span></div>
+                <div className="project-art">
+                  <span className="project-mark">{project.mark.split("\n").map((part) => <span key={part}>{part}</span>)}</span>
+                  <span className="project-label">{project.label}</span>
+                  <span className="project-graphic" aria-hidden="true" />
+                </div>
+                <span className="project-tag">Concept direction</span>
+              </div>
+              <div className="flex items-start justify-between gap-3 pt-5">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.11em] text-violet">{project.type}</p>
+                  <h3 className="mt-2 max-w-[22ch] text-xl leading-snug">{project.title}</h3>
+                </div>
+                <span className="pt-1 text-xs font-semibold text-muted">{project.number}</span>
+              </div>
+            </article>
           ))}
         </div>
       </div>

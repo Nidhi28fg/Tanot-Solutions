@@ -19,9 +19,9 @@ const serif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Tanot Solutions — AI Search, SEO & Content Marketing",
+  title: "Tanot Solutions — Website Design, Redesign & Development",
   description:
-    "Tanot Solutions helps growth teams win AI search, organic rankings, and content that gets cited — across Google, ChatGPT, and answer engines.",
+    "Tanot Solutions designs, redesigns and develops distinctive websites for businesses across industries in India and around the world.",
   icons: { icon: "/favicon.svg" },
 };
 

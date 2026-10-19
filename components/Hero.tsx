@@ -1,92 +1,75 @@
-const channels = [
-  { name: "Google AI Overviews", width: "88%", status: "Cited" },
-  { name: "ChatGPT", width: "74%", status: "Cited" },
-  { name: "Perplexity", width: "61%", status: "Rising" },
-  { name: "Classic SERP", width: "92%", status: "Page 1" },
-];
-
-const metrics = [
-  { label: "AI citation lift", value: "3.2×" },
-  { label: "Content systems shipped", value: "140+" },
-  { label: "Avg. time to first win", value: "8 wks" },
-];
+const offerings = ["Strategy", "Design", "Development", "Growth"];
 
 export default function Hero() {
   return (
-    <section className="bg-ink text-white" id="top">
-      <div className="container-page grid items-center gap-12 py-16 md:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] md:gap-16 md:py-24">
-        <div>
-          <p className="eyebrow-light">AI search · SEO · content systems</p>
-          <h1 className="max-w-[14ch] text-[2.5rem] leading-[1.08] text-white sm:text-5xl md:text-[4rem]">
-            Be the answer{" "}
-            <em className="font-serif italic text-cta">AI search recommends.</em>
+    <section className="hero-section relative overflow-hidden" id="top">
+      <div className="hero-grid" aria-hidden="true" />
+      <div className="container-page relative grid items-center gap-12 pb-16 pt-14 lg:grid-cols-[1fr_0.95fr] lg:gap-10 lg:pb-28 lg:pt-20">
+        <div className="hero-copy">
+          <p className="eyebrow"><span className="eyebrow-dot" /> Independent digital studio · India & worldwide</p>
+          <h1 className="max-w-[13ch] text-[3.15rem] leading-[0.99] sm:text-6xl lg:text-[5.15rem]">
+            Your next website should <em className="font-serif text-violet">open doors.</em>
           </h1>
-          <p className="mt-6 max-w-xl text-base leading-7 text-white/72 md:text-lg md:leading-8">
-            Tanot Solutions engineers visibility for growth teams — so your brand
-            is cited in ChatGPT, ranked in Google, and chosen when buyers ask AI
-            what to buy.
+          <p className="mt-6 max-w-lg text-base leading-7 text-muted lg:text-lg lg:leading-8">
+            We design, redesign and build thoughtful websites for ambitious
+            businesses—across industries, across borders, and built around what
+            makes you different.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a href="#contact" className="btn btn-cta">
-              Book a strategy session
+              Let&apos;s build something <span aria-hidden="true">↗</span>
             </a>
-            <a href="#services" className="btn btn-ghost">
-              Explore services
+            <a href="#services" className="btn btn-text">
+              Explore what we do <span aria-hidden="true">↓</span>
             </a>
           </div>
-          <dl className="mt-12 grid grid-cols-3 gap-4 border-t border-white/10 pt-8">
-            {metrics.map((metric) => (
-              <div key={metric.label}>
-                <dt className="text-[11px] font-medium uppercase tracking-[0.12em] text-white/50">
-                  {metric.label}
-                </dt>
-                <dd className="mt-2 font-serif text-2xl text-white md:text-[2rem]">
-                  {metric.value}
-                </dd>
-              </div>
+          <ul className="mt-10 flex flex-wrap gap-x-5 gap-y-2 text-xs font-semibold uppercase tracking-[0.13em] text-muted">
+            {offerings.map((offering) => (
+              <li key={offering} className="flex items-center gap-2">
+                <span className="h-1 w-1 rounded-full bg-orange" />
+                {offering}
+              </li>
             ))}
-          </dl>
+          </ul>
         </div>
 
-        <aside aria-label="AI search visibility snapshot">
-          <div className="rounded-2xl border border-white/10 bg-ink-2 p-6 shadow-panel md:p-8">
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-semibold uppercase tracking-[0.16em] text-white/50">
-                Visibility console
-              </span>
-              <span className="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-cta">
-                <span className="h-1.5 w-1.5 rounded-full bg-cta" />
-                Live
-              </span>
+        <div className="hero-art relative mx-auto w-full max-w-[570px]" aria-label="A glimpse of a modern custom website design">
+          <div className="art-note note-top"><span className="note-star">✳</span> Made to move you forward</div>
+          <div className="browser-window">
+            <div className="browser-bar">
+              <div className="flex gap-1.5" aria-hidden="true">
+                <span className="browser-dot bg-[#FF8274]" />
+                <span className="browser-dot bg-[#F8C75E]" />
+                <span className="browser-dot bg-[#7BC9A2]" />
+              </div>
+              <span className="browser-url">yourbrand.co</span>
+              <span className="text-xs text-white/50">↗</span>
             </div>
-            <p className="mt-4 text-lg font-semibold">AI Search Presence</p>
-            <div className="mt-6 flex items-end gap-4">
-              <span className="font-serif text-6xl leading-none text-cta">86</span>
-              <span className="pb-1 text-sm leading-6 text-white/60">
-                Presence score
-                <strong className="mt-0.5 block font-semibold text-white">
-                  +12 this quarter
-                </strong>
-              </span>
+            <div className="mock-site">
+              <div className="mock-nav">
+                <span className="mock-logo"><span />FORME</span>
+                <span className="mock-menu">STUDIO　 JOURNAL　 ABOUT</span>
+                <span className="mock-contact">LET&apos;S TALK ↗</span>
+              </div>
+              <div className="mock-content">
+                <span className="mock-overline">DESIGN FOR EVERYDAY RITUALS</span>
+                <p>Make room<br />for <i>better.</i></p>
+                <span className="mock-link">DISCOVER THE COLLECTION <b>↗</b></span>
+                <div className="mock-orb" aria-hidden="true"><span>F</span></div>
+                <div className="mock-sun" aria-hidden="true" />
+              </div>
+              <div className="mock-bottom"><span>OBJECTS WITH INTENTION</span><span>01 — 04</span></div>
             </div>
-            <ul className="mt-8 space-y-5">
-              {channels.map((channel) => (
-                <li key={channel.name}>
-                  <div className="mb-2 flex items-center justify-between gap-3 text-sm">
-                    <span className="text-white/70">{channel.name}</span>
-                    <b className="text-xs font-semibold text-white">{channel.status}</b>
-                  </div>
-                  <div className="h-1.5 overflow-hidden rounded-full bg-white/10">
-                    <i
-                      className="block h-full rounded-full bg-cta"
-                      style={{ width: channel.width }}
-                    />
-                  </div>
-                </li>
-              ))}
-            </ul>
           </div>
-        </aside>
+          <div className="art-sticker" aria-hidden="true">
+            <span>IDEAS</span><b>↗</b><span>INTO IMPACT</span>
+          </div>
+          <div className="art-note note-bottom">Thoughtful by design <span>✳</span></div>
+        </div>
+      </div>
+      <div className="hero-footer container-page">
+        <span>GOOD WORK TRAVELS.</span>
+        <span>Scroll to explore <b aria-hidden="true">↓</b></span>
       </div>
     </section>
   );

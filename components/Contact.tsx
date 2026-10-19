@@ -8,35 +8,39 @@ export default function Contact() {
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
-    if (!form.checkValidity()) {
-      setStatus("Please complete the required fields.");
+    if (!form.reportValidity()) {
       return;
     }
-    setStatus("Received. We will reply within one business day.");
-    form.reset();
+    const data = new FormData(form);
+    const subject = encodeURIComponent(`Website project enquiry from ${data.get("name")}`);
+    const body = encodeURIComponent(
+      `Name: ${data.get("name")}\nEmail: ${data.get("email")}\nCompany: ${data.get("company") || "Not provided"}\n\nProject details:\n${data.get("message")}`,
+    );
+    window.location.href = `mailto:hello@tanot.solutions?subject=${subject}&body=${body}`;
+    setStatus("Your email app should open with your project details ready to send.");
   }
 
   return (
     <section className="section pt-8" id="contact">
       <div className="container-page grid gap-12 md:grid-cols-2 md:gap-16">
         <header className="section-head">
-          <p className="eyebrow">Contact</p>
-          <h2>Tell us where you need to be found.</h2>
+          <p className="eyebrow"><span className="eyebrow-dot" /> Start a conversation</p>
+          <h2>Tell us what you have in mind.</h2>
           <p>
-            Share your market and current stack. We reply within one business
-            day with whether we are the right fit — and what a first sprint
-            would look like.
+            A new website, a redesign or an idea that needs a digital home—we
+            would love to hear about it. Share a few details and let&apos;s take
+            it from there.
           </p>
           <ul className="mt-8 space-y-5 text-sm">
             <li>
               <strong className="block text-ink">Email</strong>
-              <a className="mt-1 inline-block text-teal hover:underline" href="mailto:hello@tanot.solutions">
+              <a className="mt-1 inline-block text-violet hover:underline" href="mailto:hello@tanot.solutions">
                 hello@tanot.solutions
               </a>
             </li>
             <li>
-              <strong className="block text-ink">Typical engagement</strong>
-              <span className="mt-1 block text-muted">8-week foundation, then monthly ops</span>
+              <strong className="block text-ink">Working worldwide</strong>
+              <span className="mt-1 block text-muted">Based in India · Collaborating across time zones</span>
             </li>
           </ul>
         </header>
@@ -46,7 +50,7 @@ export default function Contact() {
             <label className="block text-sm font-medium text-ink">
               Full name
               <input
-                className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-teal"
+                className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-violet"
                 type="text"
                 name="name"
                 autoComplete="name"
@@ -56,7 +60,7 @@ export default function Contact() {
             <label className="block text-sm font-medium text-ink">
               Work email
               <input
-                className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-teal"
+                className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-violet"
                 type="email"
                 name="email"
                 autoComplete="email"
@@ -67,25 +71,25 @@ export default function Contact() {
           <label className="mt-5 block text-sm font-medium text-ink">
             Company
             <input
-              className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-teal"
+              className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-violet"
               type="text"
               name="company"
               autoComplete="organization"
             />
           </label>
           <label className="mt-5 block text-sm font-medium text-ink">
-            What should AI search say about you?
+            Tell us about your project
             <textarea
-              className="mt-2 w-full rounded-lg border border-line bg-paper px-4 py-3 text-[15px] outline-none focus:border-teal"
+              className="mt-2 w-full rounded-lg border border-line bg-paper px-4 py-3 text-[15px] outline-none focus:border-violet"
               name="message"
               rows={4}
               required
             />
           </label>
           <button className="btn btn-cta mt-6 w-full" type="submit">
-            Request a strategy session
+            Send your project enquiry <span aria-hidden="true">↗</span>
           </button>
-          <p className="mt-3 min-h-6 text-sm text-teal" role="status">
+          <p className="mt-3 min-h-6 text-sm text-violet" role="status">
             {status}
           </p>
         </form>

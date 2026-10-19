@@ -1,39 +1,40 @@
 const steps = [
   {
-    title: "Discover",
-    body: "Map buyer questions, competitor citations, and entity gaps across Google and AI surfaces.",
+    title: "Get to know you",
+    body: "We learn about your business, your customers and what success should look like.",
   },
   {
-    title: "Engineer",
-    body: "Rebuild architecture, schema, and source pages so models can parse — and prefer — your expertise.",
+    title: "Plan with purpose",
+    body: "Together, we shape the right direction, site structure and a clear project plan.",
   },
   {
-    title: "Publish",
-    body: "Ship a content system with editorial standards, expert review, and distribution that earns links and mentions.",
+    title: "Design & build",
+    body: "Our team turns the plan into a distinctive, responsive website—crafted around your brand.",
   },
   {
-    title: "Measure",
-    body: "Track citations, rankings, and assisted pipeline. Double down on what moves revenue.",
+    title: "Launch & grow",
+    body: "We test every detail, help you launch with confidence and stay by your side as you grow.",
   },
 ];
 
 export default function Approach() {
   return (
-    <section className="section bg-paper-2" id="approach">
+    <section className="section approach-section" id="approach">
       <div className="container-page grid gap-12 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:gap-16">
         <header className="section-head">
-          <p className="eyebrow">Approach</p>
-          <h2>A disciplined system, not a pile of tactics.</h2>
+          <p className="eyebrow"><span className="eyebrow-dot" /> How we work</p>
+          <h2>Good work starts with a good conversation.</h2>
           <p>
-            We run an eight-week foundation, then a compounding operating cadence.
-            Every artifact is built to be retrieved, ranked, and trusted.
+            Clear communication, considered decisions and a hands-on team at
+            every step. No one-size-fits-all templates—just the right solution
+            for your business.
           </p>
         </header>
 
         <ol className="grid gap-6 sm:grid-cols-2">
           {steps.map((step, index) => (
-            <li key={step.title} className="rounded-2xl border border-line bg-paper p-6">
-              <span className="text-xs font-semibold text-teal">0{index + 1}</span>
+            <li key={step.title} className="process-card rounded-2xl border border-line bg-paper p-6">
+              <span className="text-xs font-semibold text-violet">0{index + 1}</span>
               <h3 className="mt-3 text-xl">{step.title}</h3>
               <p className="mt-2 text-[15px] leading-7 text-muted">{step.body}</p>
             </li>

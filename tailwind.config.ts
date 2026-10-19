@@ -9,20 +9,25 @@ const config: Config = {
     extend: {
       colors: {
         ink: {
-          DEFAULT: "#0B1220",
-          2: "#151C2C",
+          DEFAULT: "#191624",
+          2: "#272336",
         },
         paper: {
-          DEFAULT: "#F6F4EF",
+          DEFAULT: "#FAF8F4",
           2: "#FFFFFF",
         },
-        muted: "#5C6578",
-        line: "rgba(11, 18, 32, 0.08)",
+        muted: "#726D7A",
+        line: "rgba(25, 22, 36, 0.10)",
+        violet: {
+          DEFAULT: "#7452D6",
+          dark: "#5A3AB7",
+        },
+        orange: "#F17854",
         teal: {
           DEFAULT: "#0F766E",
           dark: "#0B5C56",
         },
-        cta: "#D8F34A",
+        cta: "#D9F36A",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
@@ -32,8 +37,8 @@ const config: Config = {
         page: "70rem",
       },
       boxShadow: {
-        card: "0 8px 24px rgba(11, 18, 32, 0.06)",
-        panel: "0 24px 64px rgba(11, 18, 32, 0.28)",
+        card: "0 8px 24px rgba(25, 22, 36, 0.06)",
+        panel: "0 24px 64px rgba(25, 22, 36, 0.20)",
       },
       spacing: {
         18: "4.5rem",
