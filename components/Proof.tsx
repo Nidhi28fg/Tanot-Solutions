@@ -69,9 +69,9 @@ export default function Proof() {
           ))}
         </div>
 
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {visibleWork.map((project) => (
-            <article key={project.number} className="project-card glass-card">
+            <article key={project.number} className={`project-card glass-card${project.number === "01" ? " project-card-featured" : ""}`}>
               <figure className={`project-preview ${project.className}`}>
                 <Image
                   className="project-image"

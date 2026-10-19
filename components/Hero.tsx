@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const offerings = ["Website design", "Redesign", "Development", "India & worldwide"];
 
 export default function Hero() {
@@ -38,19 +36,43 @@ export default function Hero() {
           </ul>
         </div>
 
-        <div className="hero-art relative mx-auto w-full max-w-[700px]" aria-label="A web design workspace with a laptop displaying code">
+        <div className="hero-art relative mx-auto w-full max-w-[760px]" role="img" aria-label="Illustrative website concept displayed in a floating browser window">
           <div className="hero-art-glow" aria-hidden="true" />
-          <Image
-            className="hero-collage"
-            src="/images/hero-workspace.jpg"
-            alt="A laptop displaying code on a bright web design workspace"
-            width={1200}
-            height={800}
-            priority
-            sizes="(max-width: 1023px) 100vw, 54vw"
-          />
-          <div className="hero-float-label hero-float-top"><span>✳</span> BIG IDEAS, BUILT TOGETHER</div>
-          <div className="hero-float-label hero-float-bottom"><span>01 / 03</span> Strategy → Design → Launch</div>
+          <div className="browser-window hero-browser" aria-hidden="true">
+            <div className="browser-bar">
+              <span className="flex items-center gap-1.5">
+                <i className="browser-dot bg-[#ff6f91]" />
+                <i className="browser-dot bg-[#ffc565]" />
+                <i className="browser-dot bg-[#64dfda]" />
+              </span>
+              <span className="browser-url">tanot.solutions / concept</span>
+              <span className="browser-status">LIVE PREVIEW</span>
+            </div>
+            <div className="mock-site hero-mock-site">
+              <div className="mock-nav">
+                <span className="mock-logo"><span /> TANOT STUDIO</span>
+                <span className="mock-menu">STUDIO&nbsp;&nbsp;&nbsp; SERVICES&nbsp;&nbsp;&nbsp; CONTACT</span>
+                <span className="mock-contact">LET&apos;S TALK ↗</span>
+              </div>
+              <div className="mock-content">
+                <span className="mock-overline">A DIGITAL STUDIO FOR WHAT&apos;S NEXT</span>
+                <p>Make your<br /><i>next move.</i></p>
+                <span className="mock-link">Explore the concept <b>↗</b></span>
+                <div className="mock-sun" />
+                <div className="mock-orb"><span>T</span></div>
+              </div>
+              <div className="mock-bottom">
+                <span>DESIGN WITH INTENT</span>
+                <span>BUILT AROUND YOUR GOALS&nbsp;&nbsp; ↗</span>
+              </div>
+            </div>
+          </div>
+          <div className="hero-float-label hero-float-top"><span>✳</span> A DISTINCTIVE DIGITAL PRESENCE</div>
+          <div className="hero-float-label hero-float-bottom"><span>01 / 03</span> Strategy → Design → Development</div>
+          <div className="hero-float-card" aria-hidden="true">
+            <span>DESIGN · DEVELOPMENT</span>
+            <strong>One thoughtful experience.</strong>
+          </div>
         </div>
       </div>
       <div className="hero-footer container-page">

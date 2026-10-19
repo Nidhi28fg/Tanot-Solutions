@@ -4,6 +4,7 @@ const services = [
   {
     index: "01",
     title: "Website design",
+    icon: "design",
     image: "/images/service-design-photo.jpg",
     imageAlt: "Stock photograph of a person working on a digital design with a stylus",
     body: "Make your offer easier to understand with a user-first design shaped around your brand and customers.",
@@ -12,6 +13,7 @@ const services = [
   {
     index: "02",
     title: "Website redesign",
+    icon: "redesign",
     image: "/images/service-redesign-photo.jpg",
     imageAlt: "A web designer's screen showing website layouts across devices",
     body: "Give an existing website a more current look, clearer navigation and a more useful experience.",
@@ -20,6 +22,7 @@ const services = [
   {
     index: "03",
     title: "Web development",
+    icon: "development",
     image: "/images/service-development-photo.jpg",
     imageAlt: "A team collaborating around laptops in a bright workspace",
     body: "Turn an approved design into a responsive website, built around your features and content needs.",
@@ -28,6 +31,7 @@ const services = [
   {
     index: "04",
     title: "Ongoing support",
+    icon: "support",
     image: "/images/service-support-photo.jpg",
     imageAlt: "A small team working together around a laptop",
     body: "Keep your website current with practical updates and help planning what to improve next.",
@@ -67,6 +71,14 @@ export default function Services() {
               </div>
               <span className="service-number text-xs font-semibold tracking-[0.14em] text-violet">
                 {service.index}
+              </span>
+              <span className={`service-icon service-icon-${service.icon}`} aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                  {service.icon === "design" && <><path d="m15 5 4 4" /><path d="M4 20l4.5-1 10-10a2.12 2.12 0 0 0-3-3l-10 10L4 20Z" /><path d="M13 7 17 11" /></>}
+                  {service.icon === "redesign" && <><path d="M20 7v5h-5" /><path d="M4.5 9A8 8 0 0 1 18 5l2 2" /><path d="M4 17v-5h5" /><path d="M19.5 15A8 8 0 0 1 6 19l-2-2" /></>}
+                  {service.icon === "development" && <><path d="m8 8-4 4 4 4" /><path d="m16 8 4 4-4 4" /><path d="m14 5-4 14" /></>}
+                  {service.icon === "support" && <><path d="m13 2-3 8h7l-6 12 1-9H6l7-11Z" /></>}
+                </svg>
               </span>
               <h3 className="mt-4 text-2xl leading-snug">{service.title}</h3>
               <p className="mt-3 text-[15px] leading-7 text-muted">{service.body}</p>
