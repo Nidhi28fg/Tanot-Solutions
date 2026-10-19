@@ -1,15 +1,20 @@
-const industries = ["Technology", "Retail & e-commerce", "Healthcare", "Hospitality", "Professional services", "And beyond"];
+const trustPoints = [
+  { mark: "✳", label: "Every industry" },
+  { mark: "↗", label: "India & worldwide" },
+  { mark: "◇", label: "Design to development" },
+  { mark: "✓", label: "Built around your goals" },
+];
 
 export default function LogoBar() {
   return (
-    <section className="industry-strip" aria-label="Industries we work with">
-      <div className="container-page flex flex-col gap-5 py-6 md:flex-row md:items-center md:justify-between">
-        <p className="text-xs font-bold uppercase tracking-[0.14em] text-muted">Different industries. Distinctive digital experiences.</p>
-        <ul className="flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-ink/75">
-          {industries.map((industry) => (
-            <li key={industry}>{industry}</li>
+    <section className="trust-strip" aria-label="What you can expect">
+      <div className="container-page grid grid-cols-2 gap-3 py-5 md:grid-cols-4">
+        {trustPoints.map((point) => (
+          <div className="trust-badge" key={point.label}>
+            <span aria-hidden="true">{point.mark}</span>
+            <p>{point.label}</p>
+          </div>
           ))}
-        </ul>
       </div>
     </section>
   );

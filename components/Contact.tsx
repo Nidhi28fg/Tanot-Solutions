@@ -45,7 +45,7 @@ export default function Contact() {
           </ul>
         </header>
 
-        <form className="rounded-2xl border border-line bg-paper-2 p-6 shadow-card md:p-8" onSubmit={onSubmit} noValidate>
+        <form className="contact-glass-card glass-card rounded-2xl border border-line p-6 shadow-card md:p-8" onSubmit={onSubmit} noValidate>
           <div className="grid gap-5 sm:grid-cols-2">
             <label className="block text-sm font-medium text-ink">
               Full name

@@ -42,7 +42,7 @@ export default function Services() {
           {services.map((service) => (
             <article
               key={service.index}
-              className="service-card rounded-2xl border border-line bg-paper-2 p-7 shadow-card md:p-8"
+              className="service-card glass-card rounded-2xl border border-line p-7 shadow-card md:p-8"
             >
               <span className="service-number text-xs font-semibold tracking-[0.14em] text-violet">
                 {service.index}

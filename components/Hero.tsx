@@ -4,6 +4,9 @@ export default function Hero() {
   return (
     <section className="hero-section relative overflow-hidden" id="top">
       <div className="hero-grid" aria-hidden="true" />
+      <div className="hero-orb hero-orb-violet" aria-hidden="true" />
+      <div className="hero-orb hero-orb-coral" aria-hidden="true" />
+      <div className="hero-orb hero-orb-blue" aria-hidden="true" />
       <div className="container-page relative grid items-center gap-12 pb-16 pt-14 lg:grid-cols-[1fr_0.95fr] lg:gap-10 lg:pb-28 lg:pt-20">
         <div className="hero-copy">
           <p className="eyebrow"><span className="eyebrow-dot" /> Independent digital studio · India & worldwide</p>
