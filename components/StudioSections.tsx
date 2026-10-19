@@ -221,14 +221,26 @@ export function WhyTanot() {
   return (
     <section className="section why-tanot-section" id="why-tanot">
       <div className="container-page">
-        <header className="section-head">
-          <p className="eyebrow"><span className="eyebrow-dot" /> Why work with us</p>
-          <h2>Trust built through the way we work.</h2>
-          <p>
-            Thoughtful design, clear communication and reliable delivery are
-            the principles we bring to each project.
-          </p>
-        </header>
+        <div className="why-tanot-intro">
+          <header className="section-head">
+            <p className="eyebrow"><span className="eyebrow-dot" /> Why work with us</p>
+            <h2>Trust built through the way we work.</h2>
+            <p>
+              Thoughtful design, clear communication and reliable delivery are
+              the principles we bring to each project.
+            </p>
+          </header>
+          <figure className="why-tanot-visual">
+            <Image
+              src="/images/client-team-photo.jpg"
+              alt="Stock photograph of a team collaborating around a laptop"
+              width={1200}
+              height={800}
+              sizes="(max-width: 767px) 100vw, 50vw"
+            />
+            <figcaption>Stock photography · A collaborative project setting</figcaption>
+          </figure>
+        </div>
         <div className="why-tanot-grid">
           {principles.map((principle, index) => (
             <article className="why-tanot-card" key={principle.title}>

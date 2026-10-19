@@ -653,6 +653,47 @@ h3 {
     linear-gradient(128deg, #131128, #1a1234 58%, #112338);
 }
 
+.why-tanot-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(1.5rem, 5vw, 5rem);
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+
+.why-tanot-intro .section-head {
+  margin: 0;
+}
+
+.why-tanot-visual {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(226, 211, 255, 0.19);
+  border-radius: 23px;
+}
+
+.why-tanot-visual img {
+  display: block;
+  width: 100%;
+  height: clamp(210px, 25vw, 320px);
+  object-fit: cover;
+}
+
+.why-tanot-visual figcaption {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 999px;
+  background: rgba(15, 12, 34, 0.76);
+  padding: 8px 12px;
+  color: white;
+  font-size: 0.7rem;
+  backdrop-filter: blur(12px);
+}
+
 .why-tanot-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -706,6 +747,7 @@ h3 {
 .trust-image {
   width: min(100%, 420px);
   height: 72px;
+  grid-column: auto;
   justify-self: center;
 }
 
@@ -820,9 +862,14 @@ body > footer > .footer-image {
 @media (max-width: 767px) {
   .studio-intro-grid,
   .standards-grid,
+  .why-tanot-intro,
   .launch-support-grid,
   .partnership-layout {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .trust-image {
+    grid-column: 1 / -1;
   }
 
   .studio-intro-visual,
