@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="24" y1="12" x2="680" y2="238" gradientUnits="userSpaceOnUse"><stop stop-color="#1B1550"/><stop offset=".54" stop-color="#29206D"/><stop offset="1" stop-color="#092D4B"/></linearGradient>
+    <linearGradient id="orb" x1="262" y1="47" x2="430" y2="214" gradientUnits="userSpaceOnUse"><stop stop-color="#FF7BD5"/><stop offset=".5" stop-color="#9864FF"/><stop offset="1" stop-color="#36D9F5"/></linearGradient>
+    <filter id="blur" x="52" y="-70" width="626" height="384" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="38"/></filter>
+  </defs>
+  <rect width="720" height="240" rx="28" fill="url(#bg)"/>
+  <circle cx="150" cy="44" r="76" fill="#EB4FBC" opacity=".62" filter="url(#blur)"/>
+  <circle cx="592" cy="207" r="100" fill="#18C9EA" opacity=".54" filter="url(#blur)"/>
+  <circle cx="356" cy="131" r="87" fill="url(#orb)" opacity=".9"/>
+  <ellipse cx="356" cy="131" rx="129" ry="44" stroke="#E7DDFF" stroke-opacity=".55" stroke-width="2" transform="rotate(-28 356 131)"/>
+  <ellipse cx="356" cy="131" rx="129" ry="44" stroke="#E7DDFF" stroke-opacity=".35" stroke-width="2" transform="rotate(28 356 131)"/>
+  <circle cx="235" cy="76" r="8" fill="#FFF4BC"/><circle cx="469" cy="186" r="7" fill="#65F2FF"/><circle cx="434" cy="65" r="5" fill="#FFB9E9"/>
+  <path d="M321 143c13-42 56-50 80-31-7 34-33 55-68 49" fill="#fff" fill-opacity=".18"/>
+</svg>

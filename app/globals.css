@@ -7,15 +7,108 @@
     scroll-behavior: smooth;
   }
 
+  .project-image {
+    z-index: 0;
+    object-fit: cover;
+    transition: transform 600ms cubic-bezier(0.2, 0.7, 0.3, 1), filter 400ms ease;
+  }
+
+  .project-card:hover .project-image {
+    filter: saturate(1.18) brightness(1.06);
+    transform: scale(1.055);
+  }
+
   @keyframes cta-shimmer {
     0%, 52%, 100% { left: -55%; opacity: 0; }
     60% { opacity: 1; }
     82% { left: 115%; opacity: 0; }
   }
 
+  .testimonial-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 8;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 13px;
+    object-fit: cover;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.19);
+    transition: filter 350ms ease, transform 450ms ease;
+  }
+
+  .testimonial-slot:hover .testimonial-image {
+    filter: saturate(1.18);
+    transform: scale(1.02);
+  }
+
+  .faq-image-wrap {
+    margin-top: 28px;
+    border-radius: 18px;
+    transition: transform 350ms ease, box-shadow 350ms ease;
+  }
+
+  .faq-image-wrap:hover {
+    transform: translateY(-4px) rotate(1deg);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.26), 0 0 34px rgba(187, 80, 255, 0.2);
+  }
+
+  .faq-image {
+    aspect-ratio: 720 / 440;
+  }
+
+  .contact-image-wrap {
+    margin-top: 22px;
+    border-radius: 16px;
+    transition: transform 350ms ease, box-shadow 350ms ease;
+  }
+
+  .contact-image-wrap:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, 0.3), 0 0 32px rgba(230, 75, 186, 0.2);
+  }
+
+  .contact-image {
+    aspect-ratio: 720 / 340;
+  }
+
+  .contact-image-note {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 999px;
+    background: rgba(17, 16, 49, 0.68);
+    padding: 8px 11px;
+    color: #f8f5ff;
+    font-size: 10px;
+    font-weight: 600;
+    backdrop-filter: blur(12px);
+  }
+
+  .contact-image-note span {
+    margin-right: 5px;
+    color: #70f4dd;
+    text-shadow: 0 0 10px rgba(112, 244, 221, 0.8);
+  }
+
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
+    }
+
+    .cta-image {
+      width: clamp(130px, 21vw, 245px);
+      height: auto;
+      flex: 0 1 auto;
+      border: 1px solid rgba(255, 255, 255, 0.29);
+      border-radius: 19px;
+      box-shadow: 0 15px 45px rgba(13, 8, 43, 0.28), 0 0 28px rgba(255, 119, 217, 0.19);
+      transform: rotate(3deg);
+      transition: transform 400ms ease, box-shadow 400ms ease;
+    }
+
+    .cta-image:hover {
+      transform: rotate(0) translateY(-5px) scale(1.035);
+      box-shadow: 0 22px 48px rgba(13, 8, 43, 0.34), 0 0 36px rgba(255, 119, 217, 0.3);
     }
 
     *,
@@ -25,6 +118,26 @@
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
     }
+  }
+
+  body > footer > .footer-image {
+    position: absolute;
+    top: 50%;
+    right: max(calc((100vw - 70rem) / 2), 16px);
+    width: 150px;
+    height: 52px;
+    border: 1px solid rgba(197, 177, 255, 0.24);
+    border-radius: 14px;
+    object-fit: cover;
+    opacity: 0.65;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  body > footer > div {
+    position: relative;
+    z-index: 1;
+    padding-right: 172px;
   }
 
   body {
@@ -44,6 +157,41 @@
 
   :focus-visible {
     @apply outline outline-2 outline-offset-4 outline-cta;
+  }
+
+  .trust-image {
+    grid-column: 1 / -1;
+    height: 66px;
+  }
+
+  .service-image-wrap {
+    margin: -9px -9px 20px;
+  }
+
+  .approach-image-wrap,
+  .contact-image-wrap,
+  .faq-image-wrap {
+    margin-top: 20px;
+  }
+
+  .cta-image {
+    width: min(100%, 220px);
+    align-self: center;
+  }
+
+  body > footer > .footer-image {
+    position: relative;
+    top: auto;
+    right: auto;
+    display: block;
+    width: calc(100% - 32px);
+    height: 70px;
+    margin: 0 16px 16px;
+    transform: none;
+  }
+
+  body > footer > div {
+    padding-right: 0;
   }
 }
 
@@ -375,6 +523,8 @@
     padding-bottom: 17px;
     color: #827d87;
     font-size: 9px;
+    color: white;
+    text-shadow: 0 1px 10px rgba(18, 12, 44, 0.55);
     font-weight: 700;
     letter-spacing: 0.14em;
   }
@@ -443,12 +593,14 @@
 
   .project-art {
     position: relative;
+    z-index: 1;
     display: flex;
     min-height: 248px;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
     padding: 28px;
+    background: linear-gradient(90deg, rgba(12, 13, 34, 0.34), rgba(12, 13, 34, 0.02) 82%);
   }
 
   .project-mark,
@@ -464,6 +616,8 @@
     font-size: 40px;
     letter-spacing: -0.06em;
     line-height: 0.9;
+    color: #fff;
+    text-shadow: 0 2px 18px rgba(18, 12, 44, 0.42);
   }
 
   .project-label {
@@ -489,7 +643,7 @@
   }
 
   .project-retail .project-art {
-    background: #f1e8d8;
+    background: linear-gradient(90deg, rgba(74, 26, 89, 0.38), transparent 88%);
   }
 
   .project-retail .project-graphic {
@@ -498,7 +652,7 @@
   }
 
   .project-health .project-art {
-    background: #dce9df;
+    background: linear-gradient(90deg, rgba(5, 61, 69, 0.37), transparent 88%);
   }
 
   .project-health .project-mark {
@@ -520,8 +674,8 @@
   }
 
   .project-stay .project-art {
-    background: #e6d9cf;
-    color: #513e36;
+    background: linear-gradient(90deg, rgba(17, 29, 64, 0.42), transparent 88%);
+    color: white;
   }
 
   .project-stay .project-mark {
@@ -614,6 +768,104 @@
   aspect-ratio: 1;
   background: radial-gradient(circle at 40% 40%, rgba(161, 206, 255, 0.48), rgba(108, 158, 229, 0.02) 72%);
   animation-delay: -8s;
+}
+
+.section-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.service-image-wrap,
+.approach-image-wrap,
+.faq-image-wrap,
+.contact-image-wrap {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid rgba(207, 190, 255, 0.32);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.2), 0 0 28px rgba(133, 81, 255, 0.13);
+}
+
+.service-image-wrap {
+  margin: -12px -12px 24px;
+  border-radius: 14px;
+}
+
+.service-image {
+  aspect-ratio: 16 / 8.4;
+  transition: transform 500ms cubic-bezier(0.2, 0.7, 0.3, 1), filter 500ms ease;
+}
+
+.service-card:hover .service-image {
+  filter: saturate(1.18) brightness(1.08);
+  transform: scale(1.045);
+}
+
+.image-glint {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(125deg, rgba(255, 255, 255, 0.27), transparent 28%, transparent 69%, rgba(82, 224, 255, 0.15));
+  opacity: 0.5;
+  pointer-events: none;
+  transition: opacity 250ms ease;
+}
+
+.service-card:hover .image-glint {
+  opacity: 1;
+}
+
+.trust-image {
+  width: 100%;
+  height: 52px;
+  align-self: center;
+  border: 1px solid rgba(192, 173, 255, 0.24);
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(138, 79, 255, 0.2);
+}
+
+.approach-image-wrap {
+  margin-top: 28px;
+  border-color: rgba(216, 198, 255, 0.3);
+  transform: rotate(-1deg);
+  transition: transform 400ms ease, box-shadow 400ms ease;
+}
+
+.approach-image-wrap:hover {
+  transform: rotate(0) translateY(-4px);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.29), 0 0 42px rgba(93, 187, 255, 0.2);
+}
+
+.approach-image {
+  aspect-ratio: 800 / 460;
+  transition: transform 600ms ease;
+}
+
+.approach-image-wrap:hover .approach-image {
+  transform: scale(1.035);
+}
+
+.image-caption {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.29);
+  border-radius: 999px;
+  background: rgba(14, 16, 45, 0.68);
+  padding: 8px 13px;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  backdrop-filter: blur(14px);
+}
+
+.image-caption span {
+  padding-left: 5px;
+  color: #75edff;
 }
 
 .trust-strip {
@@ -1124,6 +1376,14 @@
   border-color: rgba(200, 190, 255, 0.15);
 }
 
+.hero-section .art-note {
+  color: #24231f;
+}
+
+.hero-section .art-note span {
+  color: #f17854;
+}
+
 .hero-orb {
   filter: blur(0);
   opacity: 0.85;
@@ -1392,6 +1652,10 @@
   color: #b5b2cc;
 }
 
+.project-health .project-mark {
+  color: #fff;
+}
+
 .project-tag {
   background: rgba(26, 17, 52, 0.79);
   box-shadow: 0 0 16px rgba(255, 90, 190, 0.21);
@@ -1629,6 +1893,8 @@ body > header {
 }
 
 body > footer {
+  position: relative;
+  overflow: hidden;
   border-color: rgba(191, 178, 255, 0.12);
   background:
     radial-gradient(ellipse at 50% 0, rgba(104, 65, 210, 0.14), transparent 60%),

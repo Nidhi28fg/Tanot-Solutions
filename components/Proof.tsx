@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const filters = ["All", "E-commerce", "Healthcare", "Hospitality"] as const;
 
@@ -10,6 +11,8 @@ const work = [
     title: "A digital storefront with a little more soul.",
     type: "E-commerce",
     className: "project-retail",
+    image: "/images/portfolio-retail.svg",
+    imageAlt: "Colorful concept artwork for a curated lifestyle e-commerce website",
     mark: "GOOD\nTHINGS",
     label: "Curated goods, considered living",
     detail: "A warm, editorial storefront concept for a lifestyle brand, with product discovery and a clear path to purchase.",
@@ -19,6 +22,8 @@ const work = [
     title: "A calmer way to find the care you need.",
     type: "Healthcare",
     className: "project-health",
+    image: "/images/portfolio-health.svg",
+    imageAlt: "Colorful concept artwork for a welcoming healthcare website",
     mark: "wellkind",
     label: "Care that meets you where you are.",
     detail: "A welcoming healthcare experience concept focused on clear service information, accessibility and patient confidence.",
@@ -28,6 +33,8 @@ const work = [
     title: "A stay worth planning your next trip around.",
     type: "Hospitality",
     className: "project-stay",
+    image: "/images/portfolio-hospitality.svg",
+    imageAlt: "Colorful concept artwork for a boutique hospitality website",
     mark: "Casa\nSol",
     label: "A slower kind of escape.",
     detail: "A boutique hospitality concept that brings the destination to life and makes exploring a stay feel effortless.",
@@ -72,6 +79,13 @@ export default function Proof() {
           {visibleWork.map((project) => (
             <article key={project.number} className="project-card glass-card">
               <div className={`project-preview ${project.className}`} aria-label={`${project.type} website concept preview`}>
+                <Image
+                  className="project-image"
+                  src={project.image}
+                  alt={project.imageAlt}
+                  fill
+                  sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                />
                 <div className="project-browser"><span aria-hidden="true">● ● ●</span><span>brandstudio.com</span><span aria-hidden="true">↗</span></div>
                 <div className="project-art">
                   <span className="project-mark">{project.mark.split("\n").map((part) => <span key={part}>{part}</span>)}</span>

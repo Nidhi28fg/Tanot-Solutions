@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" fill="none">
+  <defs><linearGradient id="bg" x1="40" y1="6" x2="675" y2="417" gradientUnits="userSpaceOnUse"><stop stop-color="#15245B"/><stop offset=".48" stop-color="#5837AE"/><stop offset="1" stop-color="#D849A8"/></linearGradient><linearGradient id="paper" x1="192" y1="79" x2="505" y2="345" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" stop-opacity=".3"/><stop offset="1" stop-color="#fff" stop-opacity=".09"/></linearGradient></defs>
+  <rect width="720" height="420" rx="28" fill="url(#bg)"/><circle cx="110" cy="365" r="151" fill="#32DDF4" opacity=".24"/><circle cx="610" cy="45" r="140" fill="#FF76C9" opacity=".3"/>
+  <rect x="174" y="55" width="372" height="310" rx="28" fill="url(#paper)" stroke="#fff" stroke-opacity=".64" stroke-width="2"/>
+  <rect x="202" y="86" width="134" height="12" rx="6" fill="#fff" fill-opacity=".82"/><rect x="202" y="111" width="212" height="8" rx="4" fill="#fff" fill-opacity=".43"/>
+  <rect x="202" y="146" width="316" height="44" rx="13" fill="#131A45" fill-opacity=".39" stroke="#fff" stroke-opacity=".29"/><circle cx="224" cy="168" r="8" fill="#57E9ED"/><rect x="245" y="163" width="140" height="8" rx="4" fill="#fff" fill-opacity=".64"/>
+  <rect x="202" y="205" width="316" height="44" rx="13" fill="#131A45" fill-opacity=".39" stroke="#fff" stroke-opacity=".29"/><circle cx="224" cy="227" r="8" fill="#FF7EC9"/><rect x="245" y="222" width="189" height="8" rx="4" fill="#fff" fill-opacity=".64"/>
+  <rect x="202" y="266" width="316" height="68" rx="14" fill="#131A45" fill-opacity=".39" stroke="#fff" stroke-opacity=".29"/><rect x="220" y="284" width="182" height="7" rx="3.5" fill="#fff" fill-opacity=".55"/><rect x="220" y="302" width="260" height="7" rx="3.5" fill="#fff" fill-opacity=".38"/>
+  <circle cx="576" cy="278" r="43" fill="#FFDA70"/><path d="m558 278 13 13 24-29" stroke="#47317F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m98 147 16 16 28-34" stroke="#80FFE3" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

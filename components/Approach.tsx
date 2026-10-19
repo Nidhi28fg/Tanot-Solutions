@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const steps = [
   {
     title: "Get to know you",
@@ -29,6 +31,17 @@ export default function Approach() {
             every step. No one-size-fits-all templates—just the right solution
             for your business.
           </p>
+          <div className="approach-image-wrap">
+            <Image
+              className="section-image approach-image"
+              src="/images/process-collaboration.svg"
+              alt="Glowing collaborative design illustration with connected project cards"
+              width={800}
+              height={460}
+              sizes="(max-width: 1023px) 100vw, 40vw"
+            />
+            <span className="image-caption">Better work, built together <span aria-hidden="true">✳</span></span>
+          </div>
         </header>
 
         <ol className="grid gap-6 sm:grid-cols-2">

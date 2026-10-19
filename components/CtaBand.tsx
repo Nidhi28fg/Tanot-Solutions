@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function CtaBand() {
   return (
     <section className="section pt-0">
@@ -13,6 +15,14 @@ export default function CtaBand() {
               honest advice and a plan to get you there.
             </p>
           </div>
+          <Image
+            className="cta-image"
+            src="/images/cta-launch.svg"
+            alt="A colorful rocket illustration launching a new website idea"
+            width={560}
+            height={360}
+            sizes="(max-width: 767px) 100vw, 34vw"
+          />
           <a href="#contact" className="btn btn-cta shrink-0">
             Tell us about your project <span aria-hidden="true">↗</span>
           </a>

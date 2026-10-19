@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import Image from "next/image";
 
 export default function Contact() {
   const [status, setStatus] = useState("");
@@ -31,6 +32,17 @@ export default function Contact() {
             would love to hear about it. Share a few details and let&apos;s take
             it from there.
           </p>
+          <div className="contact-image-wrap">
+            <Image
+              className="section-image contact-image"
+              src="/images/contact-project.svg"
+              alt="A colorful project enquiry form illustration ready for your next website idea"
+              width={720}
+              height={420}
+              sizes="(max-width: 767px) 100vw, 42vw"
+            />
+            <span className="contact-image-note"><span aria-hidden="true">●</span> Your next idea starts here</span>
+          </div>
           <ul className="mt-8 space-y-5 text-sm">
             <li>
               <strong className="block text-ink">Email</strong>

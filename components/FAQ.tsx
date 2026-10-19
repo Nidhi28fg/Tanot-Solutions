@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const questions = [
   {
     question: "What kinds of websites do you create?",
@@ -38,6 +40,16 @@ export default function FAQ() {
             project and we&apos;ll take it from there.
           </p>
           <a className="faq-contact-link" href="#contact">Talk to our team <span aria-hidden="true">↗</span></a>
+          <div className="faq-image-wrap">
+            <Image
+              className="section-image faq-image"
+              src="/images/faq-ideas.svg"
+              alt="Bright illustration of a glowing idea bulb and helpful message cards"
+              width={720}
+              height={440}
+              sizes="(max-width: 1023px) 100vw, 32vw"
+            />
+          </div>
         </header>
         <div className="faq-list">
           {questions.map((item, index) => (
