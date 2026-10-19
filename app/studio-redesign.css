@@ -154,7 +154,7 @@ h3 {
 }
 
 .hero-float-bottom > span {
-  color: #63eddf;
+  color: #69dfff;
 }
 
 .btn-cta {
@@ -559,7 +559,13 @@ h3 {
 
 .approach-section .process-card:nth-child(2),
 .approach-section .process-card:nth-child(4) {
-  transform: translateY(19px);
+  transform: none;
+}
+
+.approach-section .process-card:last-child {
+  grid-column: 1 / -1;
+  width: calc(50% - 0.75rem);
+  justify-self: center;
 }
 
 .approach-section .process-card:hover {
@@ -589,27 +595,26 @@ h3 {
   transition: transform 350ms ease, border-color 300ms ease, box-shadow 300ms ease;
 }
 
-.project-card:nth-child(1) { transform: rotate(-1.3deg); }
-.project-card:nth-child(2) { transform: translateY(27px) rotate(1deg); }
-.project-card:nth-child(3) { transform: rotate(-0.7deg); }
+.project-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+}
 
-.project-card:nth-child(1):hover { transform: translateY(-7px) rotate(0); }
-.project-card:nth-child(2):hover { transform: translateY(18px) rotate(0); }
-.project-card:nth-child(3):hover { transform: translateY(-7px) rotate(0); }
+.project-card:hover {
+  transform: translateY(-5px);
+}
 
 .project-preview {
-  min-height: 300px;
+  position: relative;
+  min-height: 260px;
+  overflow: hidden;
   border-radius: 19px 19px 0 0;
 }
 
-.project-art {
-  min-height: 268px;
-}
-
-.project-card:nth-child(2) .project-preview { min-height: 330px; }
-.project-card:nth-child(2) .project-art { min-height: 298px; }
-
 .project-image {
+  object-fit: cover;
   transition: transform 700ms cubic-bezier(0.18, 0.7, 0.25, 1), filter 400ms ease;
 }
 
@@ -618,30 +623,69 @@ h3 {
   transform: scale(1.06);
 }
 
-.testimonial-section {
+.project-tag {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  background: rgba(15, 12, 34, 0.76);
+  padding: 8px 12px;
+  color: #fff;
+  font-size: 0.7rem;
+  backdrop-filter: blur(12px);
+}
+
+.project-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.project-details {
+  margin-top: auto;
+  padding-top: 1.25rem;
+}
+
+.why-tanot-section {
   background:
-    radial-gradient(ellipse at 4% 8%, rgba(255, 211, 83, 0.4), transparent 34%),
-    radial-gradient(ellipse at 96% 91%, rgba(40, 217, 232, 0.31), transparent 39%),
-    linear-gradient(128deg, #632454, #42235d 53%, #16447c);
+    radial-gradient(ellipse at 6% 12%, rgba(153, 87, 232, 0.22), transparent 36%),
+    linear-gradient(128deg, #131128, #1a1234 58%, #112338);
 }
 
-.testimonial-slot {
-  min-height: 0;
-  border-radius: 23px;
-  transition: transform 300ms ease, border-color 300ms ease, box-shadow 300ms ease;
+.why-tanot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
 }
 
-.testimonial-slot:nth-child(2) {
-  transform: translateY(18px) rotate(1deg);
+.why-tanot-card {
+  min-width: 0;
+  border: 1px solid rgba(226, 211, 255, 0.17);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.055);
+  padding: clamp(22px, 3vw, 34px);
 }
 
-.testimonial-slot:nth-child(2):hover {
-  transform: translateY(9px) rotate(0);
+.why-tanot-card > span {
+  color: #c695ff;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
 }
 
-.testimonial-image {
-  aspect-ratio: 16 / 6.5;
-  max-height: 170px;
+.why-tanot-card h3 {
+  margin: 1.25rem 0 0;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.why-tanot-card p {
+  margin: 0.6rem 0 0;
+  color: #c5c0d9;
+  font-size: 0.93rem;
+  line-height: 1.75;
 }
 
 .cta-panel {
@@ -761,12 +805,42 @@ body > footer > .footer-image {
 }
 
 @media (max-width: 1023px) {
+  .industries-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .hero-section .hero-copy h1 {
     max-width: 12ch;
     font-size: clamp(3.4rem, 8.8vw, 5.4rem);
   }
 
   .hero-art { max-width: 580px; }
+}
+
+@media (max-width: 767px) {
+  .studio-intro-grid,
+  .standards-grid,
+  .launch-support-grid,
+  .partnership-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .studio-intro-visual,
+  .launch-support-grid > .launch-support-image {
+    justify-self: stretch;
+  }
+
+  .standards-grid .section-head {
+    margin: 0;
+  }
+
+  .why-tanot-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .partnership-photo {
+    min-height: 280px;
+  }
 }
 
 @media (max-width: 639px) {
@@ -788,28 +862,18 @@ body > footer > .footer-image {
     font-size: 15px;
   }
 
-  .approach-section .process-card:nth-child(2),
-  .approach-section .process-card:nth-child(4) {
-    transform: none;
+  .approach-section .process-card:last-child {
+    grid-column: auto;
+    width: 100%;
   }
 
-  .project-card:nth-child(1),
-  .project-card:nth-child(2),
-  .project-card:nth-child(3) {
-    transform: none;
+  .project-preview {
+    min-height: 220px;
   }
 
-  .project-card:nth-child(1):hover,
-  .project-card:nth-child(2):hover,
-  .project-card:nth-child(3):hover {
-    transform: translateY(-4px);
-  }
-
-  .project-preview,
-  .project-art,
-  .project-card:nth-child(2) .project-preview,
-  .project-card:nth-child(2) .project-art {
-    min-height: 235px;
+  .industries-grid,
+  .why-tanot-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .cta-panel {

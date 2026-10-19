@@ -1,5 +1,5 @@
 const messages = [
-  "Made for your kind of ambitious",
+  "Made for ambitious businesses",
   "Designed to feel different",
   "Built for people, not templates",
   "Good work travels",

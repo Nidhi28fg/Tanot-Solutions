@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const offerings = ["Strategy", "Design", "Development", "Growth"];
+const offerings = ["Website design", "Redesign", "Development", "India & worldwide"];
 
 export default function Hero() {
   return (
@@ -13,16 +13,16 @@ export default function Hero() {
         <div className="hero-copy">
           <p className="eyebrow"><span className="eyebrow-dot" /> Independent digital studio · India & worldwide</p>
           <h1 className="max-w-[13ch] text-[3.15rem] leading-[0.99] sm:text-6xl lg:text-[5.15rem]">
-            Your next website should <em className="font-serif text-violet">open doors.</em>
+            A clearer website. <em className="font-serif text-violet">A stronger next step.</em>
           </h1>
           <p className="mt-6 max-w-lg text-base leading-7 text-muted lg:text-lg lg:leading-8">
-            We design, redesign and build thoughtful websites for ambitious
-            businesses—across industries, across borders, and built around what
-            makes you different.
+            Tanot Solutions designs, redesigns and develops websites for
+            businesses in India and worldwide. Thoughtful design, clear
+            communication and modern web development—shaped around your goals.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a href="#contact" className="btn btn-cta">
-              Let&apos;s build something <span aria-hidden="true">↗</span>
+              Request a custom estimate <span aria-hidden="true">↗</span>
             </a>
             <a href="#services" className="btn btn-text">
               Explore what we do <span aria-hidden="true">↓</span>

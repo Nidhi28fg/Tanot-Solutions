@@ -37,9 +37,9 @@ export default function StickyCta() {
 
   return (
     <aside className={`sticky-cta ${visible ? "is-visible" : ""}`} aria-label="Start a website project" aria-hidden={!visible}>
-      <span className="sticky-cta-copy">Have a website in mind? <span>Let&apos;s make it happen.</span></span>
+      <span className="sticky-cta-copy">Planning a website? <span>Let&apos;s discuss the scope.</span></span>
       <a href="#contact" tabIndex={visible ? 0 : -1}>
-        Start a project <span aria-hidden="true">↗</span>
+        Request a quote <span aria-hidden="true">↗</span>
       </a>
     </aside>
   );

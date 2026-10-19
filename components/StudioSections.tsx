@@ -2,24 +2,24 @@ import Image from "next/image";
 
 const industries = [
   {
-    name: "Retail & e-commerce",
+    name: "Retail & e-commerce concept",
     image: "/images/portfolio-retail-photo.jpg",
-    alt: "A shopper browsing a clothing rack in a boutique",
+    alt: "Stock photograph of a shopper browsing a clothing rack",
   },
   {
-    name: "Healthcare",
+    name: "Healthcare concept",
     image: "/images/portfolio-health-photo.jpg",
-    alt: "A doctor using a mobile phone in a clinical setting",
+    alt: "Stock photograph of a doctor using a mobile phone",
   },
   {
-    name: "Hospitality",
+    name: "Hospitality concept",
     image: "/images/portfolio-hospitality-photo.jpg",
-    alt: "A resort with a pool and guest lounge beside the water",
+    alt: "Stock photograph of a resort with a pool beside the water",
   },
   {
-    name: "Professional services",
+    name: "Professional services concept",
     image: "/images/contact-office-photo.jpg",
-    alt: "A bright, modern professional office",
+    alt: "Stock photograph of a bright, modern professional office",
   },
 ];
 
@@ -36,23 +36,23 @@ const principles = [
   },
   {
     number: "03",
-    title: "Made to move quickly",
-    description: "Thoughtful, lightweight choices help create a smoother browsing experience.",
+    title: "Reviewed with care",
+    description: "Quality checks help review the agreed pages and functionality before launch.",
   },
 ];
 
 const promises = [
   {
-    title: "A team that listens",
-    description: "We start with your goals, audience and practical business needs.",
+    title: "Discovery & strategy",
+    description: "We clarify your goals, audience, requirements and project scope together.",
   },
   {
-    title: "A plan you can follow",
-    description: "You know what comes next, what we need from you and where things stand.",
+    title: "Design & development",
+    description: "We collaborate on the experience, then build the agreed website.",
   },
   {
-    title: "Room to keep growing",
-    description: "Launch is a beginning. We can help you plan the next useful improvements.",
+    title: "Testing & launch",
+    description: "We review the agreed work and coordinate the next steps toward launch.",
   },
 ];
 
@@ -61,12 +61,12 @@ export function StudioIntroduction() {
     <section className="section studio-intro-section" id="studio">
       <div className="container-page studio-intro-grid">
         <header className="section-head">
-          <p className="eyebrow"><span className="eyebrow-dot" /> A little about us</p>
-          <h2>A digital studio for businesses ready to move forward.</h2>
+          <p className="eyebrow"><span className="eyebrow-dot" /> Tanot Solutions</p>
+          <h2>Website design and development, shaped around your goals.</h2>
           <p>
-            Tanot Solutions brings strategy, design and development together
-            to make websites that feel right for your business—and useful to
-            the people you want to reach.
+            Based in India and working with businesses in India and worldwide,
+            we provide website design, redesign and development. Every project
+            is scoped around its requirements.
           </p>
           <a className="studio-inline-link" href="#contact">
             Tell us what you&apos;re planning <span aria-hidden="true">↗</span>
@@ -75,12 +75,12 @@ export function StudioIntroduction() {
         <div className="studio-intro-visual">
           <Image
             src="/images/footer-studio-photo.jpg"
-            alt="A bright creative studio with a shared workspace"
+            alt="Stock photograph of a bright creative workspace"
             width={1200}
             height={800}
             sizes="(max-width: 767px) 100vw, 45vw"
           />
-          <span className="studio-photo-caption">Independent studio · India & worldwide</span>
+          <span className="studio-photo-caption">Website design · Redesign · Development</span>
         </div>
       </div>
     </section>
@@ -92,11 +92,12 @@ export function IndustriesSection() {
     <section className="section industries-section" id="industries">
       <div className="container-page">
         <header className="section-head">
-          <p className="eyebrow"><span className="eyebrow-dot" /> Different fields, one thoughtful approach</p>
-          <h2>Websites shaped around the business behind them.</h2>
+          <p className="eyebrow"><span className="eyebrow-dot" /> Example directions</p>
+          <h2>Different audiences call for different website experiences.</h2>
           <p>
-            Every industry has its own audience, questions and decisions. We
-            learn what matters to yours before shaping the experience.
+            These concept visuals illustrate possible directions across
+            sectors. They are not client projects or a list of claimed
+            industry engagements.
           </p>
         </header>
         <div className="industries-grid">
@@ -131,13 +132,13 @@ export function WebsiteStandards() {
           <p className="eyebrow"><span className="eyebrow-dot" /> The details matter</p>
           <h2>Good design should work beautifully, too.</h2>
           <p>
-            A polished website is more than a striking first screen. We pay
-            attention to how it reads, moves and works across devices.
+            We focus on clear structure, responsive layouts and thoughtful
+            details alongside the visual design.
           </p>
           <div className="standards-image-wrap">
             <Image
               src="/images/service-redesign-photo.jpg"
-              alt="A designer reviewing website pages across digital devices"
+              alt="Stock photograph of website layouts displayed across devices"
               width={1200}
               height={800}
               sizes="(max-width: 767px) 100vw, 40vw"
@@ -165,18 +166,19 @@ export function StudioPartnership() {
     <section className="section partnership-section" id="partnership">
       <div className="container-page">
         <header className="section-head">
-          <p className="eyebrow"><span className="eyebrow-dot" /> A better way to work together</p>
-          <h2>Clear collaboration. No one-size-fits-all process.</h2>
+          <p className="eyebrow"><span className="eyebrow-dot" /> Project workflow</p>
+          <h2>Clear next steps and close collaboration.</h2>
           <p>
-            You bring the knowledge of your business. We bring the creative
-            and technical craft to turn it into a considered website.
+            We believe trust is built through transparent communication,
+            thoughtful design and reliable delivery. You stay involved as
+            decisions move from planning to launch.
           </p>
         </header>
         <div className="partnership-layout">
           <div className="partnership-photo">
             <Image
               src="/images/client-workspace-photo.jpg"
-              alt="A collaborative team sharing ideas around a laptop"
+              alt="Stock photograph of colleagues collaborating around a laptop"
               width={1200}
               height={800}
               sizes="(max-width: 767px) 100vw, 42vw"
@@ -194,6 +196,47 @@ export function StudioPartnership() {
               </article>
             ))}
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function WhyTanot() {
+  const principles = [
+    {
+      title: "Thoughtful design",
+      description: "Visual decisions and page structure are shaped around your business and its audience.",
+    },
+    {
+      title: "Clear communication",
+      description: "We collaborate closely and keep project conversations focused on requirements and decisions.",
+    },
+    {
+      title: "Modern web development",
+      description: "We build responsive websites and review the agreed experience before launch.",
+    },
+  ];
+
+  return (
+    <section className="section why-tanot-section" id="why-tanot">
+      <div className="container-page">
+        <header className="section-head">
+          <p className="eyebrow"><span className="eyebrow-dot" /> Why work with us</p>
+          <h2>Trust built through the way we work.</h2>
+          <p>
+            Thoughtful design, clear communication and reliable delivery are
+            the principles we bring to each project.
+          </p>
+        </header>
+        <div className="why-tanot-grid">
+          {principles.map((principle, index) => (
+            <article className="why-tanot-card" key={principle.title}>
+              <span>0{index + 1}</span>
+              <h3>{principle.title}</h3>
+              <p>{principle.description}</p>
+            </article>
+          ))}
         </div>
       </div>
     </section>
@@ -224,7 +267,7 @@ export function LaunchSupport() {
         <div className="launch-support-image">
           <Image
             src="/images/cta-workspace-photo.jpg"
-            alt="A calm workspace ready for the next stage of a website project"
+            alt="Stock photograph of a calm workspace ready for a project"
             width={1200}
             height={800}
             sizes="(max-width: 767px) 100vw, 45vw"

@@ -3,9 +3,10 @@
 import { useEffect, useState } from "react";
 
 const links = [
-  { href: "#services", label: "What we do" },
+  { href: "#services", label: "Services" },
   { href: "#approach", label: "How we work" },
-  { href: "#proof", label: "Who we help" },
+  { href: "#proof", label: "Selected work" },
+  { href: "#pricing", label: "Pricing" },
   { href: "#faq", label: "FAQs" },
   { href: "#contact", label: "Contact" },
 ];
@@ -61,7 +62,7 @@ export default function Header() {
 
           <div className="flex items-center gap-3">
             <a href="#contact" className="btn btn-cta hidden min-h-10 whitespace-nowrap px-5 text-sm lg:inline-flex">
-              Start a project
+              Request a quote
             </a>
             <button
               type="button"
@@ -94,7 +95,7 @@ export default function Header() {
               </a>
             ))}
             <a href="#contact" className="btn btn-cta mt-2" onClick={() => setOpen(false)}>
-              Start a project
+              Request a quote
             </a>
           </nav>
         </div>

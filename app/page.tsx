@@ -6,7 +6,6 @@ import FAQ from "@/components/FAQ";
 import LogoBar from "@/components/LogoBar";
 import Proof from "@/components/Proof";
 import Services from "@/components/Services";
-import Testimonials from "@/components/Testimonials";
 import StickyCta from "@/components/StickyCta";
 import StudioTicker from "@/components/StudioTicker";
 import {
@@ -15,6 +14,7 @@ import {
   StudioIntroduction,
   StudioPartnership,
   WebsiteStandards,
+  WhyTanot,
 } from "@/components/StudioSections";
 
 export default function HomePage() {
@@ -30,7 +30,7 @@ export default function HomePage() {
       <WebsiteStandards />
       <Proof />
       <StudioPartnership />
-      <Testimonials />
+      <WhyTanot />
       <LaunchSupport />
       <CtaBand />
       <FAQ />

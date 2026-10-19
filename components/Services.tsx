@@ -5,32 +5,32 @@ const services = [
     index: "01",
     title: "Website design",
     image: "/images/service-design-photo.jpg",
-    imageAlt: "A designer working on a digital illustration with a stylus",
-    body: "Distinctive, user-first design that brings your brand to life and makes every visit feel effortless.",
-    items: ["Brand-led visual direction", "Responsive page design", "Conversion-focused journeys"],
+    imageAlt: "Stock photograph of a person working on a digital design with a stylus",
+    body: "Make your offer easier to understand with a user-first design shaped around your brand and customers.",
+    items: ["Clear page structure", "Responsive visual design", "A considered path to enquire"],
   },
   {
     index: "02",
     title: "Website redesign",
     image: "/images/service-redesign-photo.jpg",
     imageAlt: "A web designer's screen showing website layouts across devices",
-    body: "A clearer story, a fresher look and a better experience—built to help your existing website do more.",
-    items: ["UX and content review", "Modern visual refresh", "Performance improvements"],
+    body: "Give an existing website a more current look, clearer navigation and a more useful experience.",
+    items: ["Review of structure and content", "Refreshed visual direction", "Responsive experience updates"],
   },
   {
     index: "03",
     title: "Web development",
     image: "/images/service-development-photo.jpg",
     imageAlt: "A team collaborating around laptops in a bright workspace",
-    body: "Reliable, responsive websites with thoughtful details, clean code and the right technology for your goals.",
-    items: ["Custom front-end development", "CMS and e-commerce builds", "Accessibility and quality checks"],
+    body: "Turn an approved design into a responsive website, built around your features and content needs.",
+    items: ["Custom front-end development", "CMS and e-commerce options", "Testing across key screens"],
   },
   {
     index: "04",
     title: "Ongoing support",
     image: "/images/service-support-photo.jpg",
     imageAlt: "A small team working together around a laptop",
-    body: "A dependable creative and technical partner to keep your website secure, current and moving in the right direction.",
+    body: "Keep your website current with practical updates and help planning what to improve next.",
     items: ["Updates and maintenance", "New features and landing pages", "Practical growth guidance"],
   },
 ];
@@ -40,11 +40,11 @@ export default function Services() {
     <section className="section" id="services">
       <div className="container-page">
         <header className="section-head mb-12">
-          <p className="eyebrow"><span className="eyebrow-dot" /> What we do</p>
-          <h2>Everything your website needs to make a great first impression.</h2>
+          <p className="eyebrow"><span className="eyebrow-dot" /> Website services</p>
+          <h2>What does your website need to do next?</h2>
           <p>
-            From the first sketch to launch day and beyond, we bring strategy,
-            design and development together under one roof.
+            Choose a focused service or bring us in from planning through
+            launch. We&apos;ll shape the scope around your requirements.
           </p>
         </header>
 

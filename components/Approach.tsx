@@ -2,20 +2,24 @@ import Image from "next/image";
 
 const steps = [
   {
-    title: "Get to know you",
-    body: "We learn about your business, your customers and what success should look like.",
+    title: "Discovery & strategy",
+    body: "We learn about your business, audience, requirements and what the website needs to support.",
   },
   {
-    title: "Plan with purpose",
-    body: "Together, we shape the right direction, site structure and a clear project plan.",
+    title: "UX/UI design",
+    body: "We plan the structure and design page experiences around your brand and visitors.",
   },
   {
-    title: "Design & build",
-    body: "Our team turns the plan into a distinctive, responsive website—crafted around your brand.",
+    title: "Development",
+    body: "We build the agreed experience responsively, using an approach suited to the project.",
   },
   {
-    title: "Launch & grow",
-    body: "We test every detail, help you launch with confidence and stay by your side as you grow.",
+    title: "Quality assurance",
+    body: "We review the website across key screens and check the agreed functionality before launch.",
+  },
+  {
+    title: "Launch & support",
+    body: "We coordinate launch and can discuss ongoing updates or improvements for your site.",
   },
 ];
 
@@ -24,18 +28,18 @@ export default function Approach() {
     <section className="section approach-section" id="approach">
       <div className="container-page grid gap-12 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:gap-16">
         <header className="section-head">
-          <p className="eyebrow"><span className="eyebrow-dot" /> How we work</p>
-          <h2>Good work starts with a good conversation.</h2>
+          <p className="eyebrow"><span className="eyebrow-dot" /> Our process</p>
+          <h2>Know what happens next, from discovery to launch.</h2>
           <p>
-            Clear communication, considered decisions and a hands-on team at
-            every step. No one-size-fits-all templates—just the right solution
-            for your business.
+            Every project follows a structured process for clarity and
+            consistency. We collaborate with you from planning through
+            design, development, testing and launch.
           </p>
           <div className="approach-image-wrap">
             <Image
               className="section-image approach-image"
               src="/images/process-team-photo.jpg"
-              alt="A team discussing a project around a laptop"
+              alt="Stock photograph of colleagues discussing work around a laptop"
               width={1200}
               height={800}
               sizes="(max-width: 1023px) 100vw, 40vw"
@@ -44,7 +48,7 @@ export default function Approach() {
           </div>
         </header>
 
-        <ol className="grid gap-6 sm:grid-cols-2">
+        <ol className="process-steps-grid grid gap-6 sm:grid-cols-2">
           {steps.map((step, index) => (
             <li key={step.title} className="process-card rounded-2xl border border-line bg-paper p-6">
               <span className="text-xs font-semibold text-violet">0{index + 1}</span>

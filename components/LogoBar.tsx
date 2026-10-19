@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const trustPoints = [
-  { mark: "✳", label: "Every industry" },
+  { mark: "✳", label: "Across industries" },
   { mark: "↗", label: "India & worldwide" },
   { mark: "◇", label: "Design to development" },
   { mark: "✓", label: "Built around your goals" },
@@ -20,7 +20,7 @@ export default function LogoBar() {
         <Image
           className="trust-image"
           src="/images/global-team-photo.jpg"
-          alt="Colleagues collaborating in a shared studio"
+          alt="Stock photograph of colleagues collaborating in an office"
           width={1200}
           height={800}
           sizes="(max-width: 767px) 100vw, 30vw"

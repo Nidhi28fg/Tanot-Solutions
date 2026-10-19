@@ -4,7 +4,7 @@ const questions = [
   {
     question: "What kinds of websites do you create?",
     answer:
-      "We design, redesign and develop websites for businesses across industries—from service businesses and startups to e-commerce and hospitality brands. We shape the solution around your audience and goals.",
+      "We design, redesign and develop websites for businesses across industries. We shape the scope around your audience, requirements and goals.",
   },
   {
     question: "Can you redesign my existing website?",
@@ -26,6 +26,11 @@ const questions = [
     answer:
       "Yes. Ongoing support can include maintenance, updates, new pages and future improvements. We can discuss the right level of support for your team.",
   },
+  {
+    question: "How is website project pricing determined?",
+    answer:
+      "Every project is unique. Pricing depends on its scope, requirements and timeline. After discussing what you need, we can prepare a custom proposal.",
+  },
 ];
 
 export default function FAQ() {
@@ -39,12 +44,12 @@ export default function FAQ() {
             Want to talk through something specific? Tell us a little about your
             project and we&apos;ll take it from there.
           </p>
-          <a className="faq-contact-link" href="#contact">Talk to our team <span aria-hidden="true">↗</span></a>
+          <a className="faq-contact-link" href="#contact">Discuss your project <span aria-hidden="true">↗</span></a>
           <div className="faq-image-wrap">
             <Image
               className="section-image faq-image"
               src="/images/faq-team-photo.jpg"
-              alt="Colleagues discussing ideas around a shared workspace"
+              alt="Stock photograph of colleagues discussing ideas in a workspace"
               width={1200}
               height={800}
               sizes="(max-width: 1023px) 100vw, 32vw"
