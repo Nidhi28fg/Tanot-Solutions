@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-serif tracking-tight text-ink;
+  }
+
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+
+  :focus-visible {
+    @apply outline outline-2 outline-offset-4 outline-cta;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-page px-4 sm:px-6;
+  }
+
+  .btn {
+    @apply inline-flex min-h-12 items-center justify-center rounded-lg px-6 text-[15px] font-semibold leading-none transition-transform duration-150;
+  }
+
+  .btn:active {
+    @apply translate-y-px;
+  }
+
+  .btn-cta {
+    @apply bg-cta text-ink shadow-[0_8px_0_#9BB52A];
+  }
+
+  .btn-cta:hover {
+    @apply bg-[#e4ff6e];
+  }
+
+  .btn-ghost {
+    @apply border border-white/20 bg-transparent text-white;
+  }
+
+  .btn-ghost:hover {
+    @apply border-white/40 bg-white/5;
+  }
+
+  .btn-header {
+    @apply hidden min-h-10 bg-ink px-5 text-sm text-white sm:inline-flex;
+  }
+
+  .btn-header:hover {
+    @apply bg-ink-2;
+  }
+
+  .eyebrow {
+    @apply mb-4 text-xs font-semibold uppercase tracking-[0.16em] text-teal;
+  }
+
+  .eyebrow-light {
+    @apply mb-4 text-xs font-semibold uppercase tracking-[0.16em] text-cta;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .section-head {
+    @apply max-w-xl;
+  }
+
+  .section-head h2 {
+    @apply mb-4 text-[1.75rem] leading-tight md:text-[2.5rem];
+  }
+
+  .section-head p {
+    @apply text-base leading-7 text-muted;
+  }
+}
