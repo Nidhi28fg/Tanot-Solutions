@@ -17,10 +17,10 @@ export default function CtaBand() {
           </div>
           <Image
             className="cta-image"
-            src="/images/cta-launch.svg"
-            alt="A colorful rocket illustration launching a new website idea"
-            width={560}
-            height={360}
+            src="/images/cta-workspace-photo.jpg"
+            alt="A calm workspace ready for a new project"
+            width={1200}
+            height={800}
             sizes="(max-width: 767px) 100vw, 34vw"
           />
           <a href="#contact" className="btn btn-cta shrink-0">

@@ -3,18 +3,18 @@ import Image from "next/image";
 const prompts = [
   {
     text: "Add an approved client quote about the collaboration and creative process.",
-    image: "/images/testimonial-creative.svg",
-    alt: "Colorful illustration of a creative team working together",
+    image: "/images/client-workspace-photo.jpg",
+    alt: "A team working together around a shared laptop",
   },
   {
     text: "Add a client-approved note about the impact of their new website.",
-    image: "/images/process-collaboration.svg",
-    alt: "Colorful illustration of connected project milestones",
+    image: "/images/client-team-photo.jpg",
+    alt: "Colleagues sharing ideas around a laptop",
   },
   {
     text: "Add a client quote for a website redesign or development project.",
-    image: "/images/industries-world.svg",
-    alt: "Colorful globe illustration representing customers around the world",
+    image: "/images/global-team-photo.jpg",
+    alt: "A team collaborating in a modern office",
   },
 ];
 

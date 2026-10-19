@@ -19,10 +19,10 @@ export default function LogoBar() {
         ))}
         <Image
           className="trust-image"
-          src="/images/industries-world.svg"
-          alt="Colorful globe illustration representing customers across India and around the world"
-          width={720}
-          height={240}
+          src="/images/global-team-photo.jpg"
+          alt="Colleagues collaborating in a shared studio"
+          width={1200}
+          height={800}
           sizes="(max-width: 767px) 100vw, 30vw"
         />
       </div>

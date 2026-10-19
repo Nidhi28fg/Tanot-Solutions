@@ -38,14 +38,14 @@ export default function Hero() {
           </ul>
         </div>
 
-        <div className="hero-art relative mx-auto w-full max-w-[700px]" aria-label="A colorful collage of original website designs">
+        <div className="hero-art relative mx-auto w-full max-w-[700px]" aria-label="A web design workspace with a laptop displaying code">
           <div className="hero-art-glow" aria-hidden="true" />
           <Image
             className="hero-collage"
-            src="/images/hero-studio.svg"
-            alt="Original website concepts presented as overlapping colorful glass browser windows"
-            width={920}
-            height={660}
+            src="/images/hero-workspace.jpg"
+            alt="A laptop displaying code on a bright web design workspace"
+            width={1200}
+            height={800}
             priority
             sizes="(max-width: 1023px) 100vw, 54vw"
           />

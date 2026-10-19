@@ -7,5 +7,5 @@
   <rect x="202" y="205" width="316" height="44" rx="13" fill="#131A45" fill-opacity=".39" stroke="#fff" stroke-opacity=".29"/><circle cx="224" cy="227" r="8" fill="#FF7EC9"/><rect x="245" y="222" width="189" height="8" rx="4" fill="#fff" fill-opacity=".64"/>
   <rect x="202" y="266" width="316" height="68" rx="14" fill="#131A45" fill-opacity=".39" stroke="#fff" stroke-opacity=".29"/><rect x="220" y="284" width="182" height="7" rx="3.5" fill="#fff" fill-opacity=".55"/><rect x="220" y="302" width="260" height="7" rx="3.5" fill="#fff" fill-opacity=".38"/>
   <circle cx="576" cy="278" r="43" fill="#FFDA70"/><path d="m558 278 13 13 24-29" stroke="#47317F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="m98 147 16 16 28-34" stroke="#80FFE3" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m98 147 16 16 28-34" stroke="#68DDFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

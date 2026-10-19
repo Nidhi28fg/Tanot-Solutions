@@ -24,17 +24,17 @@ const config: Config = {
         },
         orange: "#F17854",
         teal: {
-          DEFAULT: "#0F766E",
-          dark: "#0B5C56",
+          DEFAULT: "#3575D5",
+          dark: "#2459AC",
         },
-        cta: "#D9F36A",
+        cta: "#D58AFF",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
         serif: ["var(--font-serif)", "Georgia", "serif"],
       },
       maxWidth: {
-        page: "82rem",
+        page: "none",
       },
       boxShadow: {
         card: "0 8px 24px rgba(25, 22, 36, 0.06)",

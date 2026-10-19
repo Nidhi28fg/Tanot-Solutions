@@ -3,7 +3,7 @@
   <rect width="640" height="360" rx="26" fill="url(#bg)"/><circle cx="535" cy="63" r="112" fill="#FDA3E3" opacity=".32"/>
   <rect x="77" y="51" width="486" height="260" rx="18" fill="#fff" fill-opacity=".13" stroke="#fff" stroke-opacity=".55" stroke-width="2"/>
   <rect x="91" y="66" width="458" height="28" rx="9" fill="#17142C" fill-opacity=".72"/>
-  <circle cx="108" cy="80" r="4" fill="#FF7A9E"/><circle cx="122" cy="80" r="4" fill="#FFD86B"/><circle cx="136" cy="80" r="4" fill="#69F0CF"/>
+  <circle cx="108" cy="80" r="4" fill="#FF7A9E"/><circle cx="122" cy="80" r="4" fill="#FFD86B"/><circle cx="136" cy="80" r="4" fill="#65D8FF"/>
   <rect x="111" y="117" width="159" height="12" rx="6" fill="#fff" fill-opacity=".82"/><rect x="111" y="142" width="114" height="7" rx="3.5" fill="#fff" fill-opacity=".38"/>
   <rect x="111" y="164" width="119" height="32" rx="16" fill="#D970FF"/><rect x="111" y="218" width="118" height="60" rx="12" fill="#fff" fill-opacity=".11"/>
   <circle cx="402" cy="188" r="76" fill="url(#sphere)"/><circle cx="402" cy="188" r="91" stroke="#fff" stroke-opacity=".46"/><path d="M350 205c16-49 62-61 102-37-17 37-53 55-87 47" fill="#fff" fill-opacity=".3"/>

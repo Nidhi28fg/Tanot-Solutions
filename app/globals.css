@@ -86,8 +86,8 @@
 
   .contact-image-note span {
     margin-right: 5px;
-    color: #70f4dd;
-    text-shadow: 0 0 10px rgba(112, 244, 221, 0.8);
+    color: #68ddff;
+    text-shadow: 0 0 10px rgba(104, 221, 255, 0.8);
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -123,7 +123,7 @@
   body > footer > .footer-image {
     position: absolute;
     top: 50%;
-    right: max(calc((100vw - 70rem) / 2), 16px);
+    right: clamp(1rem, 3vw, 3rem);
     width: 150px;
     height: 52px;
     border: 1px solid rgba(197, 177, 255, 0.24);
@@ -303,7 +303,7 @@
   }
 
   .ticker-message i {
-    color: #73f2df;
+    color: #68ddff;
     font-family: var(--font-sans), sans-serif;
     font-size: 15px;
     font-style: normal;
@@ -704,7 +704,7 @@
   }
 
   .project-health .project-mark {
-    color: #215f4c;
+    color: #7447b6;
     font-family: var(--font-sans), sans-serif;
     font-size: 34px;
     font-weight: 600;
@@ -715,10 +715,10 @@
     right: 1%;
     bottom: -25%;
     width: 49%;
-    border: 1px solid rgba(33, 95, 76, 0.35);
+    border: 1px solid rgba(116, 71, 182, 0.35);
     border-radius: 50%;
-    background: rgba(133, 177, 150, 0.5);
-    box-shadow: 0 0 0 18px rgba(133, 177, 150, 0.15), 0 0 0 37px rgba(133, 177, 150, 0.1);
+    background: rgba(180, 134, 255, 0.5);
+    box-shadow: 0 0 0 18px rgba(180, 134, 255, 0.15), 0 0 0 37px rgba(180, 134, 255, 0.1);
   }
 
   .project-stay .project-art {

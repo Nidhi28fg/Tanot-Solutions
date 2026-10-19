@@ -2,24 +2,24 @@
   <defs>
     <linearGradient id="backdrop" x1="60" y1="46" x2="866" y2="627" gradientUnits="userSpaceOnUse"><stop stop-color="#31146B"/><stop offset=".49" stop-color="#5823A7"/><stop offset="1" stop-color="#073B56"/></linearGradient>
     <linearGradient id="cardA" x1="188" y1="115" x2="595" y2="470" gradientUnits="userSpaceOnUse"><stop stop-color="#23203F"/><stop offset="1" stop-color="#11162D"/></linearGradient>
-    <linearGradient id="neon" x1="398" y1="203" x2="612" y2="419" gradientUnits="userSpaceOnUse"><stop stop-color="#E3FF65"/><stop offset=".45" stop-color="#65E8F5"/><stop offset="1" stop-color="#EC6BDE"/></linearGradient>
+    <linearGradient id="neon" x1="398" y1="203" x2="612" y2="419" gradientUnits="userSpaceOnUse"><stop stop-color="#A88BFF"/><stop offset=".45" stop-color="#65DDF5"/><stop offset="1" stop-color="#EC6BDE"/></linearGradient>
     <linearGradient id="paint" x1="487" y1="238" x2="702" y2="464" gradientUnits="userSpaceOnUse"><stop stop-color="#FFBF72"/><stop offset=".48" stop-color="#FF66B7"/><stop offset="1" stop-color="#854CFF"/></linearGradient>
     <filter id="shadow" x="58" y="25" width="814" height="616" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur in="SourceAlpha" stdDeviation="19"/><feOffset dy="22"/><feComponentTransfer><feFuncA type="linear" slope=".4"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
   <rect x="15" y="15" width="890" height="630" rx="40" fill="url(#backdrop)"/>
   <circle cx="143" cy="132" r="118" fill="#F347CA" opacity=".38"/><circle cx="793" cy="514" r="139" fill="#2DE8E4" opacity=".28"/>
-  <circle cx="753" cy="138" r="58" fill="#D6FE57" opacity=".9"/><path d="M751 100v76m-38-38h76" stroke="#1E1851" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="753" cy="138" r="58" fill="#D978E8" opacity=".9"/><path d="M751 100v76m-38-38h76" stroke="#1E1851" stroke-width="7" stroke-linecap="round"/>
   <g filter="url(#shadow)">
     <g transform="rotate(-8 365 299)">
       <rect x="130" y="109" width="475" height="365" rx="26" fill="url(#cardA)" stroke="#fff" stroke-opacity=".62" stroke-width="2"/>
       <rect x="130" y="109" width="475" height="46" rx="26" fill="#fff" fill-opacity=".11"/>
       <path d="M130 130v25h475v-25" fill="#221C48"/>
-      <circle cx="157" cy="132" r="6" fill="#FF77AC"/><circle cx="178" cy="132" r="6" fill="#FFE071"/><circle cx="199" cy="132" r="6" fill="#77F4CA"/>
+      <circle cx="157" cy="132" r="6" fill="#FF77AC"/><circle cx="178" cy="132" r="6" fill="#FFE071"/><circle cx="199" cy="132" r="6" fill="#63D9FF"/>
       <rect x="334" y="122" width="154" height="20" rx="10" fill="#fff" fill-opacity=".11"/>
       <rect x="162" y="190" width="172" height="10" rx="5" fill="#C7BBFF" fill-opacity=".73"/>
       <path d="M163 229h188m-188 23h138" stroke="#fff" stroke-opacity=".18" stroke-width="6" stroke-linecap="round"/>
       <text x="158" y="333" fill="#F6F2FF" font-family="Georgia,serif" font-size="67" letter-spacing="-5">MAKE IT</text>
-      <text x="158" y="398" fill="#D9FF58" font-family="Georgia,serif" font-size="67" font-style="italic" letter-spacing="-5">matter.</text>
+      <text x="158" y="398" fill="#F27BD5" font-family="Georgia,serif" font-size="67" font-style="italic" letter-spacing="-5">matter.</text>
       <rect x="162" y="425" width="118" height="25" rx="12.5" fill="#A56AFF"/>
     </g>
     <g transform="rotate(9 645 358)">
@@ -29,11 +29,11 @@
       <path d="M581 300c11-27 42-39 72-25-5 30-32 49-64 41" fill="#fff" fill-opacity=".28"/>
       <text x="501" y="414" fill="#201B38" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">GOOD IDEAS, BUILT BETTER</text>
       <path d="M502 437h154m-154 17h102" stroke="#2C2542" stroke-opacity=".21" stroke-width="5" stroke-linecap="round"/>
-      <circle cx="708" cy="458" r="16" fill="#24203E"/><path d="m701 458 5 5 10-11" stroke="#DFFF68" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="708" cy="458" r="16" fill="#24203E"/><path d="m701 458 5 5 10-11" stroke="#69DFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
   </g>
   <rect x="63" y="525" width="215" height="67" rx="20" fill="#fff" fill-opacity=".13" stroke="#fff" stroke-opacity=".44" stroke-width="2"/>
-  <circle cx="94" cy="558" r="12" fill="#E1FF65"/><path d="M89 558h10m-5-5v10" stroke="#282057" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="94" cy="558" r="12" fill="#A88BFF"/><path d="M89 558h10m-5-5v10" stroke="#282057" stroke-width="2.5" stroke-linecap="round"/>
   <text x="119" y="553" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700">DESIGNED WITH INTENT</text>
   <text x="119" y="573" fill="#fff" fill-opacity=".64" font-family="Arial,sans-serif" font-size="11">Every detail has a reason</text>
   <path d="m771 561 25 25m0-25-25 25" stroke="#fff" stroke-opacity=".73" stroke-width="3" stroke-linecap="round"/>

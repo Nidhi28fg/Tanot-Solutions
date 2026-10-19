@@ -43,10 +43,10 @@ export default function FAQ() {
           <div className="faq-image-wrap">
             <Image
               className="section-image faq-image"
-              src="/images/faq-ideas.svg"
-              alt="Bright illustration of a glowing idea bulb and helpful message cards"
-              width={720}
-              height={440}
+              src="/images/faq-team-photo.jpg"
+              alt="Colleagues discussing ideas around a shared workspace"
+              width={1200}
+              height={800}
               sizes="(max-width: 1023px) 100vw, 32vw"
             />
           </div>

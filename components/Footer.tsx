@@ -15,11 +15,11 @@ export default function Footer() {
       </div>
       <Image
         className="footer-image"
-        src="/images/industries-world.svg"
+        src="/images/footer-studio-photo.jpg"
         alt=""
         aria-hidden="true"
-        width={720}
-        height={240}
+        width={1200}
+        height={800}
       />
     </footer>
   );

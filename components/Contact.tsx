@@ -35,10 +35,10 @@ export default function Contact() {
           <div className="contact-image-wrap">
             <Image
               className="section-image contact-image"
-              src="/images/contact-project.svg"
-              alt="A colorful project enquiry form illustration ready for your next website idea"
-              width={720}
-              height={420}
+              src="/images/contact-office-photo.jpg"
+              alt="A bright, modern office prepared for collaborative project work"
+              width={1200}
+              height={800}
               sizes="(max-width: 767px) 100vw, 42vw"
             />
             <span className="contact-image-note"><span aria-hidden="true">●</span> Your next idea starts here</span>

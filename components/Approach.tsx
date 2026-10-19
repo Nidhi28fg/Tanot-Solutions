@@ -34,10 +34,10 @@ export default function Approach() {
           <div className="approach-image-wrap">
             <Image
               className="section-image approach-image"
-              src="/images/process-collaboration.svg"
-              alt="Glowing collaborative design illustration with connected project cards"
-              width={800}
-              height={460}
+              src="/images/process-team-photo.jpg"
+              alt="A team discussing a project around a laptop"
+              width={1200}
+              height={800}
               sizes="(max-width: 1023px) 100vw, 40vw"
             />
             <span className="image-caption">Better work, built together <span aria-hidden="true">✳</span></span>
