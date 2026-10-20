@@ -1,4 +1,4 @@
-const offerings = ["Website design", "Redesign", "Development", "India & worldwide"];
+const offerings = ["Custom design", "Responsive development", "Strategy-led", "India & worldwide"];
 
 export default function Hero() {
   return (
@@ -10,22 +10,25 @@ export default function Hero() {
       <div className="container-page relative grid items-center gap-12 pb-16 pt-14 lg:grid-cols-[1fr_0.95fr] lg:gap-10 lg:pb-28 lg:pt-20">
         <div className="hero-copy">
           <p className="eyebrow"><span className="eyebrow-dot" /> Independent digital studio · India & worldwide</p>
-          <h1 className="max-w-[13ch] text-[3.15rem] leading-[0.99] sm:text-6xl lg:text-[5.15rem]">
-            A clearer website. <em className="font-serif text-violet">A stronger next step.</em>
+          <h1 className="hero-title max-w-[13ch] text-[3.15rem] leading-[0.99] sm:text-6xl lg:text-[5.15rem]">
+            Custom websites. <em className="font-serif text-violet">Built for your goals.</em>
           </h1>
           <p className="mt-6 max-w-lg text-base leading-7 text-muted lg:text-lg lg:leading-8">
-            Tanot Solutions designs, redesigns and develops websites for
-            businesses in India and worldwide. Thoughtful design, clear
-            communication and modern web development—shaped around your goals.
+            We plan, design and develop responsive websites around your
+            business, customers and workflows—so visitors can understand what
+            you offer and what to do next.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a href="#contact" className="btn btn-cta">
               Request a custom estimate <span aria-hidden="true">↗</span>
             </a>
             <a href="#services" className="btn btn-text">
-              Explore what we do <span aria-hidden="true">↓</span>
+              Explore website services <span aria-hidden="true">↓</span>
             </a>
           </div>
+          <p className="hero-cta-note">
+            Start with a conversation about your goals, scope and timeline.
+          </p>
           <ul className="mt-10 flex flex-wrap gap-x-5 gap-y-2 text-xs font-semibold uppercase tracking-[0.13em] text-muted">
             {offerings.map((offering) => (
               <li key={offering} className="flex items-center gap-2">

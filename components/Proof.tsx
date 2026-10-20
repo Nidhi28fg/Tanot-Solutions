@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const filters = ["All", "E-commerce", "Healthcare", "Hospitality"] as const;
 
@@ -11,8 +12,8 @@ const work = [
     title: "Product discovery concept",
     type: "E-commerce",
     className: "project-retail",
-    image: "/images/portfolio-retail-photo.jpg",
-    imageAlt: "Stock photograph of a shopper browsing a clothing rack",
+    image: "/images/portfolio-retail.svg",
+    imageAlt: "Original e-commerce concept visual showing a storefront layout and product graphic",
     detail: "Illustrative e-commerce direction exploring product discovery and clear paths through a storefront. This is a concept, not a client project.",
   },
   {
@@ -20,8 +21,8 @@ const work = [
     title: "Healthcare information concept",
     type: "Healthcare",
     className: "project-health",
-    image: "/images/portfolio-health-photo.jpg",
-    imageAlt: "Stock photograph of a doctor using a mobile phone",
+    image: "/images/portfolio-health.svg",
+    imageAlt: "Original healthcare concept visual showing a mobile service interface",
     detail: "Illustrative healthcare direction exploring clear service information and accessible page structure. This is a concept, not a client project.",
   },
   {
@@ -29,8 +30,8 @@ const work = [
     title: "Hospitality discovery concept",
     type: "Hospitality",
     className: "project-stay",
-    image: "/images/portfolio-hospitality-photo.jpg",
-    imageAlt: "Stock photograph of a resort with a pool beside the water",
+    image: "/images/portfolio-hospitality.svg",
+    imageAlt: "Original hospitality concept visual showing a destination-inspired website direction",
     detail: "Illustrative hospitality direction exploring destination imagery and stay information. This is a concept, not a client project.",
   },
 ];
@@ -47,11 +48,11 @@ export default function Proof() {
       <div className="container-page">
         <header className="section-head mb-10">
           <p className="eyebrow"><span className="eyebrow-dot" /> Selected work</p>
-          <h2>Explore design directions across different kinds of websites.</h2>
+          <h2>See how we approach different website goals.</h2>
           <p>
-            Examples below showcase our design approach, visual direction,
-            and development capabilities. These are concepts, not client
-            projects. Detailed performance results are not currently published.
+            These original concept visuals show how we think about structure,
+            visual direction and user journeys. They are clearly labelled
+            concepts—not client projects, testimonials or performance claims.
           </p>
         </header>
 
@@ -97,6 +98,15 @@ export default function Proof() {
               </div>
             </article>
           ))}
+        </div>
+        <div className="portfolio-followup">
+          <p>
+            Looking for examples relevant to your brief? Tell us what you&apos;re
+            planning and we can discuss the right direction for your project.
+          </p>
+          <Link className="portfolio-contact-link" href="#contact">
+            Discuss your project <span aria-hidden="true">↗</span>
+          </Link>
         </div>
       </div>
     </section>

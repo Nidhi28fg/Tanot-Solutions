@@ -19,7 +19,7 @@ import {
 
 export default function HomePage() {
   return (
-    <main id="main">
+    <main id="main" className="home-page">
       <Hero />
       <LogoBar />
       <StudioTicker />

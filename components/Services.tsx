@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const services = [
   {
@@ -90,6 +91,15 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
+              {service.index === "01" && (
+                <Link
+                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-violet hover:underline"
+                  href="/services/custom-website"
+                >
+                  Explore custom website design &amp; development
+                  <span aria-hidden="true">↗</span>
+                </Link>
+              )}
             </article>
           ))}
         </div>

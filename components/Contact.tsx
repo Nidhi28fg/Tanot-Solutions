@@ -1,11 +1,11 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent } from "react";
 import Image from "next/image";
 
-export default function Contact() {
-  const [status, setStatus] = useState("");
+const whatsappNumber = "918860523651";
 
+export default function Contact() {
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
@@ -13,12 +13,10 @@ export default function Contact() {
       return;
     }
     const data = new FormData(form);
-    const subject = encodeURIComponent(`Website project enquiry from ${data.get("name")}`);
-    const body = encodeURIComponent(
-      `Name: ${data.get("name")}\nEmail: ${data.get("email")}\nCompany: ${data.get("company") || "Not provided"}\nProject type: ${data.get("projectType")}\nTarget timing: ${data.get("timeline")}\nBudget status: ${data.get("budget")}\n\nProject details:\n${data.get("message")}`,
+    const message = encodeURIComponent(
+      `Hi Tanot Solutions, I'd like to discuss a website project.\n\nName: ${data.get("name")}\nWhatsApp number: ${data.get("phone") || "Not provided"}\nCompany: ${data.get("company") || "Not provided"}\nProject type: ${data.get("projectType")}\nTarget timing: ${data.get("timeline")}\nBudget: ${data.get("budget")}\n\nProject details:\n${data.get("message")}`,
     );
-    window.location.href = `mailto:hello@tanot.solutions?subject=${subject}&body=${body}`;
-    setStatus("Your email app should open with your project details ready to send.");
+    window.location.assign(`https://wa.me/${whatsappNumber}?text=${message}`);
   }
 
   return (
@@ -45,9 +43,14 @@ export default function Contact() {
           </div>
           <ul className="mt-8 space-y-5 text-sm">
             <li>
-              <strong className="block text-ink">Email</strong>
-              <a className="mt-1 inline-block text-violet hover:underline" href="mailto:hello@tanot.solutions">
-                hello@tanot.solutions
+              <strong className="block text-ink">Chat with us on WhatsApp</strong>
+              <a
+                className="mt-1 inline-flex items-center gap-2 text-violet hover:underline"
+                href={`https://wa.me/${whatsappNumber}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                +91 88605 23651 <span aria-hidden="true">↗</span>
               </a>
             </li>
             <li>
@@ -70,13 +73,13 @@ export default function Contact() {
               />
             </label>
             <label className="block text-sm font-medium text-ink">
-              Work email
+              WhatsApp number <span className="font-normal text-muted">(optional)</span>
               <input
                 className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-violet"
-                type="email"
-                name="email"
-                autoComplete="email"
-                required
+                type="tel"
+                name="phone"
+                autoComplete="tel"
+                placeholder="e.g. +91 98765 43210"
               />
             </label>
           </div>
@@ -147,14 +150,11 @@ export default function Contact() {
             />
           </label>
           <button className="btn btn-cta mt-6 w-full" type="submit">
-            Request a custom estimate <span aria-hidden="true">↗</span>
+            Continue to WhatsApp <span aria-hidden="true">↗</span>
           </button>
-          <p className="mt-3 min-h-6 text-sm text-violet" role="status">
-            {status}
-          </p>
-          <p className="mt-1 text-xs leading-5 text-muted">
-            This form prepares an email in your email app; it does not send
-            without your confirmation.
+          <p className="mt-3 text-xs leading-5 text-muted">
+            WhatsApp will open with your project details ready. Review the
+            message and send it when you&apos;re ready.
           </p>
         </form>
       </div>
