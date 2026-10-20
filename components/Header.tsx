@@ -47,12 +47,12 @@ export default function Header() {
           <Link
             href="/#top"
             className="flex shrink-0 items-center gap-3 whitespace-nowrap font-semibold text-ink"
-            aria-label="Tanot Solutions home"
+            aria-label="Guffo Solution home"
           >
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-violet font-serif text-lg text-white">
-              t
+              g
             </span>
-            <span className="text-[15px] tracking-tight">Tanot Solutions</span>
+            <span className="text-[15px] tracking-tight">Guffo Solution</span>
           </Link>
 
           <nav className="hidden items-center gap-5 whitespace-nowrap text-sm font-medium lg:flex lg:gap-7" aria-label="Primary">

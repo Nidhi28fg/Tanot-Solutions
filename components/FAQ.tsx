@@ -14,7 +14,7 @@ const questions = [
   {
     question: "Do you work with clients outside India?",
     answer:
-      "Yes. Tanot Solutions works with customers in India and internationally, collaborating remotely across time zones.",
+      "Yes. Guffo Solution works with customers in India and internationally, collaborating remotely across time zones.",
   },
   {
     question: "How long does a website project take?",

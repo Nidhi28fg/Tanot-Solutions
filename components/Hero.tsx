@@ -48,12 +48,12 @@ export default function Hero() {
                 <i className="browser-dot bg-[#ffc565]" />
                 <i className="browser-dot bg-[#64dfda]" />
               </span>
-              <span className="browser-url">tanot.solutions / concept</span>
+              <span className="browser-url">guffosolution.com / concept</span>
               <span className="browser-status">LIVE PREVIEW</span>
             </div>
             <div className="mock-site hero-mock-site">
               <div className="mock-nav">
-                <span className="mock-logo"><span /> TANOT STUDIO</span>
+                <span className="mock-logo"><span /> GUFFO STUDIO</span>
                 <span className="mock-menu">STUDIO&nbsp;&nbsp;&nbsp; SERVICES&nbsp;&nbsp;&nbsp; CONTACT</span>
                 <span className="mock-contact">LET&apos;S TALK ↗</span>
               </div>

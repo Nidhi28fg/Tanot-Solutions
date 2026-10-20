@@ -11,9 +11,9 @@ type TechnologyCardStyle = CSSProperties & {
 };
 
 export const metadata: Metadata = {
-  title: "Custom Website Design & Development | Tanot Solutions",
+  title: "Custom Website Design & Development | Guffo Solution",
   description:
-    "A custom website shaped around your business goals, workflows and customers. Strategy, bespoke design and responsive development from Tanot Solutions.",
+    "A custom website shaped around your business goals, workflows and customers. Strategy, bespoke design and responsive development from Guffo Solution.",
 };
 
 const benefits = [

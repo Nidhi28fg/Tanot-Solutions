@@ -20,9 +20,9 @@ const serif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Tanot Solutions — Website Design, Redesign & Development",
+  title: "Guffo Solution — Website Design, Redesign & Development",
   description:
-    "Tanot Solutions designs, redesigns and develops distinctive websites for businesses across industries in India and around the world.",
+    "Guffo Solution designs, redesigns and develops distinctive websites for businesses across industries in India and around the world.",
   icons: { icon: "/favicon.svg" },
 };
 

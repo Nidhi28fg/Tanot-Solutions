@@ -61,7 +61,7 @@ export function StudioIntroduction() {
     <section className="section studio-intro-section" id="studio">
       <div className="container-page studio-intro-grid">
         <header className="section-head">
-          <p className="eyebrow"><span className="eyebrow-dot" /> Tanot Solutions</p>
+          <p className="eyebrow"><span className="eyebrow-dot" /> Guffo Solution</p>
           <h2>Website design and development, shaped around your goals.</h2>
           <p>
             Based in India and working with businesses in India and worldwide,

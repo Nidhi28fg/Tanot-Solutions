@@ -14,7 +14,7 @@ export default function Contact() {
     }
     const data = new FormData(form);
     const message = encodeURIComponent(
-      `Hi Tanot Solutions, I'd like to discuss a website project.\n\nName: ${data.get("name")}\nWhatsApp number: ${data.get("phone") || "Not provided"}\nCompany: ${data.get("company") || "Not provided"}\nProject type: ${data.get("projectType")}\nTarget timing: ${data.get("timeline")}\nBudget: ${data.get("budget")}\n\nProject details:\n${data.get("message")}`,
+      `Hi Guffo Solution, I'd like to discuss a website project.\n\nName: ${data.get("name")}\nWhatsApp number: ${data.get("phone") || "Not provided"}\nCompany: ${data.get("company") || "Not provided"}\nProject type: ${data.get("projectType")}\nTarget timing: ${data.get("timeline")}\nBudget: ${data.get("budget")}\n\nProject details:\n${data.get("message")}`,
     );
     window.location.assign(`https://wa.me/${whatsappNumber}?text=${message}`);
   }
@@ -51,6 +51,15 @@ export default function Contact() {
                 rel="noreferrer"
               >
                 +91 88605 23651 <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <strong className="block text-ink">Email</strong>
+              <a
+                className="mt-1 inline-block text-violet hover:underline"
+                href="mailto:teamguffonidhi28@gmail.com"
+              >
+                teamguffonidhi28@gmail.com
               </a>
             </li>
             <li>
