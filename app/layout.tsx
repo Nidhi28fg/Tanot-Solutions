@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   title: "Guffo Solution — Website Design, Redesign & Development",
   description:
     "Guffo Solution designs, redesigns and develops distinctive websites for businesses across industries in India and around the world.",
-  icons: { icon: "/favicon.svg" },
+  icons: { icon: "/guffo-mark.png" },
 };
 
 export default function RootLayout({
