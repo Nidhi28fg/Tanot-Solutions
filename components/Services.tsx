@@ -4,15 +4,33 @@ import Link from "next/link";
 const services = [
   {
     index: "01",
-    title: "Website design",
+    title: "Website development",
     icon: "design",
     image: "/images/service-design-photo.jpg",
     imageAlt: "Stock photograph of a person working on a digital design with a stylus",
-    body: "Make your offer easier to understand with a user-first design shaped around your brand and customers.",
-    items: ["Clear page structure", "Responsive visual design", "A considered path to enquire"],
+    body: "Business websites that help you build credibility and make your offer easier to understand.",
+    items: ["Custom website structure", "Responsive development", "A clear path to enquire"],
   },
   {
     index: "02",
+    title: "eCommerce development",
+    icon: "commerce",
+    image: "/images/service-development-photo.jpg",
+    imageAlt: "A team collaborating around laptops while planning an online store",
+    body: "Create a practical online store that makes it easy for customers to discover and buy your products.",
+    items: ["Product and category pages", "Responsive shopping experience", "Payment and store integrations"],
+  },
+  {
+    index: "03",
+    title: "Landing pages",
+    icon: "landing",
+    image: "/images/service-design-photo.jpg",
+    imageAlt: "A person designing a focused landing page on a tablet",
+    body: "Give a campaign, product, or service a focused page with a clear next step for visitors.",
+    items: ["Campaign-focused structure", "Clear calls to action", "Responsive page design"],
+  },
+  {
+    index: "04",
     title: "Website redesign",
     icon: "redesign",
     image: "/images/service-redesign-photo.jpg",
@@ -21,22 +39,22 @@ const services = [
     items: ["Review of structure and content", "Refreshed visual direction", "Responsive experience updates"],
   },
   {
-    index: "03",
-    title: "Web development",
+    index: "05",
+    title: "SEO optimization",
     icon: "development",
     image: "/images/service-development-photo.jpg",
     imageAlt: "A team collaborating around laptops in a bright workspace",
-    body: "Turn an approved design into a responsive website, built around your features and content needs.",
-    items: ["Custom front-end development", "CMS and e-commerce options", "Testing across key screens"],
+    body: "Improve your website's search foundations with practical on-page and technical SEO work.",
+    items: ["Page structure and metadata", "Technical SEO foundations", "Search visibility recommendations"],
   },
   {
-    index: "04",
-    title: "Ongoing support",
+    index: "06",
+    title: "Website maintenance",
     icon: "support",
     image: "/images/service-support-photo.jpg",
     imageAlt: "A small team working together around a laptop",
-    body: "Keep your website current with practical updates and help planning what to improve next.",
-    items: ["Updates and maintenance", "New features and landing pages", "Practical growth guidance"],
+    body: "Keep your website current with regular updates, security checks, and ongoing support.",
+    items: ["Updates and security monitoring", "Website backups", "Bug fixes and support"],
   },
 ];
 
@@ -46,14 +64,14 @@ export default function Services() {
       <div className="container-page">
         <header className="section-head mb-12">
           <p className="eyebrow"><span className="eyebrow-dot" /> Website services</p>
-          <h2>What does your website need to do next?</h2>
+          <h2>Our web development services.</h2>
           <p>
             Choose a focused service or bring us in from planning through
             launch. We&apos;ll shape the scope around your requirements.
           </p>
         </header>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service) => (
             <article
               key={service.index}
@@ -77,7 +95,8 @@ export default function Services() {
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
                   {service.icon === "design" && <><path d="m15 5 4 4" /><path d="M4 20l4.5-1 10-10a2.12 2.12 0 0 0-3-3l-10 10L4 20Z" /><path d="M13 7 17 11" /></>}
                   {service.icon === "redesign" && <><path d="M20 7v5h-5" /><path d="M4.5 9A8 8 0 0 1 18 5l2 2" /><path d="M4 17v-5h5" /><path d="M19.5 15A8 8 0 0 1 6 19l-2-2" /></>}
-                  {service.icon === "development" && <><path d="m8 8-4 4 4 4" /><path d="m16 8 4 4-4 4" /><path d="m14 5-4 14" /></>}
+                  {(service.icon === "development" || service.icon === "commerce") && <><path d="m8 8-4 4 4 4" /><path d="m16 8 4 4-4 4" /><path d="m14 5-4 14" /></>}
+                  {service.icon === "landing" && <><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 9h18" /><path d="M7 14h5" /><path d="M7 17h9" /></>}
                   {service.icon === "support" && <><path d="m13 2-3 8h7l-6 12 1-9H6l7-11Z" /></>}
                 </svg>
               </span>
@@ -97,6 +116,15 @@ export default function Services() {
                   href="/services/custom-website"
                 >
                   Explore custom website design &amp; development
+                  <span aria-hidden="true">↗</span>
+                </Link>
+              )}
+              {service.index === "06" && (
+                <Link
+                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-violet hover:underline"
+                  href="/services/maintain-website"
+                >
+                  Explore website maintenance
                   <span aria-hidden="true">↗</span>
                 </Link>
               )}

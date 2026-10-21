@@ -5,21 +5,14 @@ import CtaBand from "@/components/CtaBand";
 import EmployeeTestimonials from "@/components/EmployeeTestimonials";
 import Hero from "@/components/Hero";
 import FAQ from "@/components/FAQ";
-import LogoBar from "@/components/LogoBar";
+import {
+  IndustriesGrid,
+  PricingPreview,
+  WhyChooseUs,
+} from "@/components/HomeSections";
 import Proof from "@/components/Proof";
 import Services from "@/components/Services";
 import StickyCta from "@/components/StickyCta";
-import StudioTicker from "@/components/StudioTicker";
-import {
-  IndustriesSection,
-  CustomVsBuilder,
-  FounderIntroduction,
-  LaunchSupport,
-  StudioIntroduction,
-  StudioPartnership,
-  WebsiteStandards,
-  WhyTanot,
-} from "@/components/StudioSections";
 
 export const metadata: Metadata = {
   title: "Websites Designed to Grow Your Business | Guffo Solution",
@@ -31,22 +24,15 @@ export default function HomePage() {
   return (
     <main id="main" className="home-page">
       <Hero />
-      <LogoBar />
-      <Proof />
-      <EmployeeTestimonials />
-      <StudioTicker />
-      <StudioIntroduction />
-      <FounderIntroduction />
+      <WhyChooseUs />
       <Services />
-      <CustomVsBuilder />
-      <Contact />
-      <IndustriesSection />
       <Approach />
-      <WebsiteStandards />
-      <StudioPartnership />
-      <WhyTanot />
-      <LaunchSupport />
+      <Proof />
+      <IndustriesGrid />
+      <PricingPreview />
+      <EmployeeTestimonials />
       <FAQ />
+      <Contact />
       <CtaBand />
       <StickyCta />
     </main>

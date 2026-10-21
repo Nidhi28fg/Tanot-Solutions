@@ -10,6 +10,7 @@ const links = [
     children: [
       { href: "/#services", label: "All services" },
       { href: "/services/custom-website", label: "Custom Website" },
+      { href: "/services/maintain-website", label: "Maintain Website" },
     ],
   },
   { href: "/#approach", label: "How we work" },

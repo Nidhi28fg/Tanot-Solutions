@@ -50,8 +50,8 @@ export default function Proof() {
     <section className="section portfolio-section" id="proof">
       <div className="container-page">
         <header className="section-head mb-10">
-          <p className="eyebrow"><span className="eyebrow-dot" /> Design explorations</p>
-          <h2>Sample website concepts, made to show our approach.</h2>
+          <p className="eyebrow"><span className="eyebrow-dot" /> Selected concepts</p>
+          <h2>Recent project concepts.</h2>
           <p>
             Explore original demo website concepts demonstrating our design
             approach. These are illustrative previews with fictional content,
@@ -73,7 +73,7 @@ export default function Proof() {
           ))}
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {visibleWork.map((project) => (
             <article key={project.number} className={`project-card glass-card${project.number === "01" ? " project-card-featured" : ""}`}>
               <figure className={`project-preview ${project.className}`}>

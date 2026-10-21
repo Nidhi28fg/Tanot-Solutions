@@ -251,7 +251,7 @@ main > section:not(.hero-section):not(.studio-ticker)::before {
 .hero-float-card {
   position: absolute;
   z-index: 3;
-  right: -2%;
+  left: -2%;
   bottom: 8%;
   display: grid;
   gap: 6px;
@@ -276,6 +276,127 @@ main > section:not(.hero-section):not(.studio-ticker)::before {
 .hero-float-card strong {
   font-size: clamp(10px, 0.95vw, 13px);
   font-weight: 650;
+}
+
+.hero-mobile-preview {
+  position: absolute;
+  z-index: 4;
+  right: -2%;
+  bottom: -8%;
+  display: flex;
+  width: clamp(112px, 17vw, 170px);
+  height: clamp(225px, 32vw, 340px);
+  flex-direction: column;
+  overflow: hidden;
+  border: 5px solid #17152b;
+  border-radius: 27px;
+  background: linear-gradient(160deg, #f8f4ff, #e8effb);
+  padding: 20px 12px 12px;
+  box-shadow: 0 24px 58px rgba(3, 5, 20, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.82);
+  transform: rotate(5deg);
+  animation: label-float 6s -1s ease-in-out infinite;
+}
+
+.hero-mobile-camera {
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  width: 31px;
+  height: 5px;
+  border-radius: 99px;
+  background: #28243e;
+  transform: translateX(-50%);
+}
+
+.hero-mobile-brand {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #322b4c;
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+}
+
+.hero-mobile-brand i {
+  width: 7px;
+  height: 7px;
+  border-radius: 3px;
+  background: linear-gradient(135deg, #9865ff, #ee79c4);
+}
+
+.hero-mobile-copy {
+  margin-top: 27px;
+  color: #242039;
+  font-size: clamp(15px, 2.2vw, 25px);
+  font-weight: 750;
+  letter-spacing: -0.06em;
+  line-height: 0.96;
+}
+
+.hero-mobile-copy em {
+  color: #9865e8;
+  font-family: var(--font-serif), serif;
+  font-weight: 400;
+}
+
+.hero-mobile-button {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 8px;
+  margin-top: 13px;
+  border-radius: 99px;
+  background: #7654e8;
+  padding: 6px 9px;
+  color: white;
+  font-size: 7px;
+  font-weight: 700;
+}
+
+.hero-mobile-image {
+  display: flex;
+  height: 34%;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  gap: 5px;
+  margin-top: auto;
+  border-radius: 11px;
+  background: radial-gradient(circle at 50% 25%, #e5b7e9, #a28ce1 62%, #6d91b4);
+  padding: 8px;
+}
+
+.hero-mobile-image i {
+  width: 24%;
+  height: 70%;
+  border-radius: 99px 99px 6px 6px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(61, 49, 91, 0.72));
+}
+
+.hero-proof-card {
+  position: absolute;
+  z-index: 3;
+  bottom: -5%;
+  left: 18%;
+  display: flex;
+  gap: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  background: rgba(22, 19, 48, 0.78);
+  padding: 9px;
+  box-shadow: 0 16px 36px rgba(4, 4, 17, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.hero-proof-card span {
+  border: 1px solid rgba(197, 173, 255, 0.22);
+  border-radius: 99px;
+  padding: 6px 8px;
+  color: #e5dcff;
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
 }
 
 .hero-art-glow {
@@ -800,20 +921,66 @@ main > section:not(.hero-section):not(.studio-ticker)::before {
 }
 
 .approach-section .process-card {
-  min-height: 190px;
-  border-radius: 23px !important;
+  position: relative;
+  min-height: 205px;
+  border-radius: 19px !important;
+  padding: 19px;
   transition: transform 260ms ease, border-color 260ms ease, box-shadow 260ms ease;
 }
 
-.approach-section .process-card:nth-child(2),
-.approach-section .process-card:nth-child(4) {
-  transform: none;
+.approach-section .process-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.approach-section .process-card:last-child {
-  grid-column: 1 / -1;
-  width: calc(50% - 0.75rem);
-  justify-self: center;
+.approach-section .process-card:not(:last-child)::after {
+  position: absolute;
+  top: 37px;
+  right: -13px;
+  z-index: 2;
+  width: 13px;
+  height: 1px;
+  background: rgba(170, 218, 255, 0.55);
+  content: "";
+}
+
+.approach-section .process-step-icon {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 1px solid rgba(105, 219, 255, 0.3);
+  border-radius: 11px;
+  background: rgba(105, 219, 255, 0.1);
+  color: #8de9ff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.approach-section .process-card .process-step-number {
+  position: absolute;
+  top: 30px;
+  right: 17px;
+  color: #aaa5c5;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-shadow: none;
+}
+
+.approach-section .process-card h3 {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.approach-section .process-card p {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.65;
 }
 
 .approach-section .process-card:hover {
@@ -1224,9 +1391,25 @@ body > footer > .footer-image {
   .hero-float-top { right: -2%; }
   .hero-float-bottom { left: -2%; }
   .hero-float-card {
-    right: 0;
+    left: 0;
     bottom: 1%;
     padding: 11px 13px;
+  }
+
+  .hero-mobile-preview {
+    right: -3%;
+    bottom: -4%;
+    width: 105px;
+    height: 215px;
+  }
+
+  .hero-proof-card {
+    display: none;
+  }
+
+  .hero-float-bottom {
+    bottom: 2%;
+    left: 34%;
   }
 
   .ticker-message {
@@ -1234,9 +1417,8 @@ body > footer > .footer-image {
     font-size: 15px;
   }
 
-  .approach-section .process-card:last-child {
-    grid-column: auto;
-    width: 100%;
+  .approach-section .process-steps-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .project-card-featured .project-preview {
@@ -1265,6 +1447,7 @@ body > footer > .footer-image {
 
 @media (prefers-reduced-motion: reduce) {
   .hero-art-glow,
+  .hero-mobile-preview,
   .hero-browser,
   .hero-float-card,
   .hero-float-label,
@@ -1385,6 +1568,14 @@ body > footer > .footer-image {
 }
 
 @media (max-width: 1023px) {
+  .approach-section .process-steps-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .approach-section .process-card::after {
+    display: none;
+  }
+
   .home-page .hero-section .hero-copy .hero-title {
     max-width: 13ch;
     font-size: clamp(3rem, 7.6vw, 5.2rem);

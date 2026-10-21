@@ -1,59 +1,52 @@
-import Image from "next/image";
-
 const steps = [
   {
-    title: "Discovery & strategy",
-    body: "We learn about your business, audience, requirements and what the website needs to support.",
+    title: "Discovery call",
+    body: "We learn about your business, audience, and website goals.",
   },
   {
-    title: "UX/UI design",
-    body: "We plan the structure and design page experiences around your brand and visitors.",
+    title: "Planning & strategy",
+    body: "We map the project scope, content, and priorities together.",
+  },
+  {
+    title: "UI/UX design",
+    body: "We shape a clear, considered experience around your customers.",
   },
   {
     title: "Development",
-    body: "We build the agreed experience responsively, using an approach suited to the project.",
+    body: "We build the approved website to work across screen sizes.",
   },
   {
-    title: "Quality assurance",
-    body: "We review the website across key screens and check the agreed functionality before launch.",
+    title: "Testing",
+    body: "We review the agreed pages and functionality before launch.",
   },
   {
-    title: "Launch & support",
-    body: "We coordinate launch and can discuss ongoing updates or improvements for your site.",
+    title: "Launch",
+    body: "We prepare the website to go live and hand over the finished work.",
   },
 ];
 
 export default function Approach() {
   return (
     <section className="section approach-section" id="approach">
-      <div className="container-page grid gap-12 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:gap-16">
-        <header className="section-head">
+      <div className="container-page">
+        <header className="section-head mb-10">
           <p className="eyebrow"><span className="eyebrow-dot" /> Our process</p>
-          <h2>Know what happens next, from discovery to launch.</h2>
+          <h2>Our working process, from first call to launch.</h2>
           <p>
-            Every project follows a structured process for clarity and
-            consistency. We collaborate with you from planning through
-            design, development, testing and launch.
+            A clear series of steps keeps the project moving and gives you a
+            chance to review the work along the way.
           </p>
-          <div className="approach-image-wrap">
-            <Image
-              className="section-image approach-image"
-              src="/images/process-team-photo.jpg"
-              alt="Stock photograph of colleagues discussing work around a laptop"
-              width={1200}
-              height={800}
-              sizes="(max-width: 1023px) 100vw, 40vw"
-            />
-            <span className="image-caption">Better work, built together <span aria-hidden="true">✳</span></span>
-          </div>
         </header>
 
-        <ol className="process-steps-grid grid gap-6 sm:grid-cols-2">
+        <ol className="process-steps-grid">
           {steps.map((step, index) => (
-            <li key={step.title} className="process-card rounded-2xl border border-line bg-paper p-6">
-              <span className="text-xs font-semibold text-violet">0{index + 1}</span>
-              <h3 className="mt-3 text-xl">{step.title}</h3>
-              <p className="mt-2 text-[15px] leading-7 text-muted">{step.body}</p>
+            <li key={step.title} className="process-card">
+              <span className="process-step-icon" aria-hidden="true">
+                {["◌", "⌘", "✳", "‹/›", "✓", "↗"][index]}
+              </span>
+              <span className="process-step-number">0{index + 1}</span>
+              <h3>{step.title}</h3>
+              <p>{step.body}</p>
             </li>
           ))}
         </ol>

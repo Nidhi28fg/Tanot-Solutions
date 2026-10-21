@@ -1,7 +1,7 @@
 const offerings = [
-  "Conversion-focused journeys",
+  "Custom website design",
   "SEO-aware foundations",
-  "Custom development",
+  "eCommerce experiences",
   "Responsive by design",
 ];
 
@@ -14,20 +14,20 @@ export default function Hero() {
       <div className="hero-orb hero-orb-blue" aria-hidden="true" />
       <div className="container-page relative grid items-center gap-12 pb-16 pt-14 lg:grid-cols-[1fr_0.95fr] lg:gap-10 lg:pb-28 lg:pt-20">
         <div className="hero-copy">
-          <p className="eyebrow"><span className="eyebrow-dot" /> Independent digital studio · India & worldwide</p>
+          <p className="eyebrow"><span className="eyebrow-dot" /> Website design & development · India & worldwide</p>
           <h1 className="hero-title max-w-[13ch] text-[3.15rem] leading-[0.99] sm:text-6xl lg:text-[5.15rem]">
-            Websites that <em className="font-serif text-violet">turn visitors into customers.</em>
+            Websites designed to <em className="font-serif text-violet">grow your business.</em>
           </h1>
           <p className="mt-6 max-w-lg text-base leading-7 text-muted lg:text-lg lg:leading-8">
-            Guffo Solution builds custom websites for businesses, designed to
-            build trust, attract the right customers and bring more enquiries.
+            From business websites to eCommerce stores, we build digital
+            experiences designed to attract customers and support your goals.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a href="#contact" className="btn btn-cta">
-              Book a free consultation <span aria-hidden="true">↗</span>
+              Get free consultation <span aria-hidden="true">↗</span>
             </a>
             <a href="#proof" className="btn btn-text">
-              View recent work <span aria-hidden="true">↘</span>
+              View portfolio <span aria-hidden="true">↘</span>
             </a>
           </div>
           <p className="hero-cta-note">
@@ -43,7 +43,7 @@ export default function Hero() {
           </ul>
         </div>
 
-        <div className="hero-art relative mx-auto w-full max-w-[760px]" role="img" aria-label="Illustrative website concept designed by Guffo Solution, displayed in a floating browser window">
+        <div className="hero-art relative mx-auto w-full max-w-[760px]" role="img" aria-label="Illustrative responsive website concept displayed on laptop and mobile screens">
           <div className="hero-art-glow" aria-hidden="true" />
           <div className="browser-window hero-browser" aria-hidden="true">
             <div className="browser-bar">
@@ -76,9 +76,21 @@ export default function Hero() {
           </div>
           <div className="hero-float-label hero-float-top"><span>✳</span> A DISTINCTIVE DIGITAL PRESENCE</div>
           <div className="hero-float-label hero-float-bottom"><span>01 / 03</span> Strategy → Design → Development</div>
+          <div className="hero-mobile-preview" aria-hidden="true">
+            <span className="hero-mobile-camera" />
+            <span className="hero-mobile-brand"><i /> GUFFO</span>
+            <span className="hero-mobile-copy">A better<br /><em>digital home.</em></span>
+            <span className="hero-mobile-button">Explore <b>↗</b></span>
+            <span className="hero-mobile-image"><i /><i /><i /></span>
+          </div>
           <div className="hero-float-card" aria-hidden="true">
-            <span>DESIGN · DEVELOPMENT</span>
+            <span>DESIGNED FOR EVERY SCREEN</span>
             <strong>One thoughtful experience.</strong>
+          </div>
+          <div className="hero-proof-card" aria-hidden="true">
+            <span>STRATEGY</span>
+            <span>DESIGN</span>
+            <span>DEVELOPMENT</span>
           </div>
         </div>
       </div>

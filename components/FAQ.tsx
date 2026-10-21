@@ -2,59 +2,29 @@ import Image from "next/image";
 
 const questions = [
   {
-    question: "What kinds of websites do you create?",
+    question: "How long does a website take?",
     answer:
-      "We design, redesign and develop websites for businesses across industries. We shape the scope around your audience, requirements and goals.",
+      "Timelines depend on the agreed scope, content, features, and feedback cycle. After discussing your project, we will outline a realistic schedule before work begins.",
+  },
+  {
+    question: "Will my website be mobile-friendly?",
+    answer:
+      "Yes. We plan responsive layouts and check the agreed website experience across key screen sizes.",
+  },
+  {
+    question: "Do you provide hosting?",
+    answer:
+      "We can discuss hosting options and setup guidance that fit your website. Any hosting arrangements are confirmed as part of the project scope.",
   },
   {
     question: "Can you redesign my existing website?",
     answer:
-      "Yes. We can review what is working, identify friction in the experience, and create a refreshed design and build plan that fits your brand and business needs.",
+      "Yes. We can review your current website and plan a redesign around your brand, audience, and business needs.",
   },
   {
-    question: "Why choose a custom website over a template?",
+    question: "Do you offer SEO?",
     answer:
-      "A custom website lets us shape the design, content structure and functionality around your brand and requirements. A template can still be a good fit for simpler needs, and we can discuss which approach makes sense for your project.",
-  },
-  {
-    question: "Will my website be SEO-ready?",
-    answer:
-      "We can build with technical SEO foundations in mind, including structured pages, responsive layouts and page-specific metadata. Search rankings depend on many factors and cannot be guaranteed by a website build alone.",
-  },
-  {
-    question: "What technologies do you use?",
-    answer:
-      "Our current web stack includes Next.js, React, TypeScript and Tailwind CSS. We recommend an approach based on your project goals, features and content needs.",
-  },
-  {
-    question: "Can I update my website content myself?",
-    answer:
-      "Yes, when your project needs it we can include a content management system and guide you through updating the agreed content. The right CMS depends on your requirements.",
-  },
-  {
-    question: "Do you provide hosting guidance?",
-    answer:
-      "Yes. We can discuss hosting options that suit your website and help you understand the setup needed for launch. Hosting arrangements are agreed as part of the project scope.",
-  },
-  {
-    question: "Do you work with clients outside India?",
-    answer:
-      "Yes. Guffo Solution works with customers in India and internationally, collaborating remotely across time zones.",
-  },
-  {
-    question: "How long does a website project take?",
-    answer:
-      "Timing depends on the scope, content, features and feedback cycle. After understanding your project, we will outline a realistic schedule before work begins.",
-  },
-  {
-    question: "Can you help after the website launches?",
-    answer:
-      "Yes. Ongoing support can include maintenance, updates, new pages and future improvements. We can discuss the right level of support for your team.",
-  },
-  {
-    question: "How is website project pricing determined?",
-    answer:
-      "Every project is unique. Pricing depends on its scope, requirements and timeline. After discussing what you need, we can prepare a custom proposal.",
+      "We can include SEO foundations such as clear page structure, metadata, and technical best practices. Search rankings depend on many factors, so specific results cannot be guaranteed.",
   },
 ];
 
