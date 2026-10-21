@@ -8,12 +8,12 @@ export default function CtaBand() {
           <div className="max-w-xl">
             <p className="eyebrow-light"><span className="eyebrow-dot" /> Clear, custom pricing</p>
             <h2 className="text-[1.75rem] leading-tight text-white md:text-[2.5rem]">
-              A proposal shaped around your project.
+              Ready to build a website that supports your business goals?
             </h2>
             <p className="mt-4 text-base leading-7 text-white/70">
-              Every project is unique. Pricing depends on scope, requirements
-              and timeline; we provide a custom proposal after discussing
-              what you need.
+              Let&apos;s discuss what your website needs to achieve and plan
+              the next step together. Project costs vary with scope, features
+              and timeline; every proposal is customized.
             </p>
           </div>
           <Image
@@ -25,7 +25,7 @@ export default function CtaBand() {
             sizes="(max-width: 767px) 100vw, 34vw"
           />
           <a href="#contact" className="btn btn-cta shrink-0">
-            Get a custom estimate <span aria-hidden="true">↗</span>
+            Request a free consultation <span aria-hidden="true">↗</span>
           </a>
         </div>
       </div>

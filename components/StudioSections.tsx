@@ -26,18 +26,61 @@ const industries = [
 const principles = [
   {
     number: "01",
-    title: "Easy to navigate",
-    description: "Clear page structure helps visitors find the information they need.",
+    title: "More qualified enquiries",
+    description: "Clear service information and calls to action can help the right visitors take the next step.",
   },
   {
     number: "02",
-    title: "Ready for every screen",
-    description: "Layouts are planned for mobile, tablet and desktop from the start.",
+    title: "A stronger first impression",
+    description: "A considered, consistent brand experience helps your business make a more professional introduction.",
   },
   {
     number: "03",
-    title: "Reviewed with care",
-    description: "Quality checks help review the agreed pages and functionality before launch.",
+    title: "A smoother user experience",
+    description: "Thoughtful navigation and responsive layouts make key information easier to find across devices.",
+  },
+  {
+    number: "04",
+    title: "More useful engagement",
+    description: "Relevant content and clear journeys give visitors useful reasons to explore your offer.",
+  },
+  {
+    number: "05",
+    title: "A sound SEO foundation",
+    description: "Structured pages and technical SEO best practices help search engines understand your content.",
+  },
+  {
+    number: "06",
+    title: "Room to grow",
+    description: "A flexible build can make it easier to add content and functionality as your needs change.",
+  },
+];
+
+const comparisonRows = [
+  {
+    topic: "Design & branding",
+    builder: "Start from a shared theme and adapt what it allows",
+    custom: "Shape the design around your brand and customer journey",
+  },
+  {
+    topic: "Features",
+    builder: "Work within the builder's available blocks and add-ons",
+    custom: "Plan functionality and integrations around your requirements",
+  },
+  {
+    topic: "Search foundations",
+    builder: "SEO controls vary by platform, plan and setup",
+    custom: "Plan page structure and technical SEO for your content",
+  },
+  {
+    topic: "Performance",
+    builder: "Performance depends on the platform, theme and add-ons",
+    custom: "Tune the build for the agreed pages and functionality",
+  },
+  {
+    topic: "Growth",
+    builder: "Future changes depend on platform capabilities",
+    custom: "Choose an approach that can support your planned next steps",
   },
 ];
 
@@ -56,17 +99,59 @@ const promises = [
   },
 ];
 
+export function CustomVsBuilder() {
+  return (
+    <section className="section comparison-section" aria-labelledby="custom-vs-builder">
+      <div className="container-page">
+        <header className="section-head mb-10">
+          <p className="eyebrow"><span className="eyebrow-dot" /> Choose the right foundation</p>
+          <h2 id="custom-vs-builder">Custom website or page builder?</h2>
+          <p>
+            Page builders can work well for a simple site and a tight budget.
+            Custom development gives more room to shape the experience when
+            your brand, features or growth plans need it.
+          </p>
+        </header>
+        <div className="overflow-x-auto rounded-2xl border border-line">
+          <table className="w-full min-w-[660px] border-collapse text-left">
+            <thead>
+              <tr className="bg-white/[0.04]">
+                <th scope="col" className="w-[22%] px-5 py-4 text-sm font-semibold text-muted md:px-7">Consideration</th>
+                <th scope="col" className="w-[39%] px-5 py-4 text-sm font-semibold text-muted md:px-7">Page builder</th>
+                <th scope="col" className="px-5 py-4 text-sm font-semibold text-violet md:px-7">Custom website</th>
+              </tr>
+            </thead>
+            <tbody>
+              {comparisonRows.map((row) => (
+                <tr key={row.topic} className="border-t border-line">
+                  <th scope="row" className="px-5 py-4 text-sm font-medium md:px-7">{row.topic}</th>
+                  <td className="px-5 py-4 text-sm leading-6 text-muted md:px-7">{row.builder}</td>
+                  <td className="px-5 py-4 text-sm leading-6 text-muted md:px-7">{row.custom}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-4 text-sm leading-6 text-muted">
+          The best option depends on your needs, timeline and budget. We can
+          help you compare the trade-offs before you decide.
+        </p>
+      </div>
+    </section>
+  );
+}
+
 export function StudioIntroduction() {
   return (
     <section className="section studio-intro-section" id="studio">
       <div className="container-page studio-intro-grid">
         <header className="section-head">
           <p className="eyebrow"><span className="eyebrow-dot" /> Guffo Solution</p>
-          <h2>Website design and development, shaped around your goals.</h2>
+          <h2>Your website is often the first impression of your business.</h2>
           <p>
-            Based in India and working with businesses in India and worldwide,
-            we provide website design, redesign and development. Every project
-            is scoped around its requirements.
+            Visitors often decide within seconds whether they trust a business.
+            Your website should help make that decision easier. Guffo Solution
+            builds custom websites designed to support that first impression.
           </p>
           <a className="studio-inline-link" href="#contact">
             Tell us what you&apos;re planning <span aria-hidden="true">↗</span>
@@ -82,6 +167,33 @@ export function StudioIntroduction() {
           />
           <span className="studio-photo-caption">Website design · Redesign · Development</span>
         </div>
+      </div>
+    </section>
+  );
+}
+
+export function FounderIntroduction() {
+  return (
+    <section className="section" aria-labelledby="founder-introduction">
+      <div className="container-page">
+        <article className="glass-card grid gap-6 rounded-2xl border border-line p-7 shadow-card md:grid-cols-[auto_1fr] md:items-center md:gap-8 md:p-10">
+          <div
+            aria-hidden="true"
+            className="grid h-16 w-16 place-items-center rounded-2xl border border-violet/30 bg-violet/10 font-serif text-3xl text-violet"
+          >
+            N
+          </div>
+          <div>
+            <p className="eyebrow"><span className="eyebrow-dot" /> A personal approach</p>
+            <h2 id="founder-introduction" className="text-2xl md:text-3xl">Hi, I&apos;m Nidhi.</h2>
+            <p className="mt-3 max-w-3xl text-[15px] leading-7 text-muted">
+              I help businesses create websites that are clear, fast and
+              focused on generating enquiries. I believe the best projects
+              start with understanding your goals and communicating openly
+              throughout the work.
+            </p>
+          </div>
+        </article>
       </div>
     </section>
   );
@@ -129,11 +241,12 @@ export function WebsiteStandards() {
     <section className="section standards-section" id="standards">
       <div className="container-page standards-grid">
         <header className="section-head">
-          <p className="eyebrow"><span className="eyebrow-dot" /> The details matter</p>
-          <h2>Good design should work beautifully, too.</h2>
+          <p className="eyebrow"><span className="eyebrow-dot" /> The value of a better website</p>
+          <h2>What a better website can help you achieve.</h2>
           <p>
-            We focus on clear structure, responsive layouts and thoughtful
-            details alongside the visual design.
+            A website cannot guarantee business results, but a clear,
+            accessible and well-structured experience can give visitors better
+            reasons and easier ways to take action.
           </p>
           <div className="standards-image-wrap">
             <Image
@@ -205,16 +318,28 @@ export function StudioPartnership() {
 export function WhyTanot() {
   const principles = [
     {
-      title: "Thoughtful design",
-      description: "Visual decisions and page structure are shaped around your business and its audience.",
+      title: "Conversion-focused journeys",
+      description: "Clear page structure and calls to action guide visitors toward a useful next step.",
     },
     {
-      title: "Clear communication",
-      description: "We collaborate closely and keep project conversations focused on requirements and decisions.",
+      title: "SEO-ready foundations",
+      description: "We consider page structure, metadata and technical SEO best practices from the start.",
     },
     {
-      title: "Modern web development",
-      description: "We build responsive websites and review the agreed experience before launch.",
+      title: "Performance-minded builds",
+      description: "We keep performance in mind while building and reviewing the agreed website experience.",
+    },
+    {
+      title: "Mobile-first experience",
+      description: "We plan responsive layouts so key content and actions work across screen sizes.",
+    },
+    {
+      title: "No template lock-in",
+      description: "Design and functionality are shaped around your brief, not constrained to a one-size-fits-all theme.",
+    },
+    {
+      title: "Direct project communication",
+      description: "Discuss requirements and decisions directly with the people working on your website.",
     },
   ];
 
@@ -223,11 +348,11 @@ export function WhyTanot() {
       <div className="container-page">
         <div className="why-tanot-intro">
           <header className="section-head">
-            <p className="eyebrow"><span className="eyebrow-dot" /> Why work with us</p>
-            <h2>Trust built through the way we work.</h2>
+            <p className="eyebrow"><span className="eyebrow-dot" /> Why choose Guffo Solution?</p>
+            <h2>A website partner focused on your next step.</h2>
             <p>
-              Thoughtful design, clear communication and reliable delivery are
-              the principles we bring to each project.
+              From the first page to post-launch support, we focus on a useful
+              website foundation shaped around your goals and customers.
             </p>
           </header>
           <figure className="why-tanot-visual">

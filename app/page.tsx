@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Approach from "@/components/Approach";
 import Contact from "@/components/Contact";
 import CtaBand from "@/components/CtaBand";
+import EmployeeTestimonials from "@/components/EmployeeTestimonials";
 import Hero from "@/components/Hero";
 import FAQ from "@/components/FAQ";
 import LogoBar from "@/components/LogoBar";
@@ -11,6 +12,8 @@ import StickyCta from "@/components/StickyCta";
 import StudioTicker from "@/components/StudioTicker";
 import {
   IndustriesSection,
+  CustomVsBuilder,
+  FounderIntroduction,
   LaunchSupport,
   StudioIntroduction,
   StudioPartnership,
@@ -30,18 +33,21 @@ export default function HomePage() {
       <Hero />
       <LogoBar />
       <Proof />
+      <EmployeeTestimonials />
       <StudioTicker />
       <StudioIntroduction />
+      <FounderIntroduction />
       <Services />
+      <CustomVsBuilder />
+      <Contact />
       <IndustriesSection />
       <Approach />
       <WebsiteStandards />
       <StudioPartnership />
       <WhyTanot />
       <LaunchSupport />
-      <CtaBand />
       <FAQ />
-      <Contact />
+      <CtaBand />
       <StickyCta />
     </main>
   );

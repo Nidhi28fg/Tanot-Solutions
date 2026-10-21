@@ -37,9 +37,21 @@ export default function StickyCta() {
 
   return (
     <aside className={`sticky-cta ${visible ? "is-visible" : ""}`} aria-label="Start a website project" aria-hidden={!visible}>
-      <span className="sticky-cta-copy">Planning a website? <span>Let&apos;s discuss the scope.</span></span>
-      <a href="#contact" tabIndex={visible ? 0 : -1}>
-        Request a quote <span aria-hidden="true">↗</span>
+      <span className="sticky-cta-copy">Need a website? <span>Get free project advice.</span></span>
+      <a
+        href="https://wa.me/918860523651?text=Hi%20Guffo%20Solution%2C%20I%27d%20like%20free%20website%20advice."
+        target="_blank"
+        rel="noreferrer"
+        tabIndex={visible ? 0 : -1}
+      >
+        WhatsApp <span aria-hidden="true">↗</span>
+      </a>
+      <a
+        className="sticky-cta-call"
+        href="tel:+918860523651"
+        tabIndex={visible ? 0 : -1}
+      >
+        Call <span aria-hidden="true">↗</span>
       </a>
     </aside>
   );

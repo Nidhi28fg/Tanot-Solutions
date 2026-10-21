@@ -9,30 +9,33 @@ const filters = ["All", "E-commerce", "Healthcare", "Hospitality"] as const;
 const work = [
   {
     number: "01",
-    title: "Product discovery concept",
+    title: "E-commerce design exploration",
     type: "E-commerce",
     className: "project-retail",
-    image: "/images/portfolio-retail.svg",
-    imageAlt: "Original e-commerce concept visual showing a storefront layout and product graphic",
-    detail: "Illustrative e-commerce direction exploring product discovery and clear paths through a storefront. This is a concept, not a client project.",
+    image: "/images/concept-commerce-preview.svg",
+    imageAlt: "Original demo e-commerce website concept shown in a desktop browser frame",
+    goal: "Make product discovery and key shopping paths easy to explore.",
+    detail: "Designed to make product discovery and key shopping paths easier to explore. This is a concept direction, not a measured client result.",
   },
   {
     number: "02",
-    title: "Healthcare information concept",
+    title: "Healthcare website exploration",
     type: "Healthcare",
     className: "project-health",
-    image: "/images/portfolio-health.svg",
-    imageAlt: "Original healthcare concept visual showing a mobile service interface",
-    detail: "Illustrative healthcare direction exploring clear service information and accessible page structure. This is a concept, not a client project.",
+    image: "/images/concept-healthcare-preview.svg",
+    imageAlt: "Original demo healthcare website concept shown in a desktop browser frame",
+    goal: "Make healthcare services and next steps easier to understand.",
+    detail: "Designed to make healthcare services and next steps easier to understand. This is a concept direction, not a measured client result.",
   },
   {
     number: "03",
-    title: "Hospitality discovery concept",
+    title: "Hospitality website exploration",
     type: "Hospitality",
     className: "project-stay",
     image: "/images/portfolio-hospitality.svg",
     imageAlt: "Original hospitality concept visual showing a destination-inspired website direction",
-    detail: "Illustrative hospitality direction exploring destination imagery and stay information. This is a concept, not a client project.",
+    goal: "Bring destination details and stay options into a clearer journey.",
+    detail: "Designed to bring destination information and stay options into a clear browsing journey. This is a concept direction, not a measured client result.",
   },
 ];
 
@@ -47,12 +50,12 @@ export default function Proof() {
     <section className="section portfolio-section" id="proof">
       <div className="container-page">
         <header className="section-head mb-10">
-          <p className="eyebrow"><span className="eyebrow-dot" /> Selected work</p>
-          <h2>See how we approach different website goals.</h2>
+          <p className="eyebrow"><span className="eyebrow-dot" /> Design explorations</p>
+          <h2>Sample website concepts, made to show our approach.</h2>
           <p>
-            These original concept visuals show how we think about structure,
-            visual direction and user journeys. They are clearly labelled
-            concepts—not client projects, testimonials or performance claims.
+            Explore original demo website concepts demonstrating our design
+            approach. These are illustrative previews with fictional content,
+            not published client projects or performance case studies.
           </p>
         </header>
 
@@ -81,7 +84,7 @@ export default function Proof() {
                   fill
                   sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
                 />
-                <figcaption className="project-tag">Concept visual · not client work</figcaption>
+                <figcaption className="project-tag">Demo concept · not client work</figcaption>
               </figure>
               <div className="project-info">
                 <div className="flex items-start justify-between gap-3">
@@ -91,8 +94,12 @@ export default function Proof() {
                   </div>
                   <span className="pt-1 text-xs font-semibold text-muted">{project.number}</span>
                 </div>
+                <p className="mt-4 text-sm leading-6 text-muted">
+                  <strong className="font-semibold text-ink">Design goal (concept):</strong>{" "}
+                  {project.goal}
+                </p>
                 <details className="project-details">
-                  <summary>About this concept <span aria-hidden="true">↗</span></summary>
+                  <summary>Design intent <span aria-hidden="true">↗</span></summary>
                   <p>{project.detail}</p>
                 </details>
               </div>

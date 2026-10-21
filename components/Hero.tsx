@@ -19,21 +19,19 @@ export default function Hero() {
             Websites that <em className="font-serif text-violet">turn visitors into customers.</em>
           </h1>
           <p className="mt-6 max-w-lg text-base leading-7 text-muted lg:text-lg lg:leading-8">
-            We design and develop custom websites that make your offer clear,
-            build trust and guide the right visitors toward becoming customers.
-            SEO-conscious structure and thoughtful user journeys help support
-            your business growth.
+            Guffo Solution builds custom websites for businesses, designed to
+            build trust, attract the right customers and bring more enquiries.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a href="#contact" className="btn btn-cta">
-              Get a free consultation <span aria-hidden="true">↗</span>
+              Book a free consultation <span aria-hidden="true">↗</span>
             </a>
             <a href="#proof" className="btn btn-text">
-              View our work <span aria-hidden="true">↘</span>
+              View recent work <span aria-hidden="true">↘</span>
             </a>
           </div>
           <p className="hero-cta-note">
-            Start with a practical conversation about your goals and next steps.
+            Start your project discussion today—no obligation.
           </p>
           <ul aria-label="How our websites are built" className="mt-8 grid gap-3 text-sm font-medium text-muted sm:grid-cols-2">
             {offerings.map((offering) => (
@@ -45,7 +43,7 @@ export default function Hero() {
           </ul>
         </div>
 
-        <div className="hero-art relative mx-auto w-full max-w-[760px]" role="img" aria-label="Illustrative website concept displayed in a floating browser window">
+        <div className="hero-art relative mx-auto w-full max-w-[760px]" role="img" aria-label="Illustrative website concept designed by Guffo Solution, displayed in a floating browser window">
           <div className="hero-art-glow" aria-hidden="true" />
           <div className="browser-window hero-browser" aria-hidden="true">
             <div className="browser-bar">
@@ -55,7 +53,7 @@ export default function Hero() {
                 <i className="browser-dot bg-[#64dfda]" />
               </span>
               <span className="browser-url">guffosolution.com / concept</span>
-              <span className="browser-status">LIVE PREVIEW</span>
+              <span className="browser-status">CONCEPT PREVIEW</span>
             </div>
             <div className="mock-site hero-mock-site">
               <div className="mock-nav">
