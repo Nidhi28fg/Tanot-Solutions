@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Approach from "@/components/Approach";
 import Contact from "@/components/Contact";
 import CtaBand from "@/components/CtaBand";
@@ -17,18 +18,24 @@ import {
   WhyTanot,
 } from "@/components/StudioSections";
 
+export const metadata: Metadata = {
+  title: "Websites Designed to Grow Your Business | Guffo Solution",
+  description:
+    "Guffo Solution designs and develops custom, SEO-conscious websites that build trust, clarify your offer and help turn visitors into customers.",
+};
+
 export default function HomePage() {
   return (
     <main id="main" className="home-page">
       <Hero />
       <LogoBar />
+      <Proof />
       <StudioTicker />
       <StudioIntroduction />
       <Services />
       <IndustriesSection />
       <Approach />
       <WebsiteStandards />
-      <Proof />
       <StudioPartnership />
       <WhyTanot />
       <LaunchSupport />

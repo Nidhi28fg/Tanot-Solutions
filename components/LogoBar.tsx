@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const trustPoints = [
-  { mark: "✳", label: "Across industries" },
-  { mark: "↗", label: "India & worldwide" },
-  { mark: "◇", label: "Design to development" },
-  { mark: "✓", label: "Built around your goals" },
+  { mark: "✳", label: "Conversion-focused journeys" },
+  { mark: "↗", label: "SEO-aware foundations" },
+  { mark: "◇", label: "Responsive by design" },
+  { mark: "✓", label: "Custom-built for your goals" },
 ];
 
 export default function LogoBar() {

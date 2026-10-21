@@ -1,4 +1,9 @@
-const offerings = ["Custom design", "Responsive development", "Strategy-led", "India & worldwide"];
+const offerings = [
+  "Conversion-focused journeys",
+  "SEO-aware foundations",
+  "Custom development",
+  "Responsive by design",
+];
 
 export default function Hero() {
   return (
@@ -11,28 +16,29 @@ export default function Hero() {
         <div className="hero-copy">
           <p className="eyebrow"><span className="eyebrow-dot" /> Independent digital studio · India & worldwide</p>
           <h1 className="hero-title max-w-[13ch] text-[3.15rem] leading-[0.99] sm:text-6xl lg:text-[5.15rem]">
-            Custom websites. <em className="font-serif text-violet">Built for your goals.</em>
+            Websites that <em className="font-serif text-violet">turn visitors into customers.</em>
           </h1>
           <p className="mt-6 max-w-lg text-base leading-7 text-muted lg:text-lg lg:leading-8">
-            We plan, design and develop responsive websites around your
-            business, customers and workflows—so visitors can understand what
-            you offer and what to do next.
+            We design and develop custom websites that make your offer clear,
+            build trust and guide the right visitors toward becoming customers.
+            SEO-conscious structure and thoughtful user journeys help support
+            your business growth.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a href="#contact" className="btn btn-cta">
-              Request a custom estimate <span aria-hidden="true">↗</span>
+              Get a free consultation <span aria-hidden="true">↗</span>
             </a>
-            <a href="#services" className="btn btn-text">
-              Explore website services <span aria-hidden="true">↓</span>
+            <a href="#proof" className="btn btn-text">
+              View our work <span aria-hidden="true">↘</span>
             </a>
           </div>
           <p className="hero-cta-note">
-            Start with a conversation about your goals, scope and timeline.
+            Start with a practical conversation about your goals and next steps.
           </p>
-          <ul className="mt-10 flex flex-wrap gap-x-5 gap-y-2 text-xs font-semibold uppercase tracking-[0.13em] text-muted">
+          <ul aria-label="How our websites are built" className="mt-8 grid gap-3 text-sm font-medium text-muted sm:grid-cols-2">
             {offerings.map((offering) => (
               <li key={offering} className="flex items-center gap-2">
-                <span className="h-1 w-1 rounded-full bg-orange" />
+                <span className="font-semibold text-violet" aria-hidden="true">✓</span>
                 {offering}
               </li>
             ))}

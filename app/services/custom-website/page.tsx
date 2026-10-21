@@ -35,6 +35,82 @@ const benefits = [
     description:
       "Start with what you need today, with a flexible foundation that can support new content, features and opportunities over time.",
   },
+  {
+    number: "04",
+    title: "A better SEO foundation",
+    description:
+      "Purposeful page structure and technical SEO best practices help search engines understand your content. Rankings still depend on many factors beyond a website build.",
+  },
+  {
+    number: "05",
+    title: "Performance without the bloat",
+    description:
+      "A considered build avoids unnecessary plugins and code, supporting faster load times and a smoother experience across devices.",
+  },
+  {
+    number: "06",
+    title: "Designed for conversion potential",
+    description:
+      "Clear journeys, useful calls to action and relevant content can make it easier for visitors to take the next step.",
+  },
+];
+
+const heroHighlights = [
+  "Bespoke design",
+  "SEO-ready architecture",
+  "Performance-minded build",
+  "Scalable foundations",
+  "CRM & API integrations",
+  "Customer-focused journeys",
+];
+
+const comparisonRows = [
+  ["Design", "Generic layouts", "Distinctive design shaped around your brand"],
+  ["Features", "Limited by the theme", "Flexible functionality for your requirements"],
+  ["Integrations", "Often relies on plugins", "Purpose-built development and connections"],
+  ["Scalability", "Can be difficult to extend", "Architecture planned for future growth"],
+  ["Performance", "Varies by theme and plugins", "Performance considered throughout the build"],
+];
+
+const capabilities = [
+  "Custom dashboards",
+  "Booking systems",
+  "Lead management",
+  "CRM integrations",
+  "Multi-step forms",
+  "Payment gateways",
+  "Membership portals",
+  "E-commerce solutions",
+  "API integrations",
+];
+
+const seoFoundations = [
+  "Clean, structured code",
+  "Technical SEO best practices",
+  "Mobile-first responsive design",
+  "Performance and Core Web Vitals considerations",
+  "Schema-ready content structure",
+  "Page-specific metadata",
+];
+
+const industries = [
+  "Startups",
+  "Healthcare",
+  "Real estate",
+  "Education",
+  "SaaS",
+  "Manufacturing",
+  "E-commerce",
+  "Professional services",
+];
+
+const reasonsToChooseUs = [
+  "A dedicated team for your project",
+  "SEO-conscious development",
+  "Performance considered from the start",
+  "Clear, transparent communication",
+  "Post-launch support options",
+  "An architecture designed to scale",
 ];
 
 const inclusions = [
@@ -66,32 +142,36 @@ const steps = [
     title: "Discover",
     description:
       "Discuss your goals, audience, requirements and priorities. Together, we define a clear scope.",
+    deliverables: ["Competitor review", "Sitemap", "User journey mapping"],
   },
   {
     number: "02",
     title: "Design",
     description:
       "Explore the visual direction, then review and refine custom layouts and prototypes.",
+    deliverables: ["Wireframes", "UI mockups", "Design direction"],
   },
   {
     number: "03",
     title: "Develop & test",
     description:
       "Build the approved experience and check it across key screen sizes and user journeys.",
+    deliverables: ["Responsive website", "Agreed CMS setup", "Analytics configuration"],
   },
   {
     number: "04",
     title: "Launch & hand over",
     description:
       "Prepare for launch, help your site go live and walk you through the handover.",
+    deliverables: ["Launch checklist", "Site handover", "Next-step guidance"],
   },
 ];
 
 const technologies = [
-  { name: "Next.js", badge: "N", detail: "Web framework", color: "#c5b7ff" },
-  { name: "React", badge: "⚛", detail: "UI library", color: "#79ddff" },
-  { name: "Tailwind CSS", badge: "≈", detail: "Utility-first styling", color: "#75e0d2" },
-  { name: "TypeScript", badge: "TS", detail: "Typed JavaScript", color: "#81aaff" },
+  { name: "Next.js", badge: "N", detail: "Supports fast pages and SEO-friendly rendering", color: "#c5b7ff" },
+  { name: "React", badge: "⚛", detail: "Builds interactive, responsive experiences", color: "#79ddff" },
+  { name: "Tailwind CSS", badge: "≈", detail: "Enables consistent, responsive design systems", color: "#75e0d2" },
+  { name: "TypeScript", badge: "TS", detail: "Helps keep code reliable and maintainable", color: "#81aaff" },
 ];
 
 const concepts = [
@@ -122,16 +202,29 @@ export default function CustomWebsitePage() {
               <span className="eyebrow-dot" /> Custom website design &amp; development
             </p>
             <h1 className="mt-6 max-w-[15ch] text-[3rem] leading-[1.02] sm:text-6xl lg:text-[5rem]">
-              A website built around <em className="font-serif text-violet">your next move.</em>
+              Custom websites that <em className="font-serif text-violet">grow with your business.</em>
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
-              Your business isn&apos;t one-size-fits-all. We bring strategy,
-              custom design and thoughtful development together to create a
-              website that fits your goals—and gives your business room to grow.
+              Move beyond a one-size-fits-all template. Get a website shaped
+              around your brand, customer journeys and business goals—with the
+              flexibility to evolve as you do.
             </p>
-            <Link href="/#contact" className="btn btn-cta mt-8">
-              Request a custom estimate <span aria-hidden="true">↗</span>
-            </Link>
+            <ul className="mt-6 grid gap-3 sm:grid-cols-2" aria-label="Custom website benefits">
+              {heroHighlights.map((highlight) => (
+                <li key={highlight} className="flex items-center gap-2 text-sm text-muted">
+                  <span className="font-semibold text-violet" aria-hidden="true">✓</span>
+                  {highlight}
+                </li>
+              ))}
+            </ul>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link href="/#contact" className="btn btn-cta">
+                Get a free website strategy call <span aria-hidden="true">↗</span>
+              </Link>
+              <Link href="/#contact" className="btn btn-ghost">
+                Request a custom proposal
+              </Link>
+            </div>
             <p className="mt-4 text-sm text-muted">
               Based in India · Working with ambitious businesses worldwide
             </p>
@@ -149,6 +242,40 @@ export default function CustomWebsitePage() {
               Strategy · Design · Development
             </figcaption>
           </figure>
+        </div>
+      </section>
+
+      <section className="section bg-paper-2" aria-labelledby="template-comparison">
+        <div className="container-page">
+          <header className="section-head mb-10">
+            <p className="eyebrow"><span className="eyebrow-dot" /> Template or custom?</p>
+            <h2 id="template-comparison">A website should fit your business—not the other way around.</h2>
+            <p>
+              Templates can be a practical starting point. A custom website
+              gives you more control when your brand, workflows or growth plans
+              need a more tailored fit.
+            </p>
+          </header>
+          <div className="overflow-x-auto rounded-2xl border border-line">
+            <table className="w-full min-w-[620px] border-collapse text-left">
+              <thead>
+                <tr className="bg-white/[0.04]">
+                  <th scope="col" className="w-[28%] px-5 py-4 text-sm font-semibold text-muted md:px-7">Consideration</th>
+                  <th scope="col" className="w-[34%] px-5 py-4 text-sm font-semibold text-muted md:px-7">Template website</th>
+                  <th scope="col" className="px-5 py-4 text-sm font-semibold text-violet md:px-7">Custom website</th>
+                </tr>
+              </thead>
+              <tbody>
+                {comparisonRows.map(([consideration, template, custom]) => (
+                  <tr key={consideration} className="border-t border-line">
+                    <th scope="row" className="px-5 py-4 text-sm font-medium md:px-7">{consideration}</th>
+                    <td className="px-5 py-4 text-sm leading-6 text-muted md:px-7">{template}</td>
+                    <td className="px-5 py-4 text-sm leading-6 text-muted md:px-7">{custom}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
@@ -193,6 +320,28 @@ export default function CustomWebsitePage() {
               </figcaption>
             </figure>
           </div>
+        </div>
+      </section>
+
+      <section className="section bg-paper-2" aria-labelledby="custom-seo">
+        <div className="container-page grid gap-10 md:grid-cols-[0.8fr_1.2fr] md:items-center">
+          <header className="section-head">
+            <p className="eyebrow"><span className="eyebrow-dot" /> Search-ready foundations</p>
+            <h2 id="custom-seo">Built with SEO in mind from day one.</h2>
+            <p>
+              A website can support your search visibility with a solid
+              technical foundation. Rankings are never guaranteed, but we can
+              make your content easier to crawl, understand and use.
+            </p>
+          </header>
+          <ul className="grid gap-3 sm:grid-cols-2">
+            {seoFoundations.map((item) => (
+              <li key={item} className="glass-card flex items-start gap-3 rounded-xl border border-line p-5 text-sm leading-6 text-muted shadow-card">
+                <span className="mt-0.5 font-semibold text-violet" aria-hidden="true">✓</span>
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -246,6 +395,47 @@ export default function CustomWebsitePage() {
         </div>
       </section>
 
+      <section className="section" aria-labelledby="custom-capabilities">
+        <div className="container-page">
+          <header className="section-head mb-10">
+            <p className="eyebrow"><span className="eyebrow-dot" /> Made for the way you work</p>
+            <h2 id="custom-capabilities">What can a custom website do?</h2>
+            <p>
+              Choose the functionality your customers and team need. We&apos;ll
+              scope the right features and integrations for your project.
+            </p>
+          </header>
+          <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {capabilities.map((capability) => (
+              <li key={capability} className={`glass-card rounded-2xl border border-line p-6 text-base font-medium shadow-card ${styles.interactiveCard}`}>
+                <span className="mr-3 text-violet" aria-hidden="true">↗</span>
+                {capability}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="section bg-paper-2" aria-labelledby="custom-industries">
+        <div className="container-page grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-center">
+          <header className="section-head">
+            <p className="eyebrow"><span className="eyebrow-dot" /> Industry-aware, always custom</p>
+            <h2 id="custom-industries">Custom websites for ambitious businesses.</h2>
+            <p>
+              We tailor structure, content and functionality to your audience
+              and goals across a range of industries.
+            </p>
+          </header>
+          <ul className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+            {industries.map((industry) => (
+              <li key={industry} className="glass-card rounded-xl border border-line p-4 text-center text-sm font-medium shadow-card">
+                {industry}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       <section className="section" aria-labelledby="custom-tech">
         <div className="container-page grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-center">
           <header className="section-head">
@@ -269,6 +459,27 @@ export default function CustomWebsitePage() {
                   <span className={styles.stackLabel}>{technology.name}</span>
                   <span className={styles.stackDetail}>{technology.detail}</span>
                 </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="section bg-paper-2" aria-labelledby="why-guffo">
+        <div className="container-page">
+          <header className="section-head mb-10">
+            <p className="eyebrow"><span className="eyebrow-dot" /> A thoughtful partner</p>
+            <h2 id="why-guffo">Why choose Guffo Solution?</h2>
+            <p>
+              Get a collaborative team focused on a useful, maintainable
+              website—not just a launch-day finish line.
+            </p>
+          </header>
+          <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {reasonsToChooseUs.map((reason) => (
+              <li key={reason} className={`glass-card flex items-start gap-3 rounded-2xl border border-line p-6 text-sm leading-6 shadow-card ${styles.interactiveCard}`}>
+                <span className="font-semibold text-violet" aria-hidden="true">✓</span>
+                {reason}
               </li>
             ))}
           </ul>
@@ -299,6 +510,17 @@ export default function CustomWebsitePage() {
                   <p className="mt-3 text-sm leading-6 text-muted">
                     {step.description}
                   </p>
+                  <div className="mt-5 border-t border-line pt-4">
+                    <h4 className="text-xs font-semibold uppercase tracking-[0.1em] text-violet">Typical deliverables</h4>
+                    <ul className="mt-3 grid gap-2">
+                      {step.deliverables.map((deliverable) => (
+                        <li key={deliverable} className="flex items-start gap-2 text-sm leading-5 text-muted">
+                          <span className="text-violet" aria-hidden="true">·</span>
+                          {deliverable}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </li>
               ))}
             </ol>
@@ -451,9 +673,14 @@ export default function CustomWebsitePage() {
                 requirements and prepare a custom proposal shaped around your project.
               </p>
             </div>
-            <Link href="/#contact" className="btn btn-cta shrink-0">
-              Request a custom estimate <span aria-hidden="true">↗</span>
-            </Link>
+            <div className="flex shrink-0 flex-wrap gap-3">
+              <Link href="/#contact" className="btn btn-cta">
+                Get a free website strategy call <span aria-hidden="true">↗</span>
+              </Link>
+              <Link href="/#contact" className="btn btn-ghost">
+                Request a custom proposal
+              </Link>
+            </div>
           </div>
         </div>
       </section>
