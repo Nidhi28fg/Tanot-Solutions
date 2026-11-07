@@ -1,0 +1,258 @@
+/* Site-wide orange / amber accents on the dark studio theme */
+
+:root {
+  --orange: #f97316;
+  --orange-bright: #fb923c;
+  --amber: #f59e0b;
+  --orange-ink: #1a0d05;
+  --orange-glow: rgba(249, 115, 22, 0.28);
+  --orange-soft: rgba(249, 115, 22, 0.14);
+  --cta-orange: linear-gradient(110deg, #f97316 0%, #f59e0b 100%);
+  --cta-orange-hover: linear-gradient(110deg, #fb8533 0%, #fbbf24 100%);
+}
+
+/* Primary CTAs → orange */
+.btn-cta,
+.home-page .hero-section .btn-cta,
+.home-page .cta-panel .btn-cta {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: var(--cta-orange);
+  color: var(--orange-ink);
+  box-shadow:
+    0 10px 28px rgba(249, 115, 22, 0.38),
+    0 0 30px rgba(249, 115, 22, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.btn-cta:hover,
+.home-page .hero-section .btn-cta:hover,
+.home-page .cta-panel .btn-cta:hover {
+  background: var(--cta-orange-hover);
+  color: var(--orange-ink);
+  box-shadow:
+    0 14px 36px rgba(245, 158, 11, 0.45),
+    0 0 36px rgba(249, 115, 22, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.btn-ghost:hover {
+  border-color: rgba(249, 115, 22, 0.45);
+  background: rgba(249, 115, 22, 0.08);
+}
+
+/* Eyebrows, dots, ticks */
+.eyebrow-dot {
+  background: linear-gradient(135deg, var(--orange), var(--amber));
+  box-shadow: 0 0 14px rgba(249, 115, 22, 0.7), 0 0 0 4px rgba(249, 115, 22, 0.14);
+}
+
+.eyebrow,
+.eyebrow-light {
+  color: #fdba74;
+}
+
+.text-violet,
+.hero-section .hero-copy h1 em,
+.hero-section h1 em {
+  color: #fb923c;
+}
+
+.hero-section .hero-copy h1 em,
+.hero-section h1 em {
+  background: linear-gradient(105deg, #fb923c 0%, #f59e0b 42%, #fdba74 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-section .eyebrow {
+  color: #fdba74;
+}
+
+/* Mesh / orbs — warm orange in the mix */
+.hero-section {
+  background:
+    radial-gradient(ellipse at 78% 18%, rgba(249, 115, 22, 0.22), transparent 36%),
+    radial-gradient(ellipse at 12% 88%, rgba(99, 102, 241, 0.16), transparent 38%),
+    radial-gradient(ellipse at 55% 70%, rgba(245, 158, 11, 0.14), transparent 34%),
+    linear-gradient(140deg, #090a1c 0%, #12102b 48%, #0b0b20 100%);
+}
+
+.hero-orb-coral {
+  background: radial-gradient(circle at 42% 42%, rgba(251, 146, 60, 0.58), rgba(249, 115, 22, 0.14) 55%, transparent 72%) !important;
+  filter: blur(16px);
+  opacity: 0.9;
+}
+
+.hero-orb-violet {
+  background: radial-gradient(circle at 38% 36%, rgba(167, 139, 250, 0.45), rgba(249, 115, 22, 0.08) 58%, transparent 72%);
+}
+
+/* Cards / hover */
+.glass-card:hover,
+.service-card:hover,
+.project-card:hover,
+.testimonial-slot:hover,
+.process-card:hover {
+  border-color: rgba(249, 115, 22, 0.42);
+  box-shadow:
+    0 24px 58px rgba(0, 0, 0, 0.32),
+    0 0 30px rgba(249, 115, 22, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+.service-card > span,
+.process-card > span,
+.trust-badge > span,
+.project-details summary,
+.faq-contact-link,
+.portfolio-contact-link,
+.hero-section .btn-text:hover {
+  color: #fb923c;
+  text-shadow: 0 0 14px rgba(249, 115, 22, 0.35);
+}
+
+.portfolio-filter.is-active {
+  border-color: transparent;
+  background: var(--cta-orange);
+  color: var(--orange-ink);
+  box-shadow: 0 5px 24px rgba(249, 115, 22, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+}
+
+.project-tag {
+  border: 1px solid rgba(249, 115, 22, 0.4);
+  background: linear-gradient(110deg, rgba(249, 115, 22, 0.28), rgba(245, 158, 11, 0.16));
+  color: #ffedd5;
+  box-shadow: 0 0 16px rgba(249, 115, 22, 0.22);
+}
+
+/* Nav */
+.glass-nav > a:first-child > span:first-child {
+  background: var(--cta-orange);
+  box-shadow: 0 0 18px rgba(249, 115, 22, 0.45);
+}
+
+.glass-nav nav a:hover {
+  color: #fb923c;
+}
+
+.nav-scrolled .glass-nav {
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.33), 0 0 28px rgba(249, 115, 22, 0.12);
+}
+
+/* Contact / forms */
+#contact form input:focus,
+#contact form textarea:focus,
+#contact form select:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.16), 0 0 18px rgba(249, 115, 22, 0.14);
+}
+
+#contact .section-head a,
+#contact form [role="status"],
+.faq-contact-link:hover {
+  color: #fb923c;
+}
+
+/* CTA band */
+.cta-panel {
+  border-color: rgba(249, 115, 22, 0.28);
+  background:
+    radial-gradient(ellipse at 88% 16%, rgba(249, 115, 22, 0.4), transparent 36%),
+    radial-gradient(ellipse at 15% 120%, rgba(245, 158, 11, 0.22), transparent 42%),
+    linear-gradient(115deg, #3b1d12, #5c2a14 49%, #7c2d12);
+  box-shadow: 0 25px 70px rgba(80, 30, 10, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.cta-panel .eyebrow-light {
+  color: #fdba74;
+}
+
+/* Sticky / WhatsApp adjacency */
+.sticky-cta > a {
+  background: var(--cta-orange) !important;
+  color: var(--orange-ink) !important;
+  box-shadow: 0 5px 18px rgba(249, 115, 22, 0.35) !important;
+}
+
+.sticky-cta > a:hover {
+  background: var(--cta-orange-hover) !important;
+}
+
+/* Section dividers */
+main > section:not(.hero-section):not(.studio-ticker)::before {
+  background: linear-gradient(90deg, transparent, rgba(249, 115, 22, 0.45) 28%, rgba(245, 158, 11, 0.4) 72%, transparent);
+  box-shadow: 0 0 22px rgba(249, 115, 22, 0.2);
+}
+
+/* Studio ticker */
+.studio-ticker {
+  border-color: rgba(249, 115, 22, 0.28);
+  background: linear-gradient(100deg, #7c2d12 0%, #ea580c 48%, #c2410c 100%);
+  box-shadow: 0 10px 38px rgba(249, 115, 22, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+/* FAQ */
+.faq-item:hover,
+.faq-item[open] {
+  background: linear-gradient(100deg, rgba(249, 115, 22, 0.1), rgba(245, 158, 11, 0.05));
+}
+
+.faq-toggle {
+  border-color: rgba(249, 115, 22, 0.35);
+  background: rgba(249, 115, 22, 0.12);
+}
+
+.faq-toggle::before,
+.faq-toggle::after {
+  background: #fb923c;
+  box-shadow: 0 0 8px rgba(249, 115, 22, 0.45);
+}
+
+/* Footer */
+body > footer,
+body > footer.bg-paper-2 {
+  background:
+    radial-gradient(ellipse at 50% 0, rgba(249, 115, 22, 0.12), transparent 60%),
+    #080918;
+}
+
+body > footer a:hover {
+  color: #fb923c;
+}
+
+/* Service pages accent */
+[class*="custom-website"] .textLink,
+[class*="custom-website_textLink"],
+a.text-violet {
+  color: #fb923c;
+}
+
+/* Trust signals (replace empty testimonials) */
+.trust-signal-card {
+  min-height: 0;
+}
+
+.trust-signal-card h3 {
+  color: #fafafa;
+}
+
+.trust-signal-card .trust-signal-copy,
+.trust-signal-card > p.trust-signal-copy {
+  margin-top: 10px;
+  color: #a1a1aa;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.trust-signal-card .testimonial-mark {
+  height: auto;
+  color: #fb923c;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: 0 0 16px rgba(249, 115, 22, 0.4);
+}

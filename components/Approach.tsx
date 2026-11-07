@@ -1,3 +1,5 @@
+import SectionHead from "@/components/SectionHead";
+
 const steps = [
   {
     title: "Discovery call",
@@ -29,14 +31,12 @@ export default function Approach() {
   return (
     <section className="section approach-section" id="approach">
       <div className="container-page">
-        <header className="section-head mb-10">
-          <p className="eyebrow"><span className="eyebrow-dot" /> Our process</p>
-          <h2>Our working process, from first call to launch.</h2>
-          <p>
-            A clear series of steps keeps the project moving and gives you a
-            chance to review the work along the way.
-          </p>
-        </header>
+        <SectionHead
+          index="03"
+          kicker="Our process"
+          title="From first call to launch, without the fog."
+          support="A clear series of steps keeps the project moving and gives you space to review the work along the way."
+        />
 
         <ol className="process-steps-grid">
           {steps.map((step, index) => (

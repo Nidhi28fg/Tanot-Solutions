@@ -1,13 +1,13 @@
 .page {
-  --maintain-ink: #f8f7ff;
-  --maintain-muted: #c4c0d8;
-  --maintain-line: rgba(223, 211, 255, 0.18);
-  --maintain-violet: #b69aff;
+  --maintain-ink: #fafafa;
+  --maintain-muted: #a1a1aa;
+  --maintain-line: rgba(255, 255, 255, 0.08);
+  --maintain-violet: #fb923c;
   color: var(--maintain-ink);
   background:
-    radial-gradient(ellipse at 5% 18%, rgba(76, 42, 136, 0.16), transparent 35%),
-    radial-gradient(ellipse at 94% 57%, rgba(25, 110, 143, 0.12), transparent 34%),
-    #090b17;
+    radial-gradient(ellipse at 5% 18%, rgba(249, 115, 22, 0.16), transparent 35%),
+    radial-gradient(ellipse at 94% 57%, rgba(245, 158, 11, 0.1), transparent 34%),
+    #0a0a0c;
 }
 
 .page :global(h1),
@@ -27,8 +27,8 @@
 
 .page :global(.bg-paper-2) {
   background:
-    radial-gradient(ellipse at 80% 10%, rgba(125, 78, 214, 0.11), transparent 44%),
-    rgba(255, 255, 255, 0.018);
+    radial-gradient(ellipse at 80% 10%, rgba(249, 115, 22, 0.1), transparent 44%),
+    #141418;
 }
 
 .page :global(.glass-card) {
@@ -213,15 +213,16 @@
   position: absolute;
   top: 18px;
   right: 18px;
-  border: 1px solid rgba(182, 154, 255, 0.32);
+  border: 1px solid rgba(249, 115, 22, 0.4);
   border-radius: 99px;
-  background: rgba(182, 154, 255, 0.12);
+  background: linear-gradient(110deg, rgba(249, 115, 22, 0.24), rgba(245, 158, 11, 0.16));
   padding: 6px 10px;
-  color: #d8c9ff;
+  color: #ffedd5;
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  box-shadow: 0 0 18px rgba(249, 115, 22, 0.22);
 }
 
 .planFeatures {
@@ -369,11 +370,20 @@
 }
 
 .ctaCard h2 {
-  max-width: 18ch;
+  max-width: none;
   margin-top: 18px;
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  line-height: 1.08;
-  letter-spacing: -0.045em;
+  font-size: clamp(1.7rem, 3.2vw, 2.7rem);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+  text-wrap: nowrap;
+}
+
+@media (max-width: 899px) {
+  .ctaCard h2 {
+    white-space: normal;
+    text-wrap: pretty;
+  }
 }
 
 .ctaCard > p:not(.eyebrow) {

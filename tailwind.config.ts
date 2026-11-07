@@ -22,12 +22,20 @@ const config: Config = {
           DEFAULT: "#7452D6",
           dark: "#5A3AB7",
         },
-        orange: "#F17854",
+        orange: {
+          DEFAULT: "#F97316",
+          bright: "#FB923C",
+          dark: "#EA580C",
+        },
+        amber: {
+          DEFAULT: "#F59E0B",
+          dark: "#D97706",
+        },
         teal: {
           DEFAULT: "#3575D5",
           dark: "#2459AC",
         },
-        cta: "#D58AFF",
+        cta: "#F97316",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],

@@ -1,0 +1,335 @@
+.head {
+  margin-bottom: 40px;
+}
+
+.bento {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  --svc-accent: #c9a6ff;
+  position: relative;
+  display: flex;
+  min-width: 0;
+  height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(226, 214, 255, 0.16);
+  border-radius: 24px;
+  background:
+    linear-gradient(165deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.03));
+  box-shadow: 0 18px 48px rgba(3, 5, 20, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(22px) saturate(140%);
+  -webkit-backdrop-filter: blur(22px) saturate(140%);
+  transition: transform 240ms ease, border-color 240ms ease, box-shadow 240ms ease;
+}
+
+.card::before {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--svc-accent), transparent);
+  content: "";
+  opacity: 0.7;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: color-mix(in srgb, var(--svc-accent) 45%, rgba(226, 214, 255, 0.2));
+  box-shadow:
+    0 24px 56px rgba(3, 5, 20, 0.38),
+    0 0 32px color-mix(in srgb, var(--svc-accent) 18%, transparent),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.featured {
+  --svc-accent: #ff8ad4;
+  min-height: 360px;
+}
+
+.companion {
+  --svc-accent: #6fe3ff;
+}
+
+.tile:nth-child(3) { --svc-accent: #9aa8ff; }
+.tile:nth-child(4) { --svc-accent: #f3a6d4; }
+.tile:nth-child(5) { --svc-accent: #7ad8c8; }
+.tile:nth-child(6) { --svc-accent: #ffb37a; }
+
+.featuredMedia {
+  position: relative;
+  min-height: 220px;
+  overflow: hidden;
+  background: linear-gradient(160deg, #4a1d86, #7e35cc 52%, #d44aa8);
+}
+
+.featuredMedia::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 58%, rgba(18, 12, 38, 0.28));
+  pointer-events: none;
+  content: "";
+}
+
+.featuredImage {
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.08);
+}
+
+.mediaBadge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  background: rgba(12, 10, 28, 0.55);
+  padding: 6px 10px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  backdrop-filter: blur(10px);
+}
+
+.featuredBody,
+.companion,
+.tile {
+  padding: 24px;
+}
+
+.featuredBody {
+  display: flex;
+  min-width: 0;
+  height: 100%;
+  flex-direction: column;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--svc-accent) 38%, transparent);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--svc-accent) 14%, transparent);
+  color: var(--svc-accent);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  transition: transform 240ms ease;
+}
+
+.card:hover .icon {
+  transform: translateY(-2px) rotate(-4deg);
+}
+
+.icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.index {
+  color: color-mix(in srgb, var(--svc-accent) 80%, #fff);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.card h3 {
+  margin: 20px 0 0;
+  color: #fff;
+  font-size: 1.35rem;
+  line-height: 1.25;
+  text-wrap: pretty;
+}
+
+.featured h3 {
+  font-size: clamp(1.6rem, 2.2vw, 2.15rem);
+}
+
+.card p {
+  margin: 12px 0 0;
+  color: #c9c7dc;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chips li {
+  border: 1px solid rgba(226, 214, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 6px 10px;
+  color: #eeeafc;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 24px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cta span {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--svc-accent) 22%, transparent);
+  color: var(--svc-accent);
+  font-size: 13px;
+  transition: transform 200ms ease, background 200ms ease;
+}
+
+.card:hover .cta span {
+  transform: translate(2px, -2px);
+  background: color-mix(in srgb, var(--svc-accent) 36%, transparent);
+}
+
+@media (min-width: 768px) {
+  .bento {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .featured {
+    grid-column: 1 / -1;
+    grid-template-columns: 0.9fr 1.1fr;
+    display: grid;
+  }
+
+  .featuredMedia,
+  .companion,
+  .tile {
+    min-height: 100%;
+  }
+}
+
+@media (min-width: 1180px) {
+  .bento {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .featured {
+    grid-column: span 8;
+    min-height: 420px;
+  }
+
+  .companion {
+    grid-column: span 4;
+  }
+
+  .tile {
+    grid-column: span 3;
+    min-height: 320px;
+  }
+
+  .featuredBody,
+  .companion,
+  .tile {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card:hover {
+    transform: none;
+  }
+
+  .featuredMedia {
+    min-height: 180px;
+  }
+}
+
+.servicesSection {
+  position: relative;
+}
+
+.serviceList {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.serviceRow {
+  display: grid;
+  gap: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.2rem;
+  background: rgba(20, 20, 24, 0.72);
+  padding: 1.2rem 1.3rem;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 200ms ease, transform 200ms ease, background 200ms ease, box-shadow 200ms ease;
+}
+
+.serviceRow:hover {
+  border-color: rgba(249, 115, 22, 0.42);
+  background: rgba(28, 22, 18, 0.9);
+  color: inherit;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28), 0 0 28px rgba(249, 115, 22, 0.12);
+  transform: translateY(-3px);
+}
+
+@media (min-width: 900px) {
+  .serviceRow {
+    grid-template-columns: 4.2rem 1.05fr 1.45fr auto;
+    align-items: center;
+    gap: 1.25rem;
+  }
+}
+
+.serviceIndex {
+  color: #fb923c;
+  font-size: 1.1rem;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+
+.serviceRow h3 {
+  margin: 0;
+  color: #fafafa;
+  font-size: 1.25rem;
+  letter-spacing: -0.03em;
+}
+
+.serviceRow p {
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.serviceCta {
+  color: #fdba74;
+  font-size: 0.86rem;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.serviceRow:hover .serviceCta {
+  color: #fb923c;
+}

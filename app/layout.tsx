@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import "./globals.css";
 import "./studio-redesign.css";
+import "./theme-orange.css";
 
 const sans = Plus_Jakarta_Sans({
   subsets: ["latin"],

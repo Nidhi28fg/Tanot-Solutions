@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="hero-copy">
           <p className="eyebrow"><span className="eyebrow-dot" /> Website design & development · India & worldwide</p>
           <h1 className="hero-title max-w-[13ch] text-[3.15rem] leading-[0.99] sm:text-6xl lg:text-[5.15rem]">
-            Websites designed to <em className="font-serif text-violet">grow your business.</em>
+            Websites designed to <em className="font-serif text-orange">grow your business.</em>
           </h1>
           <p className="mt-6 max-w-lg text-base leading-7 text-muted lg:text-lg lg:leading-8">
             From business websites to eCommerce stores, we build digital
@@ -36,7 +36,7 @@ export default function Hero() {
           <ul aria-label="How our websites are built" className="mt-8 grid gap-3 text-sm font-medium text-muted sm:grid-cols-2">
             {offerings.map((offering) => (
               <li key={offering} className="flex items-center gap-2">
-                <span className="font-semibold text-violet" aria-hidden="true">✓</span>
+                <span className="font-semibold text-orange" aria-hidden="true">✓</span>
                 {offering}
               </li>
             ))}

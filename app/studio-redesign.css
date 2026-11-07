@@ -21,12 +21,22 @@ h3 {
 }
 
 .section-head h2 {
-  max-width: 22ch;
-  text-wrap: balance;
+  max-width: none;
+  text-wrap: nowrap;
+  white-space: nowrap;
+  font-size: clamp(1.55rem, 2.6vw, 2.55rem);
+  line-height: 1.15;
 }
 
 .section-head > p:not(.eyebrow) {
-  max-width: 64ch;
+  max-width: 54rem;
+}
+
+@media (max-width: 899px) {
+  .section-head h2 {
+    white-space: normal;
+    text-wrap: pretty;
+  }
 }
 
 .section {
