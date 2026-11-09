@@ -230,6 +230,18 @@
     @apply border-white/40 bg-white/5;
   }
 
+  .btn-ghost-light {
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+  }
+
+  .btn-ghost-light:hover {
+    border-color: rgba(251, 146, 60, 0.55);
+    background: rgba(249, 115, 22, 0.14);
+    color: #ffedd5;
+  }
+
   .btn-header {
     @apply hidden min-h-10 bg-ink px-5 text-sm text-white sm:inline-flex;
   }
@@ -1987,6 +1999,17 @@
   background: rgba(9, 10, 30, 0.47);
   color: #fbfaff;
   backdrop-filter: blur(10px);
+}
+
+#contact form select {
+  border-color: rgba(207, 194, 255, 0.21);
+  background: #ffffff;
+  color: #000000;
+}
+
+#contact form select option {
+  color: #000000;
+  background: #ffffff;
 }
 
 #contact form input::placeholder,

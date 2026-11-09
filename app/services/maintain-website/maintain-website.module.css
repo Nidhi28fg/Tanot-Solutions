@@ -359,39 +359,61 @@
 }
 
 .ctaCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
   overflow: hidden;
-  border: 1px solid rgba(201, 180, 255, 0.28);
+  border: 1px solid rgba(249, 115, 22, 0.28);
   border-radius: 28px;
   background:
-    radial-gradient(ellipse at 90% 0%, rgba(124, 86, 213, 0.25), transparent 48%),
-    linear-gradient(130deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.025));
-  padding: clamp(28px, 6vw, 64px);
-  box-shadow: 0 26px 78px rgba(3, 5, 20, 0.32);
+    radial-gradient(ellipse at 90% 0%, rgba(249, 115, 22, 0.28), transparent 46%),
+    radial-gradient(ellipse at 8% 100%, rgba(245, 158, 11, 0.14), transparent 40%),
+    linear-gradient(130deg, #1c120c, #2a1810 55%, #1a100c);
+  padding: clamp(28px, 5vw, 52px);
+  box-shadow: 0 26px 78px rgba(40, 16, 6, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 900px) {
+  .ctaCard {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+  }
+}
+
+.ctaCardCopy {
+  max-width: 40rem;
 }
 
 .ctaCard h2 {
   max-width: none;
-  margin-top: 18px;
-  font-size: clamp(1.7rem, 3.2vw, 2.7rem);
+  margin-top: 14px;
+  color: #fafafa;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
   line-height: 1.15;
   letter-spacing: -0.04em;
-  white-space: nowrap;
-  text-wrap: nowrap;
+  white-space: normal;
 }
 
-@media (max-width: 899px) {
-  .ctaCard h2 {
-    white-space: normal;
-    text-wrap: pretty;
-  }
-}
-
-.ctaCard > p:not(.eyebrow) {
-  max-width: 62ch;
-  margin-top: 18px;
-  color: var(--maintain-muted);
+.ctaCardCopy > p:not(.eyebrow) {
+  max-width: 48ch;
+  margin-top: 14px;
+  color: #c4b5a5;
   font-size: 16px;
   line-height: 1.75;
+}
+
+.ctaCardActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+
+.ctaCardActions :global(.btn) {
+  justify-content: center;
+  min-width: 180px;
 }
 
 @media (max-width: 900px) {

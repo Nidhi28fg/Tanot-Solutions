@@ -403,15 +403,22 @@ export default function MaintainWebsitePage() {
       <section className={styles.finalCta} aria-labelledby="maintenance-cta">
         <div className="container-page">
           <div className={styles.ctaCard}>
-            <p className="eyebrow"><span className="eyebrow-dot" /> Keep things running smoothly</p>
-            <h2 id="maintenance-cta">Let&apos;s keep your website ready for business.</h2>
-            <p>
-              Don&apos;t let technical issues slow you down. We&apos;ll help maintain,
-              secure, and optimize your website while you focus on growth.
-            </p>
-            <Link href="/#contact" className="btn btn-cta mt-7">
-              Get started today <span aria-hidden="true">↗</span>
-            </Link>
+            <div className={styles.ctaCardCopy}>
+              <p className="eyebrow"><span className="eyebrow-dot" /> Keep things running smoothly</p>
+              <h2 id="maintenance-cta">Keep your website ready for business.</h2>
+              <p>
+                Don&apos;t let technical issues slow you down. We&apos;ll help maintain,
+                secure, and optimize your website while you focus on growth.
+              </p>
+            </div>
+            <div className={styles.ctaCardActions}>
+              <Link href="/#contact" className="btn btn-cta">
+                Get started today <span aria-hidden="true">↗</span>
+              </Link>
+              <Link href="/#pricing" className="btn btn-ghost-light">
+                View care plans
+              </Link>
+            </div>
           </div>
         </div>
       </section>

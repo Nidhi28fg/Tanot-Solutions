@@ -10,6 +10,10 @@ const links = [
     children: [
       { href: "/#services", label: "All services" },
       { href: "/services/custom-website", label: "Custom Website" },
+      { href: "/services/ecommerce-website", label: "eCommerce Website" },
+      { href: "/services/landing-pages", label: "Landing Pages" },
+      { href: "/services/website-redesign", label: "Website Redesign" },
+      { href: "/services/seo-optimization", label: "SEO Optimization" },
       { href: "/services/maintain-website", label: "Maintain Website" },
     ],
   },
@@ -65,8 +69,8 @@ export default function Header() {
                     {link.label}
                     <span aria-hidden="true" className="text-[10px] transition-transform group-open:rotate-180">▾</span>
                   </summary>
-                  <div className="absolute left-0 top-full z-50 min-w-48 pt-3">
-                    <div className="mobile-glass-nav rounded-xl border border-line p-2 shadow-card">
+                  <div className="absolute left-0 top-full z-50 min-w-56 pt-3">
+                    <div className="mobile-glass-nav max-h-[70vh] overflow-y-auto rounded-xl border border-line p-2 shadow-card">
                       {link.children.map((child) => (
                         <Link
                           key={child.href}

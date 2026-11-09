@@ -186,10 +186,10 @@ const steps = [
 ];
 
 const technologies = [
-  { name: "Next.js", badge: "N", detail: "Fast pages and SEO-friendly rendering", color: "#c5b7ff" },
-  { name: "React", badge: "⚛", detail: "Interactive, responsive experiences", color: "#79ddff" },
-  { name: "Tailwind CSS", badge: "≈", detail: "Consistent design systems", color: "#75e0d2" },
-  { name: "TypeScript", badge: "TS", detail: "Reliable, maintainable code", color: "#81aaff" },
+  { name: "Next.js", badge: "N", detail: "Fast pages and SEO-friendly rendering", color: "#fb923c" },
+  { name: "React", badge: "R", detail: "Interactive, responsive experiences", color: "#f97316" },
+  { name: "Tailwind CSS", badge: "T", detail: "Consistent design systems", color: "#f59e0b" },
+  { name: "TypeScript", badge: "TS", detail: "Reliable, maintainable code", color: "#fdba74" },
 ];
 
 const concepts = [
@@ -605,9 +605,9 @@ export default function CustomWebsitePage() {
             </div>
             <div className={styles.ctaActions}>
               <Link href="/#contact" className="btn btn-cta">
-                Get a free website strategy call <span aria-hidden="true">↗</span>
+                Book a free strategy call <span aria-hidden="true">↗</span>
               </Link>
-              <Link href="/#contact" className="btn btn-ghost">
+              <Link href="/#contact" className="btn btn-ghost-light">
                 Request a custom proposal
               </Link>
             </div>

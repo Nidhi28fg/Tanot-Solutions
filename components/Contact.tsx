@@ -95,7 +95,7 @@ export default function Contact() {
           <label className="mt-5 block text-sm font-medium text-ink">
             What type of business do you run?
             <select
-              className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-violet"
+              className="mt-2 min-h-12 w-full rounded-lg border border-line bg-white px-4 text-[15px] text-black outline-none focus:border-orange"
               name="businessType"
               defaultValue=""
               required
@@ -144,7 +144,7 @@ export default function Contact() {
             <label className="block text-sm font-medium text-ink">
               What do you need? <span className="font-normal text-muted">(optional)</span>
               <select
-                className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-violet"
+                className="mt-2 min-h-12 w-full rounded-lg border border-line bg-white px-4 text-[15px] text-black outline-none focus:border-orange"
                 name="projectType"
                 defaultValue=""
               >

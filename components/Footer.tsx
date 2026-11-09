@@ -1,35 +1,98 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const serviceLinks = [
+  { href: "/#services", label: "All services" },
+  { href: "/services/custom-website", label: "Custom website" },
+  { href: "/services/ecommerce-website", label: "eCommerce website" },
+  { href: "/services/landing-pages", label: "Landing pages" },
+  { href: "/services/website-redesign", label: "Website redesign" },
+  { href: "/services/seo-optimization", label: "SEO optimization" },
+  { href: "/services/maintain-website", label: "Website care" },
+];
+
+const exploreLinks = [
+  { href: "/#approach", label: "How we work" },
+  { href: "/#proof", label: "Selected work" },
+  { href: "/#faq", label: "FAQs" },
+  { href: "/#contact", label: "Contact" },
+];
+
 export default function Footer() {
   return (
-    <footer className="border-t border-line bg-paper-2">
-      <div className="container-page grid gap-8 py-10 md:grid-cols-[1.2fr_1fr_1fr] md:items-start">
-        <div>
-          <Link href="/#top" className="flex items-center gap-3 font-semibold text-ink">
-            <span className="relative h-9 w-9 shrink-0 overflow-hidden rounded-xl border border-white/10 shadow-[0_0_18px_rgba(139,92,246,0.22)]">
-              <Image src="/guffo-mark.png" alt="" fill sizes="36px" />
+    <footer className="site-footer border-t border-line">
+      <div className="container-page site-footer-inner">
+        <div className="site-footer-brand">
+          <Link href="/#top" className="site-footer-logo" aria-label="Guffo Solution home">
+            <span className="site-footer-mark">
+              <Image src="/guffo-mark.png" alt="" fill sizes="40px" />
             </span>
-            <span className="text-[15px] tracking-tight">Guffo Solution</span>
+            <span>
+              Guffo <em>Solution</em>
+            </span>
           </Link>
-          <p className="mt-3 max-w-xs text-sm leading-6 text-muted">
-            Thoughtful websites. Built to move your business forward.
+          <p>
+            Custom websites designed and developed for businesses that want a
+            clear offer, stronger first impression, and a site ready to grow.
           </p>
+          <div className="site-footer-pills">
+            <span>India-based</span>
+            <span>Worldwide clients</span>
+            <span>Custom builds</span>
+          </div>
         </div>
-        <div className="grid content-start gap-2 text-sm">
-          <h2 className="mb-1 text-sm font-semibold text-ink">Let&apos;s talk about your project</h2>
-          <a className="text-violet hover:underline" href="https://wa.me/918860523651" target="_blank" rel="noreferrer">
-            Chat on WhatsApp: +91 88605 23651
-          </a>
-          <a className="text-violet hover:underline" href="mailto:teamguffonidhi28@gmail.com">teamguffonidhi28@gmail.com</a>
-          <span className="text-muted">Based in India · Working worldwide</span>
-          <Link className="btn btn-cta mt-2 w-fit" href="/#contact">
+
+        <div>
+          <h2 className="site-footer-title">Services</h2>
+          <ul className="site-footer-links">
+            {serviceLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href}>{link.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="site-footer-title">Explore</h2>
+          <ul className="site-footer-links">
+            {exploreLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href}>{link.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="site-footer-title">Get in touch</h2>
+          <ul className="site-footer-contact">
+            <li>
+              <a href="https://wa.me/918860523651" target="_blank" rel="noreferrer">
+                WhatsApp · +91 88605 23651
+              </a>
+            </li>
+            <li>
+              <a href="mailto:teamguffonidhi28@gmail.com">teamguffonidhi28@gmail.com</a>
+            </li>
+            <li>
+              <span>Based in India · Working worldwide</span>
+            </li>
+          </ul>
+          <Link className="btn btn-cta site-footer-cta" href="/#contact">
             Request a free consultation <span aria-hidden="true">↗</span>
           </Link>
         </div>
-        <p className="text-sm text-muted md:text-right">© 2026 Guffo Solution. All rights reserved.</p>
       </div>
-      
+
+      <div className="container-page site-footer-bottom">
+        <p>© 2026 Guffo Solution. All rights reserved.</p>
+        <div className="site-footer-bottom-links">
+          <Link href="/#pricing">Pricing</Link>
+          <Link href="/#contact">Start a project</Link>
+          <a href="mailto:teamguffonidhi28@gmail.com">Email us</a>
+        </div>
+      </div>
     </footer>
   );
 }
