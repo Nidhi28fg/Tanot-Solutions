@@ -91,7 +91,6 @@
 /* Cards / hover */
 .glass-card:hover,
 .service-card:hover,
-.project-card:hover,
 .testimonial-slot:hover,
 .process-card:hover {
   border-color: rgba(249, 115, 22, 0.42);
@@ -103,8 +102,6 @@
 
 .service-card > span,
 .process-card > span,
-.trust-badge > span,
-.project-details summary,
 .faq-contact-link,
 .portfolio-contact-link,
 .hero-section .btn-text:hover {
@@ -117,13 +114,6 @@
   background: var(--cta-orange);
   color: var(--orange-ink);
   box-shadow: 0 5px 24px rgba(249, 115, 22, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.28);
-}
-
-.project-tag {
-  border: 1px solid rgba(249, 115, 22, 0.4);
-  background: linear-gradient(110deg, rgba(249, 115, 22, 0.28), rgba(245, 158, 11, 0.16));
-  color: #ffedd5;
-  box-shadow: 0 0 16px rgba(249, 115, 22, 0.22);
 }
 
 /* Nav */
@@ -352,16 +342,9 @@
 }
 
 /* Section dividers */
-main > section:not(.hero-section):not(.studio-ticker)::before {
+main > section:not(.hero-section)::before {
   background: linear-gradient(90deg, transparent, rgba(249, 115, 22, 0.45) 28%, rgba(245, 158, 11, 0.4) 72%, transparent);
   box-shadow: 0 0 22px rgba(249, 115, 22, 0.2);
-}
-
-/* Studio ticker */
-.studio-ticker {
-  border-color: rgba(249, 115, 22, 0.28);
-  background: linear-gradient(100deg, #7c2d12 0%, #ea580c 48%, #c2410c 100%);
-  box-shadow: 0 10px 38px rgba(249, 115, 22, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
 /* FAQ */
@@ -463,23 +446,11 @@ a.text-violet {
   color: #fdba74;
 }
 
-.home-page .project-details summary {
-  color: #fb923c;
-}
-
 .home-page .portfolio-section {
   background:
     radial-gradient(ellipse at 97% 18%, rgba(249, 115, 22, 0.18), transparent 34%),
     radial-gradient(ellipse at 0% 86%, rgba(245, 158, 11, 0.12), transparent 38%),
     linear-gradient(130deg, #1a120c, #121018 52%, #0c0c14);
-}
-
-.home-page .project-card:hover {
-  border-color: rgba(249, 115, 22, 0.42);
-  box-shadow:
-    0 24px 58px rgba(0, 0, 0, 0.32),
-    0 0 30px rgba(249, 115, 22, 0.16),
-    inset 0 1px 0 rgba(255, 255, 255, 0.14);
 }
 
 .home-page .portfolio-followup {
