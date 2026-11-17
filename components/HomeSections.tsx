@@ -66,13 +66,13 @@ const plans = [
 
 export function WhyChooseUs() {
   return (
-    <section className="section" aria-labelledby="why-choose-guffo">
+    <section className="section" aria-labelledby="why-choose-digitalwebnet">
       <div className="container-page">
         <SectionHead
           index="01"
-          kicker="Why Guffo Solution"
+          kicker="Why DigitalWebNet"
           title="A sharper digital presence for growth."
-          titleId="why-choose-guffo"
+          titleId="why-choose-digitalwebnet"
           support="Thoughtful design, practical technology, and clear collaboration—shaped around what your customers need to do next."
         />
         <div className={styles.reasonGrid}>

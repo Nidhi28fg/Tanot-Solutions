@@ -44,7 +44,7 @@ export default function FAQ() {
             <Image
               className="section-image faq-image"
               src="/images/faq-team-photo.jpg"
-              alt="Stock photograph of colleagues discussing ideas in a workspace"
+              alt="Team discussing website ideas in a bright workspace"
               width={1200}
               height={800}
               sizes="(max-width: 1023px) 100vw, 32vw"

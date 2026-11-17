@@ -23,12 +23,12 @@ export default function Footer() {
     <footer className="site-footer border-t border-line">
       <div className="container-page site-footer-inner">
         <div className="site-footer-brand">
-          <Link href="/#top" className="site-footer-logo" aria-label="Guffo Solution home">
+          <Link href="/#top" className="site-footer-logo" aria-label="DigitalWebNet home">
             <span className="site-footer-mark">
-              <Image src="/guffo-mark.png" alt="" fill sizes="40px" />
+              <Image src="/digitalwebnet-mark.png" alt="" fill sizes="40px" />
             </span>
             <span>
-              Guffo <em>Solution</em>
+              Digital<em>WebNet</em>
             </span>
           </Link>
           <p>
@@ -73,7 +73,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="mailto:teamguffonidhi28@gmail.com">teamguffonidhi28@gmail.com</a>
+              <a href="mailto:hello@digitalwebnet.com">hello@digitalwebnet.com</a>
             </li>
             <li>
               <span>Based in India · Working worldwide</span>
@@ -86,11 +86,11 @@ export default function Footer() {
       </div>
 
       <div className="container-page site-footer-bottom">
-        <p>© 2026 Guffo Solution. All rights reserved.</p>
+        <p>© 2026 DigitalWebNet. All rights reserved.</p>
         <div className="site-footer-bottom-links">
           <Link href="/#pricing">Pricing</Link>
           <Link href="/#contact">Start a project</Link>
-          <a href="mailto:teamguffonidhi28@gmail.com">Email us</a>
+          <a href="mailto:hello@digitalwebnet.com">Email us</a>
         </div>
       </div>
     </footer>

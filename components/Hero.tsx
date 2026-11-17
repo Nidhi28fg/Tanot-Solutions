@@ -52,12 +52,12 @@ export default function Hero() {
                 <i className="browser-dot bg-[#ffc565]" />
                 <i className="browser-dot bg-[#64dfda]" />
               </span>
-              <span className="browser-url">guffosolution.com / concept</span>
+              <span className="browser-url">digitalwebnet.com / concept</span>
               <span className="browser-status">CONCEPT PREVIEW</span>
             </div>
             <div className="mock-site hero-mock-site">
               <div className="mock-nav">
-                <span className="mock-logo"><span /> GUFFO STUDIO</span>
+                <span className="mock-logo"><span /> DIGITALWEBNET</span>
                 <span className="mock-menu">STUDIO&nbsp;&nbsp;&nbsp; SERVICES&nbsp;&nbsp;&nbsp; CONTACT</span>
                 <span className="mock-contact">LET&apos;S TALK ↗</span>
               </div>
@@ -78,7 +78,7 @@ export default function Hero() {
           <div className="hero-float-label hero-float-bottom"><span>01 / 03</span> Strategy → Design → Development</div>
           <div className="hero-mobile-preview" aria-hidden="true">
             <span className="hero-mobile-camera" />
-            <span className="hero-mobile-brand"><i /> GUFFO</span>
+            <span className="hero-mobile-brand"><i /> DWN</span>
             <span className="hero-mobile-copy">A better<br /><em>digital home.</em></span>
             <span className="hero-mobile-button">Explore <b>↗</b></span>
             <span className="hero-mobile-image"><i /><i /><i /></span>

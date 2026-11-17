@@ -22,10 +22,10 @@ const serif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Guffo Solution — Website Design, Redesign & Development",
+  title: "DigitalWebNet — Website Design, Redesign & Development",
   description:
-    "Guffo Solution designs, redesigns and develops distinctive websites for businesses across industries in India and around the world.",
-  icons: { icon: "/guffo-mark.png" },
+    "DigitalWebNet designs, redesigns and develops distinctive websites for businesses across industries in India and around the world.",
+  icons: { icon: "/digitalwebnet-mark.png" },
 };
 
 export default function RootLayout({

@@ -53,19 +53,19 @@ export default function Header() {
           <Link
             href="/#top"
             className="flex shrink-0 items-center gap-3 whitespace-nowrap font-semibold text-ink"
-            aria-label="Guffo Solution home"
+            aria-label="DigitalWebNet home"
           >
-            <span className="relative h-9 w-9 shrink-0 overflow-hidden rounded-xl border border-white/10 shadow-[0_0_18px_rgba(139,92,246,0.22)]">
-              <Image src="/guffo-mark.png" alt="" fill sizes="36px" />
+            <span className="relative h-9 w-9 shrink-0 overflow-hidden rounded-xl border border-white/10 shadow-[0_0_18px_rgba(249,115,22,0.35)]">
+              <Image src="/digitalwebnet-mark.png" alt="" fill sizes="36px" />
             </span>
-            <span className="text-[15px] tracking-tight">Guffo Solution</span>
+            <span className="text-[15px] tracking-tight">DigitalWebNet</span>
           </Link>
 
           <nav className="hidden items-center gap-5 whitespace-nowrap text-sm font-medium lg:flex lg:gap-7" aria-label="Primary">
             {links.map((link) => (
               link.children ? (
                 <details key={link.label} className="group relative">
-                  <summary className="flex cursor-pointer list-none items-center gap-1 text-muted transition-colors hover:text-violet [&::-webkit-details-marker]:hidden">
+                  <summary className="flex cursor-pointer list-none items-center gap-1 text-muted transition-colors hover:text-orange [&::-webkit-details-marker]:hidden">
                     {link.label}
                     <span aria-hidden="true" className="text-[10px] transition-transform group-open:rotate-180">▾</span>
                   </summary>
@@ -75,7 +75,7 @@ export default function Header() {
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="block rounded-lg px-3 py-2.5 text-sm text-ink transition-colors hover:bg-paper-2 hover:text-violet"
+                          className="block rounded-lg px-3 py-2.5 text-sm text-ink transition-colors hover:bg-paper-2 hover:text-orange"
                         >
                           {child.label}
                         </Link>
@@ -87,7 +87,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-muted transition-colors hover:text-violet"
+                  className="text-muted transition-colors hover:text-orange"
                 >
                   {link.label}
                 </Link>

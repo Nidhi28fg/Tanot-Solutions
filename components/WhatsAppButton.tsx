@@ -2,10 +2,10 @@ export default function WhatsAppButton() {
   return (
     <a
       className="whatsapp-fab"
-      href="https://wa.me/918860523651?text=Hi%20Guffo%20Solution%2C%20I%27d%20like%20to%20discuss%20a%20website%20project."
+      href="https://wa.me/918860523651?text=Hi%20DigitalWebNet%2C%20I%27d%20like%20to%20discuss%20a%20website%20project."
       target="_blank"
       rel="noreferrer"
-      aria-label="Chat with Guffo Solution on WhatsApp"
+      aria-label="Chat with DigitalWebNet on WhatsApp"
     >
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="M20.5 11.8a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.3-4.8a8.4 8.4 0 1 1 16.2-3.9Z" />

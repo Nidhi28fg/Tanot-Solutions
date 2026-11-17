@@ -14,10 +14,10 @@ const work = [
     type: "E-commerce",
     className: "project-retail",
     image: "/images/concept-commerce-preview.svg",
-    imageAlt: "Original demo e-commerce website concept shown in a desktop browser frame",
+    imageAlt: "E-commerce website concept shown in a desktop browser frame",
     goal: "Make product discovery and key shopping paths easy to explore.",
     detail:
-      "Homepage, category, and product paths designed for clearer browsing. This is a concept direction—not a published client site.",
+      "Homepage, category, and product paths designed for clearer browsing and a smoother path to purchase.",
   },
   {
     number: "02",
@@ -25,10 +25,10 @@ const work = [
     type: "Healthcare",
     className: "project-health",
     image: "/images/concept-healthcare-preview.svg",
-    imageAlt: "Original demo healthcare website concept shown in a desktop browser frame",
+    imageAlt: "Healthcare website concept shown in a desktop browser frame",
     goal: "Make healthcare services and next steps easier to understand.",
     detail:
-      "Service explanations and enquiry journeys designed for trust and clarity. This is a concept direction—not a published client site.",
+      "Service explanations and enquiry journeys designed for trust, calm reading, and clear next steps.",
   },
   {
     number: "03",
@@ -36,10 +36,10 @@ const work = [
     type: "Hospitality",
     className: "project-stay",
     image: "/images/portfolio-hospitality.svg",
-    imageAlt: "Original hospitality concept visual showing a destination-inspired website direction",
+    imageAlt: "Hospitality website concept with a destination-inspired visual direction",
     goal: "Bring destination details and stay options into a clearer journey.",
     detail:
-      "Destination storytelling and stay options arranged into a calmer browsing flow. This is a concept direction—not a published client site.",
+      "Destination storytelling and stay options arranged into a calmer browsing flow that supports booking enquiries.",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function Proof() {
           index="04"
           kicker="Design portfolio"
           title="Concepts shaped for real industries."
-          support="Interactive concept previews that show our approach. Live client work will appear here once we have permission to share it."
+          support="Sample directions for e-commerce, healthcare, and hospitality—showing how we structure clarity, trust, and conversion."
           actionHref="#contact"
           actionLabel="Discuss a similar direction"
         />

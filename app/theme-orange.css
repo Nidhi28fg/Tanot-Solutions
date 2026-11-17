@@ -428,3 +428,69 @@ a.text-violet {
   line-height: 1;
   text-shadow: 0 0 16px rgba(249, 115, 22, 0.4);
 }
+
+/* Beat higher-specificity purple leftovers from studio-redesign */
+.home-page .hero-section .hero-copy .hero-title em,
+.home-page .hero-section .hero-copy h1 em {
+  background: linear-gradient(105deg, #fb923c 0%, #f59e0b 42%, #fdba74 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-page .hero-section .btn-cta,
+.home-page .cta-panel .btn-cta {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: var(--cta-orange);
+  color: var(--orange-ink);
+  box-shadow:
+    0 10px 28px rgba(249, 115, 22, 0.38),
+    0 0 30px rgba(249, 115, 22, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.home-page .hero-section .btn-cta:hover,
+.home-page .cta-panel .btn-cta:hover {
+  background: var(--cta-orange-hover);
+  color: var(--orange-ink);
+  box-shadow:
+    0 14px 36px rgba(245, 158, 11, 0.45),
+    0 0 36px rgba(249, 115, 22, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.home-page .hero-section .eyebrow {
+  color: #fdba74;
+}
+
+.home-page .project-details summary {
+  color: #fb923c;
+}
+
+.home-page .portfolio-section {
+  background:
+    radial-gradient(ellipse at 97% 18%, rgba(249, 115, 22, 0.18), transparent 34%),
+    radial-gradient(ellipse at 0% 86%, rgba(245, 158, 11, 0.12), transparent 38%),
+    linear-gradient(130deg, #1a120c, #121018 52%, #0c0c14);
+}
+
+.home-page .project-card:hover {
+  border-color: rgba(249, 115, 22, 0.42);
+  box-shadow:
+    0 24px 58px rgba(0, 0, 0, 0.32),
+    0 0 30px rgba(249, 115, 22, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+.home-page .portfolio-followup {
+  border-color: rgba(249, 115, 22, 0.22);
+  background: rgba(249, 115, 22, 0.05);
+}
+
+.home-page .portfolio-contact-link {
+  color: #fdba74;
+}
+
+.home-page .portfolio-contact-link:hover {
+  color: #fb923c;
+}

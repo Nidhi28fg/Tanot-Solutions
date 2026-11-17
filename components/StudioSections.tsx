@@ -146,11 +146,11 @@ export function StudioIntroduction() {
     <section className="section studio-intro-section" id="studio">
       <div className="container-page studio-intro-grid">
         <header className="section-head">
-          <p className="eyebrow"><span className="eyebrow-dot" /> Guffo Solution</p>
+          <p className="eyebrow"><span className="eyebrow-dot" /> DigitalWebNet</p>
           <h2>Your website is often the first impression of your business.</h2>
           <p>
             Visitors often decide within seconds whether they trust a business.
-            Your website should help make that decision easier. Guffo Solution
+            Your website should help make that decision easier. DigitalWebNet
             builds custom websites designed to support that first impression.
           </p>
           <a className="studio-inline-link" href="#contact">
@@ -348,7 +348,7 @@ export function WhyTanot() {
       <div className="container-page">
         <div className="why-tanot-intro">
           <header className="section-head">
-            <p className="eyebrow"><span className="eyebrow-dot" /> Why choose Guffo Solution?</p>
+            <p className="eyebrow"><span className="eyebrow-dot" /> Why choose DigitalWebNet?</p>
             <h2>A website partner focused on your next step.</h2>
             <p>
               From the first page to post-launch support, we focus on a useful

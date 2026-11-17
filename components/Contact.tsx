@@ -14,7 +14,7 @@ export default function Contact() {
     }
     const data = new FormData(form);
     const message = encodeURIComponent(
-      `Hi Guffo Solution, I'd like a free website recommendation.\n\nName: ${data.get("name")}\nEmail: ${data.get("email")}\nBusiness type: ${data.get("businessType")}\nWebsite: ${data.get("website") || "Not provided"}\nWhatsApp number: ${data.get("phone") || "Not provided"}\nCompany: ${data.get("company") || "Not provided"}\nWhat I need: ${data.get("projectType") || "Not specified"}\n\nAnything else to know:\n${data.get("message") || "Not provided"}`,
+      `Hi DigitalWebNet, I'd like a free website recommendation.\n\nName: ${data.get("name")}\nEmail: ${data.get("email")}\nBusiness type: ${data.get("businessType")}\nWebsite: ${data.get("website") || "Not provided"}\nWhatsApp number: ${data.get("phone") || "Not provided"}\nCompany: ${data.get("company") || "Not provided"}\nWhat I need: ${data.get("projectType") || "Not specified"}\n\nAnything else to know:\n${data.get("message") || "Not provided"}`,
     );
     window.location.assign(`https://wa.me/${whatsappNumber}?text=${message}`);
   }
@@ -34,7 +34,7 @@ export default function Contact() {
             <Image
               className="section-image contact-image"
               src="/images/contact-office-photo.jpg"
-              alt="Stock photograph of a bright, modern office"
+              alt="Bright modern workspace ready for a project discussion"
               width={1200}
               height={800}
               sizes="(max-width: 767px) 100vw, 42vw"
@@ -45,7 +45,7 @@ export default function Contact() {
             <li>
               <strong className="block text-ink">Chat with us on WhatsApp</strong>
               <a
-                className="mt-1 inline-flex items-center gap-2 text-violet hover:underline"
+                className="mt-1 inline-flex items-center gap-2 text-orange hover:underline"
                 href={`https://wa.me/${whatsappNumber}`}
                 target="_blank"
                 rel="noreferrer"
@@ -56,10 +56,10 @@ export default function Contact() {
             <li>
               <strong className="block text-ink">Email</strong>
               <a
-                className="mt-1 inline-block text-violet hover:underline"
-                href="mailto:teamguffonidhi28@gmail.com"
+                className="mt-1 inline-block text-orange hover:underline"
+                href="mailto:hello@digitalwebnet.com"
               >
-                teamguffonidhi28@gmail.com
+                hello@digitalwebnet.com
               </a>
             </li>
             <li>
@@ -74,7 +74,7 @@ export default function Contact() {
             <label className="block text-sm font-medium text-ink">
               Name
               <input
-                className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-violet"
+                className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-orange"
                 type="text"
                 name="name"
                 autoComplete="name"
@@ -84,7 +84,7 @@ export default function Contact() {
             <label className="block text-sm font-medium text-ink">
               Email
               <input
-                className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-violet"
+                className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-orange"
                 type="email"
                 name="email"
                 autoComplete="email"
@@ -114,28 +114,28 @@ export default function Contact() {
             <label className="block text-sm font-medium text-ink">
               WhatsApp number <span className="font-normal text-muted">(optional)</span>
               <input
-                className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-violet"
+                className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-orange"
                 type="tel"
                 name="phone"
                 autoComplete="tel"
                 placeholder="e.g. +91 98765 43210"
               />
             </label>
+            <label className="block text-sm font-medium text-ink">
+              Company <span className="font-normal text-muted">(optional)</span>
+              <input
+                className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-orange"
+                type="text"
+                name="company"
+                autoComplete="organization"
+              />
+            </label>
           </div>
-          <label className="mt-5 block text-sm font-medium text-ink">
-            Company
-            <input
-              className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-violet"
-              type="text"
-              name="company"
-              autoComplete="organization"
-            />
-          </label>
           <div className="mt-5 grid gap-5 sm:grid-cols-2">
             <label className="block text-sm font-medium text-ink">
               Current website <span className="font-normal text-muted">(optional)</span>
               <input
-                className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-violet"
+                className="mt-2 min-h-12 w-full rounded-lg border border-line bg-paper px-4 text-[15px] outline-none focus:border-orange"
                 type="url"
                 name="website"
                 placeholder="https://"
@@ -149,10 +149,12 @@ export default function Contact() {
                 defaultValue=""
               >
                 <option value="" disabled>Select a service</option>
-                <option value="New website design and development">New website design and development</option>
+                <option value="Custom website">Custom website</option>
+                <option value="eCommerce website">eCommerce website</option>
+                <option value="Landing pages">Landing pages</option>
                 <option value="Website redesign">Website redesign</option>
-                <option value="Website development">Website development</option>
-                <option value="Ongoing website support">Ongoing website support</option>
+                <option value="SEO optimization">SEO optimization</option>
+                <option value="Website maintenance">Website maintenance</option>
                 <option value="Not sure yet">Not sure yet</option>
               </select>
             </label>
@@ -160,7 +162,7 @@ export default function Contact() {
           <label className="mt-5 block text-sm font-medium text-ink">
             Anything else you&apos;d like us to know? <span className="font-normal text-muted">(optional)</span>
             <textarea
-              className="mt-2 w-full rounded-lg border border-line bg-paper px-4 py-3 text-[15px] outline-none focus:border-violet"
+              className="mt-2 w-full rounded-lg border border-line bg-paper px-4 py-3 text-[15px] outline-none focus:border-orange"
               name="message"
               rows={4}
               placeholder="What are you building or improving? Who is the website for, and what should it help them do?"

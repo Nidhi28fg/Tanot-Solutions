@@ -15,9 +15,9 @@ import Services from "@/components/Services";
 import StickyCta from "@/components/StickyCta";
 
 export const metadata: Metadata = {
-  title: "Websites Designed to Grow Your Business | Guffo Solution",
+  title: "Websites Designed to Grow Your Business | DigitalWebNet",
   description:
-    "Guffo Solution designs and develops custom, SEO-conscious websites that build trust, clarify your offer and help turn visitors into customers.",
+    "DigitalWebNet designs and develops custom, SEO-conscious websites that build trust, clarify your offer and help turn visitors into customers.",
 };
 
 export default function HomePage() {
@@ -32,8 +32,8 @@ export default function HomePage() {
       <PricingPreview />
       <EmployeeTestimonials />
       <FAQ />
-      <Contact />
       <CtaBand />
+      <Contact />
       <StickyCta />
     </main>
   );

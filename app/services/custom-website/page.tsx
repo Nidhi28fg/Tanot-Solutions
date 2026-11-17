@@ -11,9 +11,9 @@ type TechnologyCardStyle = CSSProperties & {
 };
 
 export const metadata: Metadata = {
-  title: "Custom Website Design & Development | Guffo Solution",
+  title: "Custom Website Design & Development | DigitalWebNet",
   description:
-    "A custom website shaped around your business goals, workflows and customers. Strategy, bespoke design and responsive development from Guffo Solution.",
+    "A custom website shaped around your business goals, workflows and customers. Strategy, bespoke design and responsive development from DigitalWebNet.",
 };
 
 const benefits = [
@@ -238,7 +238,7 @@ export default function CustomWebsitePage() {
             <ul className="mt-6 grid gap-3 sm:grid-cols-2" aria-label="Custom website benefits">
               {heroHighlights.map((highlight) => (
                 <li key={highlight} className="flex items-center gap-2 text-sm text-muted">
-                  <span className="font-semibold text-cyan" aria-hidden="true">✓</span>
+                  <span className="font-semibold text-orange" aria-hidden="true">✓</span>
                   {highlight}
                 </li>
               ))}
@@ -289,7 +289,7 @@ export default function CustomWebsitePage() {
                 <tr className="bg-white/[0.04]">
                   <th scope="col" className="w-[28%] px-5 py-4 text-sm font-semibold text-muted md:px-7">Consideration</th>
                   <th scope="col" className="w-[34%] px-5 py-4 text-sm font-semibold text-muted md:px-7">Template website</th>
-                  <th scope="col" className="px-5 py-4 text-sm font-semibold text-violet md:px-7">Custom website</th>
+                  <th scope="col" className="px-5 py-4 text-sm font-semibold text-orange md:px-7">Custom website</th>
                 </tr>
               </thead>
               <tbody>
@@ -342,7 +342,7 @@ export default function CustomWebsitePage() {
           <ul className="grid gap-3 sm:grid-cols-2">
             {seoFoundations.map((item) => (
               <li key={item} className="glass-card flex items-start gap-3 rounded-xl border border-line p-5 text-sm leading-6 text-muted shadow-card">
-                <span className="mt-0.5 font-semibold text-cyan" aria-hidden="true">✓</span>
+                <span className="mt-0.5 font-semibold text-orange" aria-hidden="true">✓</span>
                 {item}
               </li>
             ))}
@@ -438,11 +438,11 @@ export default function CustomWebsitePage() {
         </div>
       </section>
 
-      <section className={`section bg-paper-2 ${styles.whySection}`} aria-labelledby="why-guffo">
+      <section className={`section bg-paper-2 ${styles.whySection}`} aria-labelledby="why-digitalwebnet">
         <div className="container-page">
           <header className={`section-head ${styles.sectionHead}`}>
             <p className="eyebrow"><span className="eyebrow-dot" /> A thoughtful partner</p>
-            <h2 id="why-guffo">Why choose Guffo Solution?</h2>
+            <h2 id="why-digitalwebnet">Why choose DigitalWebNet?</h2>
             <p>
               Get a collaborative team focused on a useful, maintainable
               website—not just a launch-day finish line.
@@ -505,8 +505,8 @@ export default function CustomWebsitePage() {
             <h2 id="custom-work">Industry concepts that show our design approach.</h2>
             <p>
               These concept previews show how we shape websites for different
-              audiences. Live client projects will be featured here once we
-              have permission to share them.
+              audiences—clear structure, distinctive design, and journeys that
+              match the industry.
             </p>
           </header>
           <div className={styles.conceptGrid}>

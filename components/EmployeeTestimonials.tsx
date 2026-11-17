@@ -28,7 +28,7 @@ export default function EmployeeTestimonials() {
           kicker="How we work with you"
           title="Clear process. No guesswork."
           titleId="trust-signals"
-          support="Real client stories will appear here once we have permission to share them. Until then, here is what you can expect when we work together."
+          support="Before testimonials go live, here is the working rhythm you can count on from first call through handover."
           actionHref="#contact"
           actionLabel="Get free consultation"
         />

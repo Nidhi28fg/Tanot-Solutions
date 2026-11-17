@@ -194,7 +194,7 @@ export default function MaintainWebsitePage() {
             </p>
             <h1 className="mt-6 max-w-[15ch] text-[3rem] leading-[1.02] sm:text-6xl lg:text-[5rem]">
               Keep your website{" "}
-              <em className="font-serif text-violet">secure, fast &amp; up to date.</em>
+              <em className="font-serif text-orange">secure, fast &amp; up to date.</em>
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
               Your website needs regular care to stay secure, perform well, and
@@ -204,7 +204,7 @@ export default function MaintainWebsitePage() {
             <ul className="mt-6 grid gap-3 sm:grid-cols-2" aria-label="Website maintenance highlights">
               {highlights.map((highlight) => (
                 <li key={highlight} className="flex items-center gap-2 text-sm text-muted">
-                  <span className="font-semibold text-violet" aria-hidden="true">✓</span>
+                  <span className="font-semibold text-orange" aria-hidden="true">✓</span>
                   {highlight}
                 </li>
               ))}
@@ -281,7 +281,7 @@ export default function MaintainWebsitePage() {
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <article className={`glass-card rounded-2xl border border-line p-6 shadow-card md:p-7 ${styles.serviceCard}`} key={service.number}>
-                <span className="text-xs font-semibold tracking-[0.14em] text-violet">{service.number}</span>
+                <span className="text-xs font-semibold tracking-[0.14em] text-orange">{service.number}</span>
                 <h3 className="mt-5 text-xl leading-snug">{service.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-muted">{service.description}</p>
               </article>
