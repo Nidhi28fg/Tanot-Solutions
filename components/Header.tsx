@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const links = [
   {
@@ -28,6 +28,7 @@ const links = [
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const servicesMenuRef = useRef<HTMLDetailsElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -42,6 +43,32 @@ export default function Header() {
       document.body.style.overflow = "";
     };
   }, [open]);
+
+  useEffect(() => {
+    const menu = servicesMenuRef.current;
+    if (!menu) return;
+
+    const closeMenu = () => {
+      menu.open = false;
+    };
+
+    const onPointerDown = (event: PointerEvent) => {
+      if (!menu.open) return;
+      if (menu.contains(event.target as Node)) return;
+      closeMenu();
+    };
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && menu.open) closeMenu();
+    };
+
+    document.addEventListener("pointerdown", onPointerDown);
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.removeEventListener("pointerdown", onPointerDown);
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, []);
 
   return (
     <header
@@ -69,7 +96,7 @@ export default function Header() {
           <nav className="hidden items-center gap-5 whitespace-nowrap text-sm font-medium lg:flex lg:gap-7" aria-label="Primary">
             {links.map((link) => (
               link.children ? (
-                <details key={link.label} className="group relative">
+                <details key={link.label} ref={servicesMenuRef} className="group relative">
                   <summary className="flex cursor-pointer list-none items-center gap-1 text-muted transition-colors hover:text-orange [&::-webkit-details-marker]:hidden">
                     {link.label}
                     <span aria-hidden="true" className="text-[10px] transition-transform group-open:rotate-180">▾</span>
@@ -81,6 +108,9 @@ export default function Header() {
                           key={child.href}
                           href={child.href}
                           className="block rounded-lg px-3 py-2.5 text-sm text-ink transition-colors hover:bg-paper-2 hover:text-orange"
+                          onClick={() => {
+                            if (servicesMenuRef.current) servicesMenuRef.current.open = false;
+                          }}
                         >
                           {child.label}
                         </Link>
