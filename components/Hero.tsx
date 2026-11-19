@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const offerings = [
   "Custom website design",
   "SEO-aware foundations",
@@ -55,33 +57,30 @@ export default function Hero() {
               <span className="browser-url">digitalwebnet.com / concept</span>
               <span className="browser-status">CONCEPT PREVIEW</span>
             </div>
-            <div className="mock-site hero-mock-site">
-              <div className="mock-nav">
-                <span className="mock-logo"><span /> DIGITALWEBNET</span>
-                <span className="mock-menu">STUDIO&nbsp;&nbsp;&nbsp; SERVICES&nbsp;&nbsp;&nbsp; CONTACT</span>
-                <span className="mock-contact">LET&apos;S TALK ↗</span>
-              </div>
-              <div className="mock-content">
-                <span className="mock-overline">A DIGITAL STUDIO FOR WHAT&apos;S NEXT</span>
-                <p>Make your<br /><i>next move.</i></p>
-                <span className="mock-link">Explore the concept <b>↗</b></span>
-                <div className="mock-sun" />
-                <div className="mock-orb"><span>T</span></div>
-              </div>
-              <div className="mock-bottom">
-                <span>DESIGN WITH INTENT</span>
-                <span>BUILT AROUND YOUR GOALS&nbsp;&nbsp; ↗</span>
-              </div>
+            <div className="mock-site hero-mock-site hero-mock-logo">
+              <Image
+                src="/digitalwebnet-logo.jpg"
+                alt="DigitalWebNet"
+                width={720}
+                height={480}
+                priority
+                className="hero-mock-logo-image"
+              />
             </div>
           </div>
           <div className="hero-float-label hero-float-top"><span>✳</span> A DISTINCTIVE DIGITAL PRESENCE</div>
           <div className="hero-float-label hero-float-bottom"><span>01 / 03</span> Strategy → Design → Development</div>
-          <div className="hero-mobile-preview" aria-hidden="true">
+          <div className="hero-mobile-preview hero-mobile-logo" aria-hidden="true">
             <span className="hero-mobile-camera" />
-            <span className="hero-mobile-brand"><i /> DWN</span>
-            <span className="hero-mobile-copy">A better<br /><em>digital home.</em></span>
-            <span className="hero-mobile-button">Explore <b>↗</b></span>
-            <span className="hero-mobile-image"><i /><i /><i /></span>
+            <div className="hero-mobile-logo-screen">
+              <Image
+                src="/digitalwebnet-logo.jpg"
+                alt=""
+                width={280}
+                height={280}
+                className="hero-mobile-logo-image"
+              />
+            </div>
           </div>
           <div className="hero-float-card" aria-hidden="true">
             <span>DESIGNED FOR EVERY SCREEN</span>

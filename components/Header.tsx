@@ -53,13 +53,17 @@ export default function Header() {
         <div className="glass-nav flex h-16 items-center justify-between gap-4 rounded-2xl px-4 md:h-[4.5rem] md:rounded-full md:px-6">
           <Link
             href="/#top"
-            className="flex shrink-0 items-center gap-3 whitespace-nowrap font-semibold text-ink"
+            className="brand-logo shrink-0"
             aria-label="DigitalWebNet home"
           >
-            <span className="relative h-9 w-9 shrink-0 overflow-hidden rounded-xl border border-white/10 shadow-[0_0_18px_rgba(249,115,22,0.35)]">
-              <Image src="/digitalwebnet-mark.png" alt="" fill sizes="36px" />
-            </span>
-            <span className="text-[15px] tracking-tight">DigitalWebNet</span>
+            <Image
+              src="/digitalwebnet-logo.jpg"
+              alt="DigitalWebNet"
+              width={148}
+              height={52}
+              priority
+              className="brand-logo-image"
+            />
           </Link>
 
           <nav className="hidden items-center gap-5 whitespace-nowrap text-sm font-medium lg:flex lg:gap-7" aria-label="Primary">

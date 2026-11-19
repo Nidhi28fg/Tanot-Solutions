@@ -24,13 +24,17 @@ export default function Footer() {
     <footer className="site-footer border-t border-line">
       <div className="container-page site-footer-inner">
         <div className="site-footer-brand">
-          <Link href="/#top" className="site-footer-logo" aria-label="DigitalWebNet home">
-            <span className="site-footer-mark">
-              <Image src="/digitalwebnet-mark.png" alt="" fill sizes="40px" />
+          <Link href="/#top" className="site-footer-brand-lockup" aria-label="DigitalWebNet home">
+            <span className="site-footer-logo">
+              <Image
+                src="/digitalwebnet-logo.jpg"
+                alt=""
+                width={168}
+                height={60}
+                className="site-footer-logo-image"
+              />
             </span>
-            <span>
-              Digital<em>WebNet</em>
-            </span>
+            <span className="site-footer-brand-name">DigitalWebNet</span>
           </Link>
           <p>
             Custom websites designed and developed for businesses that want a

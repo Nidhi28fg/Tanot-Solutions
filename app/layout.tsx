@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   title: "DigitalWebNet — Website Design, Redesign & Development",
   description:
     "DigitalWebNet designs, redesigns and develops distinctive websites for businesses across industries in India and around the world.",
-  icons: { icon: "/digitalwebnet-mark.png" },
+  icons: { icon: "/digitalwebnet-logo.jpg" },
 };
 
 export default function RootLayout({
