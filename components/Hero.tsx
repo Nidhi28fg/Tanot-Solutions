@@ -58,14 +58,16 @@ export default function Hero() {
               <span className="browser-status">CONCEPT PREVIEW</span>
             </div>
             <div className="mock-site hero-mock-site hero-mock-logo">
-              <Image
-                src="/digitalwebnet-logo.jpg"
-                alt="DigitalWebNet"
-                width={720}
-                height={480}
-                priority
-                className="hero-mock-logo-image"
-              />
+              <div className="hero-mock-logo-frame">
+                <Image
+                  src="/digitalwebnet-logo.jpg"
+                  alt="DigitalWebNet"
+                  fill
+                  sizes="(max-width: 1024px) 70vw, 520px"
+                  priority
+                  className="hero-mock-logo-image"
+                />
+              </div>
             </div>
           </div>
           <div className="hero-float-label hero-float-top"><span>✳</span> A DISTINCTIVE DIGITAL PRESENCE</div>
@@ -76,8 +78,8 @@ export default function Hero() {
               <Image
                 src="/digitalwebnet-logo.jpg"
                 alt=""
-                width={280}
-                height={280}
+                fill
+                sizes="170px"
                 className="hero-mobile-logo-image"
               />
             </div>
