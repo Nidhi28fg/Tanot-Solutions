@@ -155,6 +155,7 @@ export default function Contact() {
                 <option value="Website redesign">Website redesign</option>
                 <option value="SEO optimization">SEO optimization</option>
                 <option value="Website maintenance">Website maintenance</option>
+                <option value="Social media handling">Social media handling</option>
                 <option value="Not sure yet">Not sure yet</option>
               </select>
             </label>

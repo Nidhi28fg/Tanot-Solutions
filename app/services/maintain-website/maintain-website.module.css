@@ -16,6 +16,10 @@
   color: var(--maintain-ink);
 }
 
+.page :global(.text-ink) {
+  color: var(--maintain-ink);
+}
+
 .page :global(.text-muted),
 .page :global(.section-head > p:not(.eyebrow)) {
   color: var(--maintain-muted);
@@ -197,8 +201,15 @@
   padding: 30px;
   border: 1px solid var(--maintain-line);
   border-radius: 22px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
   box-shadow: 0 18px 52px rgba(3, 5, 20, 0.24);
+  color: var(--maintain-ink);
+}
+
+.planCard h3 {
+  color: #e4e4e7;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-weight: 600;
 }
 
 .popularPlan {
@@ -229,8 +240,9 @@
   display: grid;
   gap: 13px;
   margin-top: 25px;
-  color: var(--maintain-muted);
-  font-size: 13px;
+  color: #d4d4d8;
+  font-size: 0.9rem;
+  line-height: 1.55;
 }
 
 .planFeatures li {
@@ -245,10 +257,22 @@
 }
 
 .planNote {
+  display: grid;
+  gap: 0.55rem;
   margin-top: 22px;
   color: var(--maintain-muted);
   font-size: 13px;
+  line-height: 1.65;
   text-align: center;
+}
+
+.planNote p {
+  margin: 0;
+}
+
+.planNote strong {
+  color: var(--maintain-ink);
+  font-weight: 700;
 }
 
 .processList {

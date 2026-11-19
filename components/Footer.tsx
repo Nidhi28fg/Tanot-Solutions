@@ -9,6 +9,7 @@ const serviceLinks = [
   { href: "/services/website-redesign", label: "Website redesign" },
   { href: "/services/seo-optimization", label: "SEO optimization" },
   { href: "/services/maintain-website", label: "Website care" },
+  { href: "/services/social-media-handling", label: "Social media handling" },
 ];
 
 const exploreLinks = [

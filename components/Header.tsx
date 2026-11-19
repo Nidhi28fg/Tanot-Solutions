@@ -15,6 +15,7 @@ const links = [
       { href: "/services/website-redesign", label: "Website Redesign" },
       { href: "/services/seo-optimization", label: "SEO Optimization" },
       { href: "/services/maintain-website", label: "Maintain Website" },
+      { href: "/services/social-media-handling", label: "Social Media Handling" },
     ],
   },
   { href: "/#approach", label: "How we work" },

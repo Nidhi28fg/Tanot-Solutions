@@ -45,6 +45,13 @@ const services = [
     href: "/services/maintain-website",
     cta: "Explore maintenance",
   },
+  {
+    index: "07",
+    title: "Social media handling",
+    body: "Consistent content, clean graphics, and active account management to keep your brand visible and engaging.",
+    href: "/services/social-media-handling",
+    cta: "Explore social media plans",
+  },
 ];
 
 export default function Services() {
