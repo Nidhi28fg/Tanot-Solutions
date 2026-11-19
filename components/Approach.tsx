@@ -44,7 +44,6 @@ export default function Approach() {
               <span className="process-step-icon" aria-hidden="true">
                 {["◌", "⌘", "✳", "‹/›", "✓", "↗"][index]}
               </span>
-              <span className="process-step-number">0{index + 1}</span>
               <h3>{step.title}</h3>
               <p>{step.body}</p>
             </li>

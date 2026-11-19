@@ -76,10 +76,9 @@ export function WhyChooseUs() {
           support="Thoughtful design, practical technology, and clear collaboration—shaped around what your customers need to do next."
         />
         <div className={styles.reasonGrid}>
-          {reasons.map((reason, index) => (
+          {reasons.map((reason) => (
             <article className={styles.reasonCard} key={reason.title}>
               <span className={styles.reasonIcon} aria-hidden="true">{reason.icon}</span>
-              <span className={styles.cardNumber}>0{index + 1}</span>
               <h3>{reason.title}</h3>
               <p>{reason.description}</p>
             </article>

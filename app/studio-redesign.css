@@ -628,17 +628,6 @@ main > section:not(.hero-section)::before {
   font-weight: 700;
 }
 
-.approach-section .process-card .process-step-number {
-  position: absolute;
-  top: 30px;
-  right: 17px;
-  color: #aaa5c5;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-shadow: none;
-}
-
 .approach-section .process-card h3 {
   margin-top: 20px;
   font-size: 15px;
