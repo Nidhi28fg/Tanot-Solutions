@@ -68,7 +68,6 @@ export default function Proof() {
     <section className="section portfolio-section" id="proof">
       <div className="container-page">
         <SectionHead
-          index="04"
           kicker="Selected work"
           title="Real projects and concept directions."
           support="Live client work first, then sample directions for e-commerce, healthcare, and hospitality."

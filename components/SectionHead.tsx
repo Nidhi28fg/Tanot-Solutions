@@ -1,10 +1,10 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import styles from "./section-head.module.css";
 
 type SectionHeadProps = {
-  index?: string;
   kicker: string;
-  title: string;
+  title: ReactNode;
   titleId?: string;
   support: string;
   actionHref?: string;
@@ -12,7 +12,6 @@ type SectionHeadProps = {
 };
 
 export default function SectionHead({
-  index,
   kicker,
   title,
   titleId,
@@ -21,12 +20,7 @@ export default function SectionHead({
   actionLabel,
 }: SectionHeadProps) {
   return (
-    <header className={`${styles.head} ${index ? styles.headWithIndex : ""}`}>
-      {index ? (
-        <span className={styles.index} aria-hidden="true">
-          {index}
-        </span>
-      ) : null}
+    <header className={styles.head}>
       <div className={styles.leadCol}>
         <p className={styles.kicker}>{kicker}</p>
         <h2 id={titleId} className={styles.title}>

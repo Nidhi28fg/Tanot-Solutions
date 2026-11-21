@@ -32,7 +32,6 @@ export default function Approach() {
     <section className="section approach-section" id="approach">
       <div className="container-page">
         <SectionHead
-          index="03"
           kicker="Our process"
           title="From first call to launch, without the fog."
           support="A clear series of steps keeps the project moving and gives you space to review the work along the way."

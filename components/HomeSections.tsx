@@ -69,7 +69,6 @@ export function WhyChooseUs() {
     <section className="section" aria-labelledby="why-choose-digitalwebnet">
       <div className="container-page">
         <SectionHead
-          index="01"
           kicker="Why DigitalWebNet"
           title="A sharper digital presence for growth."
           titleId="why-choose-digitalwebnet"
@@ -94,7 +93,6 @@ export function IndustriesGrid() {
     <section className="section" aria-labelledby="industries-title">
       <div className="container-page">
         <SectionHead
-          index="05"
           kicker="Industries we serve"
           title="One craft. Many kinds of business."
           titleId="industries-title"
@@ -118,7 +116,6 @@ export function PricingPreview() {
     <section className={`section ${styles.pricingSection}`} id="pricing" aria-labelledby="pricing-title">
       <div className="container-page">
         <SectionHead
-          index="06"
           kicker="Website packages"
           title="Clear packages. Confirmed before we begin."
           titleId="pricing-title"

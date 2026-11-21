@@ -59,7 +59,6 @@ export default function Services() {
     <section className={`section ${styles.servicesSection}`} id="services">
       <div className="container-page">
         <SectionHead
-          index="02"
           kicker="Website services"
           title="Choose the work your business needs next."
           support="Bring us in for a focused service or from planning through launch. We will shape the scope around your requirements."

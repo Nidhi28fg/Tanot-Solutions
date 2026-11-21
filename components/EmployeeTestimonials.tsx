@@ -24,7 +24,6 @@ export default function EmployeeTestimonials() {
     <section className="section testimonial-section" aria-labelledby="trust-signals">
       <div className="container-page">
         <SectionHead
-          index="07"
           kicker="How we work with you"
           title="Clear process. No guesswork."
           titleId="trust-signals"
